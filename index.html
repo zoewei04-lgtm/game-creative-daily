@@ -37,12 +37,13 @@
     .item-top{display:flex;gap:9px;align-items:flex-start}.num{width:30px;height:30px;display:grid;place-items:center;background:#f2e8e4;color:#8f3924;border-radius:4px;font-weight:800;flex:0 0 auto}.organic .num{background:#e3f0eb;color:#1f674f}
     .title-wrap{min-width:0;flex:1}.tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:4px}.tag{font-size:11px;padding:1px 6px;border-radius:3px;border:1px solid #cbd2cf;background:#f7f8f7;color:#546167}.tag.p0{background:#fde8e8;color:var(--p0);border-color:#efc6c6}.tag.p1{background:#fff3d2;color:var(--p1);border-color:#ead89d}.tag.style{background:#e8eef5;color:#365d7f;border-color:#c8d7e7}.tag.platform{background:#e7f1ec;color:#24604f;border-color:#bfd8cc}
     .source{margin:10px 0;padding:8px 9px;background:#f5f7f5;border-radius:4px;color:#4f5d64}.source b{color:var(--ink)}
+    .source-summary{margin-top:12px;padding:12px 13px;border:1px solid var(--line);border-radius:5px;background:#fbfcfb}.source-summary>b{font-size:13px}.source-points{margin:7px 0 0;padding-left:19px;color:#354148;font-size:13px;line-height:1.65}.source-points li+li{margin-top:4px}.kept-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(180px,1fr);gap:8px 14px;margin-top:10px}.kept-grid .detail{min-width:0}
     .actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:5px;border:1px solid #aeb9b5;background:#fff;color:var(--ink);border-radius:4px;padding:6px 9px;text-decoration:none;cursor:pointer}.btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}.btn:hover{filter:brightness(.96)}
     .detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;margin-top:10px}.detail{min-width:0}.detail b{font-size:12px;color:#4f5a60}.detail p{margin:2px 0 0}.detail.full{grid-column:1/-1}.ue{font-weight:750;color:#8f3924}
     .no-results{display:none;text-align:center;color:var(--muted);padding:35px}
     .footer{margin-top:28px;color:var(--muted);font-size:12px}.footer p{margin:5px 0}
     @media(max-width:900px){.hero{grid-template-columns:1fr}.hero-badges{justify-content:flex-start}.kpis{grid-template-columns:repeat(2,1fr)}.rule-band{grid-template-columns:1fr}.list{grid-template-columns:1fr}}
-    @media(max-width:580px){.shell{padding:10px 9px 38px}.hero{padding:20px 16px}.hero h1{font-size:22px}.kpis{grid-template-columns:1fr 1fr}.kpi b{font-size:19px}.signal-wrap{overflow:auto}.signal-table{min-width:760px}.date-content{padding:0 9px 13px}.detail-grid{grid-template-columns:1fr}.detail.full{grid-column:auto}.seg{width:100%;display:grid;grid-template-columns:repeat(4,1fr)}.seg button{padding:8px 3px}.platform-select{width:100%}.market-shortcuts{grid-template-columns:repeat(3,minmax(0,1fr));padding:9px}.market-shortcuts-label{grid-column:1/-1}.market-shortcut{min-width:0;padding:6px 3px}.item{padding:12px}.item-top{gap:7px}}
+    @media(max-width:580px){.shell{padding:10px 9px 38px}.hero{padding:20px 16px}.hero h1{font-size:22px}.kpis{grid-template-columns:1fr 1fr}.kpi b{font-size:19px}.signal-wrap{overflow:auto}.signal-table{min-width:760px}.date-content{padding:0 9px 13px}.detail-grid,.kept-grid{grid-template-columns:1fr}.detail.full{grid-column:auto}.seg{width:100%;display:grid;grid-template-columns:repeat(4,1fr)}.seg button{padding:8px 3px}.platform-select{width:100%}.market-shortcuts{grid-template-columns:repeat(3,minmax(0,1fr));padding:9px}.market-shortcuts-label{grid-column:1/-1}.market-shortcut{min-width:0;padding:6px 3px}.item{padding:12px}.item-top{gap:7px}}
   </style>
 </head>
 <body>
@@ -199,6 +200,92 @@ const organic = [
   {id:44,market:'HK',priority:'P0',platform:'Threads',sourceKind:'post',title:'IndieSummit 最新帖：独立游戏一眼玩法投票',channel:'IndieSummit / Indie Guider',url:'https://www.threads.com/@indieguider/post/DcLmWSrk3nd',signal:'Threads 具体帖子 · 采集时约 21 小时前',why:'发布时间很新，Threads 适合用一句选择题配短片或动图，快速收集玩法偏好。',format:'只放两个同资产版本：爆单经营 vs 生产链断点，正文让用户二选一并说明理由。',adapt:'三冰用非官方口吻发布“同一个雪城，你想先开店还是先修路？”；次日公布投票和制作片段。',test:'票数决定香港买量 A 面，评论理由直接进入字幕文案池。'}
 ];
 
+const paidSourceTitles = {
+  1:"労働者ネコの機嫌を取りながら生産する最新の工場経営シム【MeowFactory】",
+  2:"TCG Card Shop Simulator - Official Version 1.0 Release Date Trailer",
+  3:"Town to City | 1.0 Launch Trailer",
+  4:"Go-Go Town! - Official Launch Trailer",
+  5:"inKONBINI - Official Gameplay Trailer | ID@Xbox April 2026 Showcase",
+  6:"Tiny Bookshop - Official Mobile Launch Trailer",
+  7:"Big Ambitions 1.0 Release Date Announcement Trailer",
+  8:"「A列車で行こう9 Evolution」ティザー【Nintendo Switch 2】",
+  9:"Nintendo Switch 2「A列車で行こう9 Evolution」ゲーム紹介動画",
+  10:"Nintendo Switch 2「A列車で行こう9 Evolution」オープニング",
+  11:"【Tropico 7】トロピコ 7 | ゲームプレイティザー",
+  12:"PS5『シティーズ：スカイライン リマスター ジャパン・スペシャル・エディション』ショップオブシブヤトレーラー",
+  13:"『シティーズ：スカイライン リマスター ジャパン・スペシャル・エディション』プロモーショントレーラー",
+  14:"『プロサッカークラブをつくろう！2026』公式PV「実況サカつく！クラブ篇」",
+  15:"『プロサッカークラブをつくろう！2026』公式PV「実況サカつく！世界へ篇」",
+  16:"『プロサッカークラブをつくろう！2026』公式PV「実況サカつく！チーム篇」",
+  17:"Tiny Bookshop Mobile Announcement Trailer",
+  18:"Hotel Galactic - Official Winter Rework Overview",
+  19:"新作ゲーム「ぼくのプロ野球」（野球GMシミュレーション）【紹介PV】",
+  20:"Go-Go Town! - Official Release Date Trailer | Wholesome Direct 2026",
+  21:"マイコンビニ　コンビニ 経営 シミュレーション ゲーム",
+  22:"大家さんになろう！",
+  23:"Sim Companies",
+  24:"Playable at New Game Plus — Thrifty Business",
+  25:"The Last Gas Station",
+  26:"Calling all business sim game players! — Hotel Architect",
+  27:"Whiteout Survival — Meta Ad #2287178538489217",
+  28:"Whiteout Survival — Meta Ad #1021776857205624",
+  29:"経営シミュレーション: 起業",
+  30:"バー経営物語",
+  31:"《拉麵模擬器》6 月 22 日推出　收錄超過 100 種配料",
+  32:"不服氣你也來拍一部之《愛你一萬年》",
+  33:"【新游前瞻】我要成为中世纪铸剑大师！打铁模拟经营游戏《铸剑吟》",
+  34:"Airport Empire 2026",
+  35:"Airline Manager - 2026",
+  36:"全新模擬經營遊戲《綠植小築》現已登陸 Steam / PlayStation / Nintendo / Xbox",
+  37:"這款《Paralives》可能比模擬人生更像「人」",
+  38:"Profit Money: Business Game",
+  39:"Discounty : 打骨折超市日記",
+  40:"2026年10款Steam上值得期待城市建造模拟经营游戏推荐-Upcomming Citybuilder 2026"
+};
+
+const paidSourcePoints = {
+  1:["展示猫咪工厂中工人情绪、生产设备与流水线之间的关系。","重点是生产受阻后如何调整资源，让工厂重新运转。"],
+  2:["展示卡店从开卡包、鉴价、定价到上架销售的完整循环。","顾客交易、补货和店铺扩建是主要经营反馈。"],
+  3:["从空地开始铺路、摆放建筑并逐步形成完整小镇。","视频主要展示自由布局、居民进入与城镇成长过程。"],
+  4:["展示采集资源、建设设施、运输物资和服务居民等连续任务。","小镇会随玩家操作逐步变忙，车辆和居民反馈明显。"],
+  5:["展示便利店内补货、陈列、收银和处理顾客需求。","重点可看第一人称经营动作与日常店务的节奏。"],
+  6:["展示移动书店的选书、陈列、推荐和销售过程。","顾客偏好与库存选择共同影响当天经营结果。"],
+  7:["从小生意起步，逐渐招聘员工、租赁店面并扩大公司。","视频强调现金流、人员管理与多店扩张。"],
+  8:["预告展示铁路、列车和城市共同发展的整体画面。","核心看点是交通网络如何带动街区与产业扩张。"],
+  9:["系统介绍铺设铁路、配置列车和规划城市的主要玩法。","运输效率、站点布局与城市成长互相影响。"],
+  10:["用开场影像集中展示铁路网络、城市景观和时代氛围。","内容偏整体世界呈现，经营细节相对较少。"],
+  11:["展示岛屿建设、资源生产、道路规划与城市管理。","地形改造和产业布局是预告中的主要新玩法。"],
+  12:["围绕涩谷商业街内容展示店铺、街区和城市景观。","重点是商业建筑组合与日本城市风格的落地效果。"],
+  13:["概览日本特别版中的城市建设、交通和公共设施。","视频通过多个发展阶段展示城市规模变化。"],
+  14:["展示俱乐部创建、人员配置和日常经营管理。","球队成绩之外，也强调设施、资金和俱乐部成长。"],
+  15:["展示俱乐部从本地发展到进入更大赛事和海外舞台。","重点是长期成长路线与不同地区的扩张目标。"],
+  16:["展示球员编组、训练、战术和团队状态管理。","不同人员配置会直接影响球队表现与比赛结果。"],
+  17:["展示移动版书店经营、选书和为顾客推荐书籍。","视频也呈现书车移动、店铺布置和触屏操作。"],
+  18:["介绍酒店冬季版本的场景改造、房间和服务流程。","重点展示装修变化、住客需求与酒店运营。"],
+  19:["介绍棒球 GM 玩法，包括阵容、训练和赛季管理。","比赛结果以外，数据判断和长期经营占比很高。"],
+  20:["展示采集、建设、运输和完成居民任务的连续流程。","小镇扩张、工具解锁和多人协作是主要卖点。"],
+  21:["商店页展示便利店补货、货架陈列、收银和店铺装饰。","商品库存与顾客服务构成主要经营循环。"],
+  22:["商店页展示管理租客需求、收取租金和升级房间。","楼层扩建与住客满意度推动长期成长。"],
+  23:["商店页展示原料采购、生产加工、市场交易和公司扩张。","多段供应链与价格变化是经营核心。"],
+  24:["Reel 展示收购旧物、整理商品并经营一家二手店。","商品鉴价、陈列和出售形成短而清楚的循环。"],
+  25:["Reel 展示经营偏远加油站，同时处理顾客与库存。","普通经营流程中加入夜间事件和轻悬疑氛围。"],
+  26:["Reel 展示酒店空间规划、房间建设和家具布置。","住客需求与经营收入决定下一步扩建。"],
+  27:["广告围绕严寒环境下的炉火、温度和居民生存展开。","资源投入会立即改变设施状态与居民工作效率。"],
+  28:["广告展示冰原探索、资源点选择和运输路线。","路线受天气影响，资源回收后用于营地发展。"],
+  29:["商店页围绕创业决策、员工安排和公司现金流展开。","每次投资都会影响生产效率与后续扩张。"],
+  30:["商店页展示酒吧菜单、库存、价格与顾客经营。","收入用于升级设施并解锁更多商品。"],
+  31:["Reel 介绍自由选择汤底、面条、酱汁和超过 100 种配料。","除自由制作外，还展示拉面富士山和限时挑战等模式。"],
+  32:["TikTok 以拍摄《愛你一萬年》为例展示制片题材玩法。","内容重点是选择项目、组织拍摄并查看作品结果。"],
+  33:["Shorts 展示从原料处理到完成一把剑的锻造过程。","订单、成品品质和工坊成长构成经营反馈。"],
+  34:["商店页展示机场航线、登机口与设施扩建。","客流和航班调度决定机场收入与发展速度。"],
+  35:["商店页展示购买飞机、规划航线和管理航空公司财务。","航程、需求与成本共同决定每条航线收益。"],
+  36:["Reel 介绍栽培、照料和出售超过 100 种室内绿植。","顾客订单、店铺口碑和自由装潢推动经营成长。"],
+  37:["TikTok 介绍 Paralives 的角色生活、互动和房屋建造。","内容强调人物行为更自然，以及较高的空间自定义自由度。"],
+  38:["商店页展示投资、经营公司和逐步扩大商业规模。","利润积累与新业务选择构成主要成长线。"],
+  39:["商店页展示超市补货、定价、陈列和服务顾客。","折扣策略、店铺布局与库存周转直接影响收益。"],
+  40:["视频盘点 10 款 2026 年值得关注的城市建造经营游戏。","每款主要比较建设方式、生产经济和城市扩张差异。"]
+};
+
 paid.forEach(x=>{x.platform ||= 'YouTube'; x.sourceKind ||= 'video';});
 organic.forEach((x,index)=>{x.id=paid.length+1+index; x.platform ||= 'YouTube'; x.sourceKind ||= 'video';});
 
@@ -214,15 +301,16 @@ function sourceButtons(item){
 
 function paidCard(x){
   const tags = `<span class="tag ${x.priority.toLowerCase()}">${x.priority}</span><span class="tag">${escapeHtml(x.market)}</span><span class="tag platform">${escapeHtml(x.platform)}</span><span class="tag style">${escapeHtml(x.style)}</span>`;
-  const sourceLabel=x.sourceKind==='store'?'玩法证据：':'原素材：';
-  return `<article class="item paid" data-type="paid" data-market="${escapeHtml(x.market)}" data-priority="${x.priority}" data-platform="${escapeHtml(x.platform)}" data-search="${escapeHtml([x.title,x.game,x.market,x.platform,x.style,x.adapt].join(' '))}">
-    <div class="item-top"><span class="num">${x.id}</span><div class="title-wrap"><div class="tags">${tags}</div><h3>${escapeHtml(x.title)}</h3></div></div>
-    <div class="source"><b>${sourceLabel}</b>${escapeHtml(x.game)} · ${escapeHtml(x.signal)}${sourceButtons(x)}</div>
-    <div class="detail-grid">
-      <div class="detail"><b>0–2 秒钩子</b><p>${escapeHtml(x.hook)}</p></div><div class="detail"><b>15–30 秒镜头</b><p>${escapeHtml(x.beats)}</p></div>
-      <div class="detail"><b>AI 做法</b><p>${escapeHtml(x.ai)}</p></div><div class="detail"><b>所需资产</b><p>${escapeHtml(x.assets)}</p></div>
-      <div class="detail"><b>A / B 面</b><p>${escapeHtml(x.ab)}</p></div><div class="detail"><b>创意建议</b><p>${escapeHtml(x.adapt)}</p></div>
-      <div class="detail full"><b>UE / 录屏占比</b><p class="ue">${escapeHtml(x.ue)}，其余用 AI 场景、2D UI 与合成完成。</p></div>
+  const sourceTitle=paidSourceTitles[x.id]||x.game;
+  const points=paidSourcePoints[x.id]||[x.hook,x.beats];
+  const pointList=points.map(point=>`<li>${escapeHtml(point)}</li>`).join('');
+  return `<article class="item paid" data-type="paid" data-market="${escapeHtml(x.market)}" data-priority="${x.priority}" data-platform="${escapeHtml(x.platform)}" data-search="${escapeHtml([sourceTitle,x.game,x.market,x.platform,x.style,x.adapt].join(' '))}">
+    <div class="item-top"><span class="num">${x.id}</span><div class="title-wrap"><div class="tags">${tags}</div><h3>${escapeHtml(sourceTitle)}</h3></div></div>
+    <div class="source"><b>公开信号：</b>${escapeHtml(x.signal)}${sourceButtons(x)}</div>
+    <div class="source-summary"><b>原内容大意</b><ul class="source-points">${pointList}</ul></div>
+    <div class="kept-grid">
+      <div class="detail"><b>创意建议</b><p>${escapeHtml(x.adapt)}</p></div>
+      <div class="detail"><b>UE / 录屏占比</b><p class="ue">${escapeHtml(x.ue)}</p></div>
     </div></article>`;
 }
 
