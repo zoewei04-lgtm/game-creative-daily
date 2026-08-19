@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>日本游戏创意雷达 | 2026-08-19</title>
+  <title>游戏创意雷达 | 2026-08-19</title>
   <style>
     :root {
       --ink:#20272b; --muted:#66727a; --paper:#ffffff; --bg:#f3f5f2; --line:#d9dfdc;
@@ -30,6 +30,7 @@
     .platform-summary{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}.platform-summary span{font-size:12px;background:#e8eeeb;border:1px solid #d3dcda;border-radius:3px;padding:3px 7px;color:#405058}
     .date-block{border:1px solid var(--line);border-radius:7px;background:#fff;overflow:hidden}.date-block>summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:center;padding:13px 15px;background:#edf0ec;border-bottom:1px solid var(--line)}.date-block>summary::-webkit-details-marker{display:none}
     .date-chip{background:#c34f32;color:#fff;border-radius:4px;padding:4px 9px;font-weight:750;white-space:nowrap}.date-meta{color:var(--muted);font-size:12px}
+    .market-shortcuts{display:grid;grid-template-columns:auto repeat(3,minmax(112px,auto));align-items:center;justify-content:start;gap:8px;padding:10px 15px;background:#f8faf8;border-bottom:1px solid var(--line)}.market-shortcuts-label{color:var(--muted);font-size:12px;font-weight:700}.market-shortcut{min-height:34px;border:1px solid #aeb9b5;border-radius:4px;background:#fff;color:var(--ink);padding:6px 10px;font-weight:700;white-space:nowrap;cursor:pointer}.market-shortcut:hover{background:#f1f4f2}.market-shortcut[data-market-filter="JP"].active{background:var(--ink);border-color:var(--ink);color:#fff}.market-shortcut[data-market-filter="HK"].active{background:var(--blue);border-color:var(--blue);color:#fff}.market-shortcut[data-market-filter="TW"].active{background:var(--organic);border-color:var(--organic);color:#fff}
     .date-content{padding:0 14px 18px}.market-section{padding:20px 0 5px;border-top:1px solid var(--line)}.market-section:first-child{border-top:0}.market-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:2px}.market-title h3{font-size:20px}.market-name{display:inline-block;margin-right:8px;padding:3px 8px;border-radius:3px;background:var(--ink);color:#fff;font-size:12px;vertical-align:2px}.market-name.tw{background:#24735d}.market-name.hk{background:#255d8d}.market-total{color:var(--muted);font-size:12px;white-space:nowrap}.section-head{display:flex;gap:8px;align-items:center;margin:15px 0 9px}.section-head h4{font-size:16px;margin:0}.count{font-size:12px;color:#fff;border-radius:3px;padding:2px 7px}.count.paid{background:var(--paid)}.count.organic{background:var(--organic)}
     .list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
     .item{border:1px solid var(--line);border-left:5px solid var(--paid);background:#fff;border-radius:6px;padding:14px;min-width:0}.item.organic{border-left-color:var(--organic)}
@@ -41,14 +42,14 @@
     .no-results{display:none;text-align:center;color:var(--muted);padding:35px}
     .footer{margin-top:28px;color:var(--muted);font-size:12px}.footer p{margin:5px 0}
     @media(max-width:900px){.hero{grid-template-columns:1fr}.hero-badges{justify-content:flex-start}.kpis{grid-template-columns:repeat(2,1fr)}.rule-band{grid-template-columns:1fr}.list{grid-template-columns:1fr}}
-    @media(max-width:580px){.shell{padding:10px 9px 38px}.hero{padding:20px 16px}.hero h1{font-size:22px}.kpis{grid-template-columns:1fr 1fr}.kpi b{font-size:19px}.signal-wrap{overflow:auto}.signal-table{min-width:760px}.date-content{padding:0 9px 13px}.detail-grid{grid-template-columns:1fr}.detail.full{grid-column:auto}.seg{width:100%;display:grid;grid-template-columns:repeat(4,1fr)}.seg button{padding:8px 3px}.platform-select{width:100%}.item{padding:12px}.item-top{gap:7px}}
+    @media(max-width:580px){.shell{padding:10px 9px 38px}.hero{padding:20px 16px}.hero h1{font-size:22px}.kpis{grid-template-columns:1fr 1fr}.kpi b{font-size:19px}.signal-wrap{overflow:auto}.signal-table{min-width:760px}.date-content{padding:0 9px 13px}.detail-grid{grid-template-columns:1fr}.detail.full{grid-column:auto}.seg{width:100%;display:grid;grid-template-columns:repeat(4,1fr)}.seg button{padding:8px 3px}.platform-select{width:100%}.market-shortcuts{grid-template-columns:repeat(3,minmax(0,1fr));padding:9px}.market-shortcuts-label{grid-column:1/-1}.market-shortcut{min-width:0;padding:6px 3px}.item{padding:12px}.item-top{gap:7px}}
   </style>
 </head>
 <body>
 <main class="shell">
   <header class="hero">
     <div>
-      <h1>日本游戏创意雷达</h1>
+      <h1>游戏创意雷达</h1>
       <p>Three Kingdoms: Ice Age · 日本主市场 / 台湾与香港补充 · 2026-08-19</p>
     </div>
     <div class="hero-badges"><span>模拟经营优先</span><span>非写实</span><span>具体来源直达</span><span>北京 10:00 更新</span></div>
@@ -85,16 +86,22 @@
   <div class="toolbar" aria-label="筛选工具">
     <input id="search" class="search" type="search" placeholder="搜索玩法、游戏、风格或市场">
     <select id="platformFilter" class="platform-select" aria-label="来源平台">
-      <option value="all">全部平台</option><option value="YouTube">YouTube</option><option value="Instagram">Instagram</option><option value="Meta">Meta</option><option value="Google Play">Google Play</option><option value="App Store">App Store</option>
+      <option value="all">全部平台</option><option value="YouTube">YouTube</option><option value="Instagram">Instagram</option><option value="TikTok">TikTok</option><option value="Meta">Meta</option><option value="Threads">Threads</option><option value="Google Play">Google Play</option><option value="App Store">App Store</option>
     </select>
     <div class="seg" role="group" aria-label="内容类型">
-      <button class="active" data-filter="all">全部 50</button><button data-filter="paid">买量 30</button><button data-filter="organic">自然 20</button><button data-filter="p0">只看 P0</button>
+      <button class="active" data-filter="all">全部 64</button><button data-filter="paid">买量 40</button><button data-filter="organic">自然 24</button><button data-filter="p0">只看 P0</button>
     </div>
   </div>
-  <div class="platform-summary" aria-label="平台分布"><span>YouTube 40</span><span>Instagram 3</span><span>Meta 2</span><span>Google Play 3</span><span>App Store 2</span></div>
+  <div class="platform-summary" aria-label="平台分布"><span>YouTube 42</span><span>Instagram 8</span><span>TikTok 2</span><span>Meta 2</span><span>Threads 1</span><span>Google Play 3</span><span>App Store 6</span></div>
 
   <details class="date-block" open>
-    <summary><span class="date-chip">2026-08-19</span><b>模拟经营专项</b><span class="date-meta">日本 44 · 台湾 4 · 香港 2</span></summary>
+    <summary><span class="date-chip">2026-08-19</span><b>模拟经营专项</b><span class="date-meta">日本 44 · 台湾 10 · 香港 10</span></summary>
+    <nav class="market-shortcuts" aria-label="按地区查看买量视频">
+      <span class="market-shortcuts-label">直接查看地区买量</span>
+      <button class="market-shortcut" type="button" data-market-filter="JP" aria-pressed="false">日本买量 28</button>
+      <button class="market-shortcut" type="button" data-market-filter="HK" aria-pressed="false">香港买量 6</button>
+      <button class="market-shortcut" type="button" data-market-filter="TW" aria-pressed="false">台湾买量 6</button>
+    </nav>
     <div class="date-content">
       <section class="market-section" data-region="JP">
         <div class="market-title"><h3><span class="market-name">日本</span>主市场</h3><span class="market-total">44 条 · 优先保证数量</span></div>
@@ -102,14 +109,14 @@
         <div class="content-group"><div class="section-head"><span class="count organic">自然 16</span><h4>近期高动量内容与改法</h4></div><div id="jpOrganicList" class="list"></div></div>
       </section>
       <section class="market-section" data-region="TW">
-        <div class="market-title"><h3><span class="market-name tw">台湾</span>新增板块</h3><span class="market-total">4 条 · 日本完成后补充</span></div>
-        <div class="content-group"><div class="section-head"><span class="count paid">买量 1</span><h4>繁中买量创意</h4></div><div id="twPaidList" class="list"></div></div>
-        <div class="content-group"><div class="section-head"><span class="count organic">自然 3</span><h4>台湾自然内容</h4></div><div id="twOrganicList" class="list"></div></div>
+        <div class="market-title"><h3><span class="market-name tw">台湾</span>地区内容</h3><span class="market-total">10 条 · 买量 6 / 自然 4</span></div>
+        <div class="content-group"><div class="section-head"><span class="count paid">买量 6</span><h4>繁中买量创意与商店玩法证据</h4></div><div id="twPaidList" class="list"></div></div>
+        <div class="content-group"><div class="section-head"><span class="count organic">自然 4</span><h4>台湾自然内容</h4></div><div id="twOrganicList" class="list"></div></div>
       </section>
       <section class="market-section" data-region="HK">
-        <div class="market-title"><h3><span class="market-name hk">香港</span>新增板块</h3><span class="market-total">2 条 · 日本完成后补充</span></div>
-        <div class="content-group"><div class="section-head"><span class="count paid">买量 1</span><h4>香港买量创意</h4></div><div id="hkPaidList" class="list"></div></div>
-        <div class="content-group"><div class="section-head"><span class="count organic">自然 1</span><h4>香港自然内容</h4></div><div id="hkOrganicList" class="list"></div></div>
+        <div class="market-title"><h3><span class="market-name hk">香港</span>地区内容</h3><span class="market-total">10 条 · 买量 6 / 自然 4</span></div>
+        <div class="content-group"><div class="section-head"><span class="count paid">买量 6</span><h4>香港买量创意与商店玩法证据</h4></div><div id="hkPaidList" class="list"></div></div>
+        <div class="content-group"><div class="section-head"><span class="count organic">自然 4</span><h4>香港自然内容</h4></div><div id="hkOrganicList" class="list"></div></div>
       </section>
       <div id="noResults" class="no-results">没有匹配内容。</div>
     </div>
@@ -117,7 +124,7 @@
 
   <footer class="footer">
     <p>采集时间：2026-08-19（Asia/Shanghai）。播放、点赞、评分、评价量和广告活跃状态均为采集时平台公开值；任何单项都不等于广告转化。</p>
-    <p>本页已核验并收录 YouTube、Instagram、Meta、Google Play、App Store 的具体条目。商店页只作玩法证据，并与视频/广告分开标注。TikTok 本次受登录或服务错误限制，未把无法逐条打开的结果凑入正式清单；Steam、X、Xbox 继续监测，待出现近期且可核验的经营玩法条目再收录。</p>
+    <p>本页已核验并收录 YouTube、Instagram、TikTok、Meta、Threads、Google Play、App Store 的具体条目。商店页只作玩法证据，并与视频/广告分开标注；地区标签表示建议投放或运营市场，不等同于素材发布账号所在地。Steam、X、Xbox 继续监测，待出现近期且可核验的经营玩法条目再收录。</p>
   </footer>
 </main>
 
@@ -152,7 +159,17 @@ const paid = [
   {id:27,market:'JP',priority:'P0',platform:'Meta',sourceKind:'ad',style:'像素剖面',title:'炉火熄灭前 15 秒：先救温度还是先煮饭？',game:'Whiteout Survival Meta Ad',url:'https://www.facebook.com/ads/library/?id=2287178538489217',signal:'Meta 日区具体广告 ID · 2026-08-13 起投 · 可见多个版本',hook:'温度计归零，厨房和宿舍同时结冰。',beats:'拖木材进炉→温度回升一格→派一人煮汤→饥饿下降→居民恢复工作→拉远显示新房点亮。',ai:'像素剖面城固定机位，冰层/火光/居民动作独立生成；只用两个大指标。',assets:'剖面城、炉火、厨房、宿舍、居民 5、木材/温度/饥饿 UI。',ab:'A 先温度；B 先饥饿。A 红色警报；B 居民倒地。',adapt:'这是最贴三冰的经营母题，但必须把镜头中心放在人员与设施联动，结尾才承接主城。',ue:'0–5%'},
   {id:28,market:'JP',priority:'P0',platform:'Meta',sourceKind:'ad',style:'纸雕地图',title:'冰原搜集路线：三辆雪橇只能派两辆',game:'Whiteout Survival Meta Ad',url:'https://www.facebook.com/ads/library/?id=1021776857205624',signal:'Meta 日区具体广告 ID · 2026-06-18 起投 · 仍可在广告库查看',hook:'木材、食物、药草三个点同时告急，雪橇只剩两辆。',beats:'画两条路线→雪橇出发→暴雪封住近路→改走村落补给→资源入库→解锁第三辆雪橇。',ai:'纸雕地图 + 2D 路线动画；雪橇与暴雪做短循环，资源到仓用图标结算。',assets:'冰原地图、资源点 3、雪橇 3、村落、暴雪层、仓库 UI。',ab:'A 选错资源；B 路线被封。A 自由画线；B 三选二。',adapt:'把野外采集变成运输调度小游戏，战斗完全移除，重点是路线与库存反馈。',ue:'0%'},
   {id:29,market:'JP',priority:'P1',platform:'App Store',sourceKind:'store',style:'赛璐璐看板',title:'小作坊创业：第一笔钱该招人还是买机器？',game:'経営シミュレーション：起業 / Startup Simulator',url:'https://apps.apple.com/jp/app/%E7%B5%8C%E5%96%B6%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3-%E8%B5%B7%E6%A5%AD/id6761575000',signal:'日本 App Store 具体页面 · 2026-08-08 新作 · 决策驱动公司成长',hook:'桌上只有 100 铜钱，订单要求一天做完 20 件货。',beats:'查看招人/机器两张卡→选一张→生产速度变化→交单→现金流转正或亏损→开启第二个岗位。',ai:'赛璐璐角色 + 像素工坊看板；生产过程用循环，决策卡和现金流用 2D 动效。',assets:'工坊、员工 3、机器 2、决策卡、订单、现金流 UI。',ab:'A 招人；B 买机器。A 成功开局；B 先失败再重来。',adapt:'改成雪城新作坊创业，不讲宏大政务，只讲第一笔钱如何让生产跑起来。',ue:'0%'},
-  {id:30,market:'JP',priority:'P1',platform:'App Store',sourceKind:'store',style:'木版画酒馆',title:'酒馆今晚卖什么：库存、价格、客流三选二',game:'バー経営物語 / Bar Management Story',url:'https://apps.apple.com/jp/app/%E3%83%90%E3%83%BC%E7%B5%8C%E5%96%B6%E7%89%A9%E8%AA%9E/id6780888458',signal:'日本 App Store 具体页面 · 2026 年经营新作 · 库存/定价/获客循环',hook:'门外来了十人，酒桶只剩半桶，今日价格牌还没写。',beats:'定两档价格→选择兑水或限量→开门营业→顾客表情与排队变化→夜间结算→第二天进货。',ai:'木版画酒馆固定侧剖面，顾客分三类循环；酒量、价格、口碑用简洁图标反馈。',assets:'酒馆、吧台、酒桶 3、价格牌、顾客 10、口碑/库存/收益 UI。',ab:'A 高价限量；B 低价爆单。A 客流开场；B 空酒桶开场。',adapt:'改成雪城热汤馆或驿站食堂，避免写实食物特写，主打库存和定价。',ue:'0%'}
+  {id:30,market:'JP',priority:'P1',platform:'App Store',sourceKind:'store',style:'木版画酒馆',title:'酒馆今晚卖什么：库存、价格、客流三选二',game:'バー経営物語 / Bar Management Story',url:'https://apps.apple.com/jp/app/%E3%83%90%E3%83%BC%E7%B5%8C%E5%96%B6%E7%89%A9%E8%AA%9E/id6780888458',signal:'日本 App Store 具体页面 · 2026 年经营新作 · 库存/定价/获客循环',hook:'门外来了十人，酒桶只剩半桶，今日价格牌还没写。',beats:'定两档价格→选择兑水或限量→开门营业→顾客表情与排队变化→夜间结算→第二天进货。',ai:'木版画酒馆固定侧剖面，顾客分三类循环；酒量、价格、口碑用简洁图标反馈。',assets:'酒馆、吧台、酒桶 3、价格牌、顾客 10、口碑/库存/收益 UI。',ab:'A 高价限量；B 低价爆单。A 客流开场；B 空酒桶开场。',adapt:'改成雪城热汤馆或驿站食堂，避免写实食物特写，主打库存和定价。',ue:'0%'},
+  {id:31,market:'TW',priority:'P0',platform:'Instagram',sourceKind:'video',style:'像素摊位',title:'一锅清汤变成爆单拉面摊',game:'Ramen Shop Simulator Reel',url:'https://www.instagram.com/reel/DZos0HkgQPE/',signal:'Instagram Reel · 1.1 万+赞 · 2 个月前',hook:'摊位只有一锅清汤，门口却突然出现十张订单。',beats:'煮面→选两种配料→递给顾客→金币连跳→补一张桌→镜头拉远看到夜市排队。',ai:'像素摊位固定侧视，面碗和配料用 2D 叠层；顾客做等待/取餐/离开三段循环。',assets:'摊位、汤锅、配料 6、顾客 8、订单条、金币与扩建 UI。',ab:'A 先爆单再补货；B 先缺料再救场。A 深夜摊；B 雪城食堂。',adapt:'台湾版改成雪夜驿站热汤铺，保留连续出餐和扩座爽感，不做写实食物特写。',ue:'0%'},
+  {id:32,market:'TW',priority:'P1',platform:'TikTok',sourceKind:'video',style:'赛璐璐看板',title:'制片公司一天接三单：人手只够拍一部',game:'王牌制片人',url:'https://www.tiktok.com/@aceproducer.tw/video/7618924472346692872',signal:'TikTok 台湾账号具体视频 · 200+播放 · 5 个月前',hook:'三张高价通告同时落桌，倒计时只剩 10 秒。',beats:'看题材需求→拖员工组队→拍摄进度快切→评分结算→差评项目返工→解锁第二摄影棚。',ai:'赛璐璐员工卡与等距工作室分层生成；拍摄过程只做三套岗位循环，评分 UI 后期合成。',assets:'通告卡 3、员工 5、工作室、进度条、评分与现金流 UI。',ab:'A 先选高价单；B 先选擅长单。A 成功扩建；B 失误返工。',adapt:'把制片公司替换为军需工坊，选择订单、排岗位、交付结算，核心仍是经营调度。',ue:'0–5%'},
+  {id:33,market:'TW',priority:'P0',platform:'YouTube',sourceKind:'video',style:'像素锻造',title:'废铁三步锻成高价订单',game:'铸剑经营 Shorts',url:'https://www.youtube.com/shorts/DRX8paUUiXE',video:'DRX8paUUiXE',signal:'YouTube Shorts · 3,007 播放 / 37 赞 · 7 个月前',hook:'顾客拍下高价订单，铁匠台上只有一块锈铁。',beats:'熔炼→锤击节奏点→选刀型→淬火变色→交货估价→用利润升级风箱。',ai:'像素近景只做熔炉、铁砧、淬火槽三个镜位；火花、价格和品质条后期完成。',assets:'锈铁/成品 4、熔炉、铁砧、风箱、顾客手部剪影、品质 UI。',ab:'A 先展示高价订单；B 先展示废铁。A 完美锻造；B 一锤失误。',adapt:'三冰可改成雪城铁匠铺订单日，去掉战斗展示，用品质、定价和设备升级闭环。',ue:'0%'},
+  {id:34,market:'TW',priority:'P1',platform:'App Store',sourceKind:'store',style:'纸模机场',title:'三条航线堵在一个登机口',game:'Airport Empire 2026',url:'https://apps.apple.com/tw/app/airport-empire-2026/id6760105102',signal:'台湾 App Store · 4.7 分 / 414 条评分 · 机场经营新作',hook:'三架飞机同时落地，唯一登机口开始红灯倒计时。',beats:'安排停机位→先卸高价值货→调接驳车→旅客清空→收入结算→扩建第二登机口。',ai:'纸模等距机场替换为纸雕驿站，运输单位做沿线循环；拥堵和畅通共用同一机位。',assets:'枢纽、运输单位 3、停靠位 2、乘客/货物图标、调度与收入 UI。',ab:'A 三选一停靠；B 自动画线。A 客流堵塞；B 货运爆仓。',adapt:'借枢纽调度，不借现代机场美术；改成雪城三支商队抢一个驿站泊位。',ue:'0%'},
+  {id:35,market:'TW',priority:'P1',platform:'App Store',sourceKind:'store',style:'低模路线图',title:'航空公司第一笔钱：买大飞机还是开短航线？',game:'Airline Manager 2026',url:'https://apps.apple.com/tw/app/airline-manager-2026/id1487669805',signal:'台湾 App Store 具体页面 · 航线、机队与现金流经营',hook:'地图上有两座高收益城市，现金只够买一架小飞机。',beats:'查看航程与需求→买机→画首条航线→首班结算→油费吃掉利润→换短线后现金转正。',ai:'低模地图与 2D 路线动画；运输单位只做出发、行进、到达循环，财务曲线后期合成。',assets:'地图、城市点 5、运输单位 2、航线、需求气泡、现金流 UI。',ab:'A 先开远线；B 先跑短线。A 立即盈利；B 先亏损再纠错。',adapt:'改成商队经理：买马车、选路线、算补给和回款，经营判断比战争世界观更前置。',ue:'0%'},
+  {id:36,market:'HK',priority:'P1',platform:'Instagram',sourceKind:'video',style:'像素盆栽铺',title:'一格窗台如何变成满店绿植',game:'Plant Shop Simulator Reel',url:'https://www.instagram.com/reel/DbetRgcAl2f/',signal:'Instagram Reel · 20+赞 · 2 周前 · 新近玩法结构参考',hook:'空店只放得下一盆苗，第一位顾客要求“大型成株”。',beats:'浇水→长叶→换盆→摆上货架→成交→解锁第二排窗台→全店由空变满。',ai:'像素盆栽用幼苗/半成株/成株三状态替换；店铺固定机位，浇水和金币做短动效。',assets:'店铺、植物 6、花盆 4、货架、顾客 4、生长与收入 UI。',ab:'A 空店成长；B 枯苗救活。A 自动生长；B 玩家选择肥料。',adapt:'香港版改成屋顶药草铺，用有限空间做培育、陈列和出售，画风硬朗，不走女性向治愈包装。',ue:'0%'},
+  {id:37,market:'HK',priority:'P0',platform:'TikTok',sourceKind:'video',style:'低模剖面',title:'小屋第一天：只够先盖厨房或卧室',game:'Paralives',url:'https://www.tiktok.com/@gameshort_tt/video/7637028867122793749',signal:'TikTok 具体视频 · 520+播放 · 3 个月前',hook:'空屋中央只有 100 金币，两名住客同时出现饥饿和疲劳。',beats:'摆厨房预览→切卧室预览→选择后住客需求变化→接小订单赚钱→补上第二房间。',ai:'低模剖面屋做模块替换，人物只保留走路、吃饭、睡觉循环；需求和现金 UI 后期叠加。',assets:'空屋、厨房/卧室模块、住客 2、订单板、需求与金币 UI。',ab:'A 先厨房；B 先卧室。A 两名住客；B 四人拥挤开场。',adapt:'改成香港受众易理解的“细单位经营”：雪城客栈先建厨房还是床位，20 秒内完成回报闭环。',ue:'0–5%'},
+  {id:38,market:'HK',priority:'P1',platform:'App Store',sourceKind:'store',style:'像素商业街',title:'第一笔利润：开第二家店还是升级老店？',game:'Profit Money: Business Game',url:'https://apps.apple.com/hk/app/profit-money-business-game/id6764817146',signal:'香港 App Store · 2026-05-24 上线 · 商业扩张经营新作',hook:'第一家铺刚赚到 500 金币，隔壁空铺同时亮起限时租约。',beats:'查看升级/租铺回报→选择开分店→客流被分走→调货补库存→两店收入合并→解锁统一仓库。',ai:'像素商业街固定俯视，店铺做关门/营业/升级三状态；客流用粒子路径模拟。',assets:'街道、店铺 2、仓库、货箱、顾客流、租金与利润 UI。',ab:'A 开分店；B 升老店。A 正确扩张；B 现金流断裂。',adapt:'改成雪城商街连锁经营，突出选址、调货和回款，结尾只短接三冰真实主城。',ue:'≤5%'},
+  {id:39,market:'HK',priority:'P0',platform:'App Store',sourceKind:'store',style:'像素超市',title:'临期货架只剩一晚：打折还是直接清仓？',game:'Discounty 打骨折超市日记',url:'https://apps.apple.com/hk/app/discounty-%E6%89%93%E9%AA%A8%E6%8A%98%E8%B6%85%E5%B8%82%E6%97%A5%E8%A8%98/id6753793150',signal:'香港 App Store 具体页面 · 定价、补货、店铺扩建经营',hook:'关店前 30 秒，三排临期货还没卖完。',beats:'拖折扣牌→顾客涌入→收银排队→临时开第二柜台→库存清零→利润与口碑结算。',ai:'像素俯视店铺用空/满货架替换，顾客做排队循环；价格牌和结算数字后期合成。',assets:'货架 3、商品 8、折扣牌、收银台 2、顾客 10、库存/利润/口碑 UI。',ab:'A 打五折爆单；B 坚持原价滞销。A 倒计时；B 顾客砍价。',adapt:'改成驿站临冬清仓：草料、药材、火把在暴雪前卖完，重点是定价和效率，不做现代超市复刻。',ue:'0%'},
+  {id:40,market:'HK',priority:'P1',platform:'YouTube',sourceKind:'video',style:'等距像素',title:'2026 城建新游：最值得拆的是一条生产链',game:'2026 City-building Games',url:'https://www.youtube.com/watch?v=cyCFeUSWcbQ',video:'cyCFeUSWcbQ',signal:'YouTube 具体视频 · 4.2 万+播放 · 7 个月前',hook:'木材明明满仓，房屋却一直显示“无法施工”。',beats:'沿生产链反查→发现运输断点→补一辆货车→木料进工地→房屋落成→新居民带来税收。',ai:'等距像素地图只需仓库、道路、工地三段；资源图标沿路线移动，施工用遮罩递增。',assets:'仓库、道路、运输单位、工地三阶段、资源与税收 UI。',ab:'A 让观众找断点；B 先错误升级。A 像素；B 纸雕。',adapt:'面向香港买量时压成 25 秒“找出卡住的一格”，把宏观城建改成可一眼理解的经营故障。',ue:'0–5%'}
 ];
 
 const organic = [
@@ -175,18 +192,22 @@ const organic = [
   {id:37,market:'TW',priority:'P0',title:'20 款上瘾模拟经营手游',channel:'花現新大鹿 DoeDaDa',url:'https://www.youtube.com/watch?v=QkJz0_4-HQc',video:'QkJz0_4-HQc',signal:'约 4,744 播放 · 8 天前',why:'“上瘾”直接承诺循环强度，手游与经营双关键词清楚。',format:'每款只展示最上瘾的 6–8 秒操作。',adapt:'繁中内容标题用“越整理越順”的经营成就感，不使用女性向治愈话术。',test:'港台广告复用最高停留的操作片段。'},
   {id:38,market:'TW',priority:'P1',title:'2026 下半年 Switch 新作 25 款',channel:'狐狸牧場 foxranch',url:'https://www.youtube.com/watch?v=FQEbX-Bh2Dc',video:'FQEbX-Bh2Dc',signal:'约 13 万播放 · 1 个月前',why:'大档期清单自带收藏价值，标题有明确时间边界。',format:'用“经营类只看这 3 款”做二次垂直剪辑。',adapt:'三冰参与跨品类盘点时只讲非写实经营差异，不讲世界观。',test:'收藏率高于点赞率时，增加图表和清单资产。'},
   {id:39,market:'TW',priority:'P1',title:'7 月多人合作与单人游戏推荐',channel:'Kim和Nana的遊戲世界',url:'https://www.youtube.com/watch?v=ghwdoQtIvdA',video:'ghwdoQtIvdA',signal:'约 11 万播放 · 1 个月前',why:'把多人/单人并列，帮助观众快速找到自己的玩法场景。',format:'同一经营动作分别展示单人效率与合作混乱。',adapt:'自然内容做“一个人经营 vs 两人分工”，评论区选更想玩的版本。',test:'胜出版本进入对应受众广告组。'},
-  {id:40,market:'HK',priority:'P0',title:'8 月新作：10+6 款精简清单',channel:'Kim和Nana的遊戲世界',url:'https://www.youtube.com/watch?v=DKWh2Bk7aiA',video:'DKWh2Bk7aiA',signal:'约 5.6 万播放 · 11 天前',why:'月份非常新，标题把多人和单人数量写清，点击前就能判断价值。',format:'开场先列今日筛选标准，再进入具体游戏。',adapt:'每月做繁中“经营玩法素材雷达”，展示 3 个细节并公开下一条制作选择。',test:'把自然投票最高细节做港台买量 B 面。'}
+  {id:40,market:'HK',priority:'P0',title:'8 月新作：10+6 款精简清单',channel:'Kim和Nana的遊戲世界',url:'https://www.youtube.com/watch?v=DKWh2Bk7aiA',video:'DKWh2Bk7aiA',signal:'约 5.6 万播放 · 11 天前',why:'月份非常新，标题把多人和单人数量写清，点击前就能判断价值。',format:'开场先列今日筛选标准，再进入具体游戏。',adapt:'每月做繁中“经营玩法素材雷达”，展示 3 个细节并公开下一条制作选择。',test:'把自然投票最高细节做港台买量 B 面。'},
+  {id:41,market:'TW',priority:'P0',platform:'Instagram',sourceKind:'video',title:'PlayStation Taiwan：用一段 Reels 只讲一个可玩动作',channel:'PlayStation Taiwan',url:'https://www.instagram.com/reel/DaPokVLyU7n/',signal:'Instagram Reel · 170+赞 · 1 个月前',why:'台湾本地官方账号的近期短视频信号，单一动作比长功能罗列更适合 Reels 停留。',format:'首帧先出现一个可操作难题，8 秒内完成一次操作和结果，结尾只留一个问题。',adapt:'做“你会先修炉火还是先补货？”繁中系列，每条只演一个经营选择，不把三冰功能全塞进去。',test:'评论选项最高的选择进入下一条台湾买量 A 面。'},
+  {id:42,market:'HK',priority:'P1',platform:'Instagram',sourceKind:'video',title:'香港本地农庄：一块地从播种到爆仓',channel:'谷爆农庄 / 香港本地创作',url:'https://www.instagram.com/reel/DTAVGPukkl1/',signal:'Instagram Reel · 20+赞 · 7 个月前 · 香港本地账号',why:'本地创作身份和明确的劳作过程，适合做可连续追更的经营日志。',format:'每条固定“今日目标—一次失误—仓库结果”，让观众追下一次改进。',adapt:'改成像素雪地小农庄周记：播药草、加工、送驿站，人物中性硬朗，不走可爱治愈路线。',test:'自然内容中收藏最高的生产步骤，单独拆成香港买量 6 秒开场。'},
+  {id:43,market:'HK',priority:'P1',platform:'Instagram',sourceKind:'video',title:'Act Plus HK：本地发行账号的短预告节奏',channel:'Act Plus HK',url:'https://www.instagram.com/reel/DV0oTHmkqvp/',signal:'Instagram Reel · 10+赞 · 5 个月前 · 香港本地账号',why:'本地发行账号能验证繁中包装、字幕密度和落点节奏，适合用来校正香港版表达。',format:'0–2 秒玩法异常，3–10 秒连续操作，11–15 秒结果翻转，最后只给游戏名和商店入口。',adapt:'做港式繁中“今晚做唔切呢张单？”系列，画面仍保持像素/低模，粤语只做字幕钩子。',test:'同素材测试书面繁中与轻粤语标题，按 3 秒留存决定买量文案。'},
+  {id:44,market:'HK',priority:'P0',platform:'Threads',sourceKind:'post',title:'IndieSummit 最新帖：独立游戏一眼玩法投票',channel:'IndieSummit / Indie Guider',url:'https://www.threads.com/@indieguider/post/DcLmWSrk3nd',signal:'Threads 具体帖子 · 采集时约 21 小时前',why:'发布时间很新，Threads 适合用一句选择题配短片或动图，快速收集玩法偏好。',format:'只放两个同资产版本：爆单经营 vs 生产链断点，正文让用户二选一并说明理由。',adapt:'三冰用非官方口吻发布“同一个雪城，你想先开店还是先修路？”；次日公布投票和制作片段。',test:'票数决定香港买量 A 面，评论理由直接进入字幕文案池。'}
 ];
 
 paid.forEach(x=>{x.platform ||= 'YouTube'; x.sourceKind ||= 'video';});
-organic.forEach((x,index)=>{x.id=31+index; x.platform ||= 'YouTube'; x.sourceKind ||= 'video';});
+organic.forEach((x,index)=>{x.id=paid.length+1+index; x.platform ||= 'YouTube'; x.sourceKind ||= 'video';});
 
 const escapeHtml = value => String(value).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
 const playIcon = '<span aria-hidden="true">▶</span>';
 const openIcon = '<span aria-hidden="true">↗</span>';
 
 function sourceButtons(item){
-  const label=item.sourceKind==='store'?'打开商店玩法页':item.sourceKind==='ad'?'查看具体广告':'播放原视频';
+  const label=item.sourceKind==='store'?'打开商店玩法页':item.sourceKind==='ad'?'查看具体广告':item.sourceKind==='post'?'打开原帖':'播放原视频';
   const icon=item.sourceKind==='video'?playIcon:openIcon;
   return `<div class="actions"><a class="btn primary video-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${icon} ${label}</a></div>`;
 }
@@ -194,7 +215,7 @@ function sourceButtons(item){
 function paidCard(x){
   const tags = `<span class="tag ${x.priority.toLowerCase()}">${x.priority}</span><span class="tag">${escapeHtml(x.market)}</span><span class="tag platform">${escapeHtml(x.platform)}</span><span class="tag style">${escapeHtml(x.style)}</span>`;
   const sourceLabel=x.sourceKind==='store'?'玩法证据：':'原素材：';
-  return `<article class="item paid" data-type="paid" data-priority="${x.priority}" data-platform="${escapeHtml(x.platform)}" data-search="${escapeHtml([x.title,x.game,x.market,x.platform,x.style,x.adapt].join(' '))}">
+  return `<article class="item paid" data-type="paid" data-market="${escapeHtml(x.market)}" data-priority="${x.priority}" data-platform="${escapeHtml(x.platform)}" data-search="${escapeHtml([x.title,x.game,x.market,x.platform,x.style,x.adapt].join(' '))}">
     <div class="item-top"><span class="num">${x.id}</span><div class="title-wrap"><div class="tags">${tags}</div><h3>${escapeHtml(x.title)}</h3></div></div>
     <div class="source"><b>${sourceLabel}</b>${escapeHtml(x.game)} · ${escapeHtml(x.signal)}${sourceButtons(x)}</div>
     <div class="detail-grid">
@@ -207,7 +228,7 @@ function paidCard(x){
 
 function organicCard(x){
   const tags = `<span class="tag ${x.priority.toLowerCase()}">${x.priority}</span><span class="tag">${escapeHtml(x.market)}</span><span class="tag platform">${escapeHtml(x.platform)}</span><span class="tag style">自然流量</span>`;
-  return `<article class="item organic" data-type="organic" data-priority="${x.priority}" data-platform="${escapeHtml(x.platform)}" data-search="${escapeHtml([x.title,x.channel,x.market,x.platform,x.format,x.adapt].join(' '))}">
+  return `<article class="item organic" data-type="organic" data-market="${escapeHtml(x.market)}" data-priority="${x.priority}" data-platform="${escapeHtml(x.platform)}" data-search="${escapeHtml([x.title,x.channel,x.market,x.platform,x.format,x.adapt].join(' '))}">
     <div class="item-top"><span class="num">${x.id}</span><div class="title-wrap"><div class="tags">${tags}</div><h3>${escapeHtml(x.title)}</h3></div></div>
     <div class="source"><b>${escapeHtml(x.channel)}</b> · ${escapeHtml(x.signal)}${sourceButtons(x)}</div>
     <div class="detail-grid">
@@ -227,22 +248,42 @@ const regionLists = [
 regionLists.forEach(([id,items,renderer])=>{document.getElementById(id).innerHTML=items.map(renderer).join('');});
 
 let activeFilter='all';
+let activeMarket='all';
 const search=document.getElementById('search');
 const platformFilter=document.getElementById('platformFilter');
 const filterButtons=[...document.querySelectorAll('[data-filter]')];
+const marketButtons=[...document.querySelectorAll('[data-market-filter]')];
+function updateMarketButtons(){
+  marketButtons.forEach(button=>{
+    const selected=button.dataset.marketFilter===activeMarket;
+    button.classList.toggle('active',selected);
+    button.setAttribute('aria-pressed',String(selected));
+  });
+}
 function applyFilters(){
   const term=search.value.trim().toLowerCase(); let visible=0;
   document.querySelectorAll('.item').forEach(card=>{
     const typeOk=activeFilter==='all'||card.dataset.type===activeFilter||(activeFilter==='p0'&&card.dataset.priority==='P0');
+    const marketOk=activeMarket==='all'||card.dataset.market===activeMarket;
     const platformOk=platformFilter.value==='all'||card.dataset.platform===platformFilter.value;
     const textOk=!term||card.dataset.search.toLowerCase().includes(term)||card.innerText.toLowerCase().includes(term);
-    card.hidden=!(typeOk&&platformOk&&textOk); if(!card.hidden) visible++;
+    card.hidden=!(typeOk&&marketOk&&platformOk&&textOk); if(!card.hidden) visible++;
   });
   document.querySelectorAll('.content-group').forEach(group=>{group.hidden=![...group.querySelectorAll('.item')].some(card=>!card.hidden);});
   document.querySelectorAll('.market-section').forEach(section=>{section.hidden=![...section.querySelectorAll('.item')].some(card=>!card.hidden);});
   document.getElementById('noResults').style.display=visible?'none':'block';
 }
-filterButtons.forEach(btn=>btn.addEventListener('click',()=>{filterButtons.forEach(b=>b.classList.remove('active'));btn.classList.add('active');activeFilter=btn.dataset.filter;applyFilters();}));
+filterButtons.forEach(btn=>btn.addEventListener('click',()=>{filterButtons.forEach(b=>b.classList.remove('active'));btn.classList.add('active');activeFilter=btn.dataset.filter;activeMarket='all';updateMarketButtons();applyFilters();}));
+marketButtons.forEach(btn=>btn.addEventListener('click',()=>{
+  activeMarket=btn.dataset.marketFilter;
+  activeFilter='paid';
+  search.value='';
+  platformFilter.value='all';
+  filterButtons.forEach(button=>button.classList.toggle('active',button.dataset.filter==='paid'));
+  updateMarketButtons();
+  applyFilters();
+  document.querySelector(`.market-section[data-region="${activeMarket}"]`)?.scrollIntoView({behavior:'smooth',block:'start'});
+}));
 platformFilter.addEventListener('change',applyFilters);
 search.addEventListener('input',applyFilters);
 </script>
