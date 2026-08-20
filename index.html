@@ -9,7 +9,7 @@
     :root {
       --ink:#20272b; --muted:#66727a; --paper:#ffffff; --bg:#f3f5f2; --line:#d9dfdc;
       --paid:#c34f32; --organic:#24735d; --blue:#255d8d; --gold:#9a6a12; --soft:#eef1ed;
-      --p0:#b62f2f; --p1:#8b6410; --shadow:0 7px 24px rgba(24,35,39,.08);
+      --p0:#b62f2f; --p1:#8b6410; --slg:#7b4356; --shadow:0 7px 24px rgba(24,35,39,.08);
     }
     *{box-sizing:border-box} html{scroll-behavior:smooth}
     body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","Noto Sans JP",Arial,sans-serif;letter-spacing:0}
@@ -28,6 +28,7 @@
     .platform-select{border:1px solid #bfc8c5;border-radius:4px;padding:8px 31px 8px 10px;background:#fff;color:var(--ink)}
     .seg{display:flex;border:1px solid #bfc8c5;border-radius:4px;overflow:hidden}.seg button{border:0;border-right:1px solid #bfc8c5;background:#fff;padding:8px 11px;cursor:pointer}.seg button:last-child{border-right:0}.seg button.active{background:var(--ink);color:#fff}
     .platform-summary{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}.platform-summary span{font-size:12px;background:#e8eeeb;border:1px solid #d3dcda;border-radius:3px;padding:3px 7px;color:#405058}
+    .slg-block{border:1px solid #d8c5cc;border-radius:7px;background:#fff;overflow:hidden;margin:15px 0 18px}.slg-block>summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:center;padding:14px 15px;background:#f4ecef;border-bottom:1px solid #decbd2}.slg-block>summary::-webkit-details-marker{display:none}.slg-chip{background:var(--slg);color:#fff;border-radius:4px;padding:4px 9px;font-weight:750;white-space:nowrap}.slg-meta{color:var(--muted);font-size:12px}.slg-intro{margin:0;padding:11px 15px;color:#4f5d64;background:#fcf9fa;border-bottom:1px solid #e8dce0}.slg-market-shortcuts{display:grid;grid-template-columns:auto repeat(3,minmax(112px,auto));gap:8px;align-items:center;padding:10px 15px;background:#faf7f8;border-bottom:1px solid #e8dce0}.slg-market-button{min-height:34px;border:1px solid #bda9b1;border-radius:4px;background:#fff;color:var(--ink);padding:6px 10px;font-weight:700;white-space:nowrap;cursor:pointer}.slg-market-button:hover{background:#f5eef1}.slg-market-button.active{background:var(--slg);border-color:var(--slg);color:#fff}.slg-content{padding:0 14px 18px}.slg-market{padding:20px 0 5px;border-top:1px solid var(--line)}.slg-market:first-child{border-top:0}.item.slg{border-left-color:var(--slg)}.slg .num{background:#f2e7eb;color:var(--slg)}.tag.slg{background:#f3e9ed;color:#6f354a;border-color:#dfc6cf}
     .date-block{border:1px solid var(--line);border-radius:7px;background:#fff;overflow:hidden}.date-block>summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:center;padding:13px 15px;background:#edf0ec;border-bottom:1px solid var(--line)}.date-block>summary::-webkit-details-marker{display:none}
     .date-chip{background:#c34f32;color:#fff;border-radius:4px;padding:4px 9px;font-weight:750;white-space:nowrap}.date-meta{color:var(--muted);font-size:12px}
     .market-shortcuts{display:grid;grid-template-columns:auto repeat(3,minmax(112px,auto));align-items:center;justify-content:start;gap:8px;padding:10px 15px;background:#f8faf8;border-bottom:1px solid var(--line)}.market-shortcuts-label{color:var(--muted);font-size:12px;font-weight:700}.market-shortcut{min-height:34px;border:1px solid #aeb9b5;border-radius:4px;background:#fff;color:var(--ink);padding:6px 10px;font-weight:700;white-space:nowrap;cursor:pointer}.market-shortcut:hover{background:#f1f4f2}.market-shortcut[data-market-filter="JP"].active{background:var(--ink);border-color:var(--ink);color:#fff}.market-shortcut[data-market-filter="HK"].active{background:var(--blue);border-color:var(--blue);color:#fff}.market-shortcut[data-market-filter="TW"].active{background:var(--organic);border-color:var(--organic);color:#fff}
@@ -43,7 +44,7 @@
     .no-results{display:none;text-align:center;color:var(--muted);padding:35px}
     .footer{margin-top:28px;color:var(--muted);font-size:12px}.footer p{margin:5px 0}
     @media(max-width:900px){.hero{grid-template-columns:1fr}.hero-badges{justify-content:flex-start}.kpis{grid-template-columns:repeat(2,1fr)}.rule-band{grid-template-columns:1fr}.list{grid-template-columns:1fr}}
-    @media(max-width:580px){.shell{padding:10px 9px 38px}.hero{padding:20px 16px}.hero h1{font-size:22px}.kpis{grid-template-columns:1fr 1fr}.kpi b{font-size:19px}.signal-wrap{overflow:auto}.signal-table{min-width:760px}.date-content{padding:0 9px 13px}.detail-grid,.kept-grid{grid-template-columns:1fr}.detail.full{grid-column:auto}.seg{width:100%;display:grid;grid-template-columns:repeat(4,1fr)}.seg button{padding:8px 3px}.platform-select{width:100%}.market-shortcuts{grid-template-columns:repeat(3,minmax(0,1fr));padding:9px}.market-shortcuts-label{grid-column:1/-1}.market-shortcut{min-width:0;padding:6px 3px}.item{padding:12px}.item-top{gap:7px}}
+    @media(max-width:580px){.shell{padding:10px 9px 38px}.hero{padding:20px 16px}.hero h1{font-size:22px}.kpis{grid-template-columns:1fr 1fr}.kpi b{font-size:19px}.signal-wrap{overflow:auto}.signal-table{min-width:760px}.date-content,.slg-content{padding:0 9px 13px}.detail-grid,.kept-grid{grid-template-columns:1fr}.detail.full{grid-column:auto}.seg{width:100%;display:grid;grid-template-columns:repeat(5,1fr)}.seg button{padding:8px 3px;font-size:12px}.platform-select{width:100%}.market-shortcuts,.slg-market-shortcuts{grid-template-columns:repeat(3,minmax(0,1fr));padding:9px}.market-shortcuts-label{grid-column:1/-1}.market-shortcut,.slg-market-button{min-width:0;padding:6px 3px}.slg-block>summary{align-items:flex-start;flex-wrap:wrap}.item{padding:12px}.item-top{gap:7px}}
   </style>
 </head>
 <body>
@@ -53,7 +54,7 @@
       <h1>游戏创意雷达</h1>
       <p>Three Kingdoms: Ice Age · 日本主市场 / 台湾与香港补充 · 2026-08-20</p>
     </div>
-    <div class="hero-badges"><span>模拟经营优先</span><span>非写实</span><span>具体来源直达</span><span>北京 10:00 完成</span></div>
+    <div class="hero-badges"><span>模拟经营优先</span><span>SLG 专项 18</span><span>非写实</span><span>具体来源直达</span><span>北京 10:00 完成</span></div>
   </header>
 
   <section class="kpis" aria-label="今日摘要">
@@ -90,10 +91,35 @@
       <option value="all">全部平台</option><option value="YouTube">YouTube</option><option value="Instagram">Instagram</option><option value="TikTok">TikTok</option><option value="Meta">Meta</option><option value="Threads">Threads</option><option value="Google Play">Google Play</option><option value="App Store">App Store</option>
     </select>
     <div class="seg" role="group" aria-label="内容类型">
-      <button class="active" data-filter="all">全部 134</button><button data-filter="paid">买量 82</button><button data-filter="organic">自然 52</button><button data-filter="p0">只看 P0</button>
+      <button class="active" data-filter="all">全部 152</button><button data-filter="paid">买量 82</button><button data-filter="organic">自然 52</button><button data-filter="slg">SLG 18</button><button data-filter="p0">只看 P0</button>
     </div>
   </div>
-  <div class="platform-summary" aria-label="平台分布"><span>YouTube 37</span><span>TikTok 7</span><span>Google Play 7</span><span>App Store 7</span><span>Meta 3</span><span>Instagram 4</span><span>Steam 1</span><span>X 1</span></div>
+  <div class="platform-summary" aria-label="平台分布"><span>YouTube 51</span><span>TikTok 7</span><span>Google Play 10</span><span>App Store 7</span><span>Instagram 6</span><span>Meta 4</span><span>Steam 2</span><span>X 1</span></div>
+
+  <details class="slg-block" open id="slg-2026-08-20">
+    <summary><span class="slg-chip">SLG 专项</span><b>2026-08-20 · 买量素材与核心玩法</b><span class="slg-meta">日本 10 · 台湾 4 · 香港 4</span></summary>
+    <p class="slg-intro">独立于模拟经营日报统计。重点观察资源争夺、行军路线、联盟集结、据点攻防、城建升级与生产运输；创意建议统一转为非写实、低录屏、可用 AI 重绘的表达。</p>
+    <nav class="slg-market-shortcuts" aria-label="按地区查看 SLG 专项">
+      <span class="market-shortcuts-label">直接查看地区 SLG</span>
+      <button class="slg-market-button" type="button" data-slg-market="JP" aria-pressed="false">日本 SLG 10</button>
+      <button class="slg-market-button" type="button" data-slg-market="TW" aria-pressed="false">台湾 SLG 4</button>
+      <button class="slg-market-button" type="button" data-slg-market="HK" aria-pressed="false">香港 SLG 4</button>
+    </nav>
+    <div class="slg-content">
+      <section class="slg-market" data-slg-region="JP">
+        <div class="market-title"><h3><span class="market-name">日本</span>SLG 主市场</h3><span class="market-total">10 条 · 9 视频 / 1 商店玩法页</span></div>
+        <div class="content-group"><div class="section-head"><span class="count paid">SLG 10</span><h4>近期素材与核心循环</h4></div><div id="jpSlgList_20260820" class="list"></div></div>
+      </section>
+      <section class="slg-market" data-slg-region="TW">
+        <div class="market-title"><h3><span class="market-name tw">台湾</span>SLG 地区内容</h3><span class="market-total">4 条 · 3 视频 / 1 商店玩法页</span></div>
+        <div class="content-group"><div class="section-head"><span class="count paid">SLG 4</span><h4>繁中策略玩法</h4></div><div id="twSlgList_20260820" class="list"></div></div>
+      </section>
+      <section class="slg-market" data-slg-region="HK">
+        <div class="market-title"><h3><span class="market-name hk">香港</span>SLG 地区内容</h3><span class="market-total">4 条 · 3 视频 / 1 商店玩法页</span></div>
+        <div class="content-group"><div class="section-head"><span class="count paid">SLG 4</span><h4>港服与粤语策略玩法</h4></div><div id="hkSlgList_20260820" class="list"></div></div>
+      </section>
+    </div>
+  </details>
 
   <details class="date-block" open id="date-2026-08-20">
     <summary><span class="date-chip">2026-08-20</span><b>经营玩法与新作素材</b><span class="date-meta">日本 50 · 台湾 10 · 香港 10</span></summary>
@@ -352,6 +378,17 @@ function organicCard(x){
     </div></article>`;
 }
 
+function slgCard(x){
+  const tags=`<span class="tag slg">SLG</span><span class="tag">${escapeHtml(x.market)}</span><span class="tag platform">${escapeHtml(x.platform)}</span><span class="tag style">${escapeHtml(x.mechanic)}</span>`;
+  const points=x.points.map(point=>`<li>${escapeHtml(point)}</li>`).join('');
+  return `<article class="item slg" data-type="slg" data-market="${escapeHtml(x.market)}" data-priority="P0" data-platform="${escapeHtml(x.platform)}" data-search="${escapeHtml([x.title,x.market,x.platform,x.mechanic,x.adapt].join(' '))}">
+    <div class="item-top"><span class="num">${escapeHtml(x.id)}</span><div class="title-wrap"><div class="tags">${tags}</div><h3>${escapeHtml(x.title)}</h3></div></div>
+    <div class="source"><b>公开信号：</b>${escapeHtml(x.signal)}${sourceButtons(x)}</div>
+    <div class="source-summary"><b>原内容大意</b><ul class="source-points">${points}</ul></div>
+    <div class="kept-grid"><div class="detail"><b>创意建议</b><p>${escapeHtml(x.adapt)}</p></div><div class="detail"><b>UE / 录屏占比</b><p class="ue">${escapeHtml(x.ue)}</p></div></div>
+  </article>`;
+}
+
 const regionLists = [
   ['jpPaidList',paid.filter(x=>x.market==='JP'),paidCard],
   ['jpOrganicList',organic.filter(x=>x.market==='JP'),organicCard],
@@ -368,9 +405,15 @@ const search=document.getElementById('search');
 const platformFilter=document.getElementById('platformFilter');
 const filterButtons=[...document.querySelectorAll('[data-filter]')];
 const marketButtons=[...document.querySelectorAll('[data-market-filter]')];
+const slgMarketButtons=[...document.querySelectorAll('[data-slg-market]')];
 function updateMarketButtons(){
   marketButtons.forEach(button=>{
-    const selected=button.dataset.marketFilter===activeMarket;
+    const selected=activeFilter==='paid'&&button.dataset.marketFilter===activeMarket;
+    button.classList.toggle('active',selected);
+    button.setAttribute('aria-pressed',String(selected));
+  });
+  slgMarketButtons.forEach(button=>{
+    const selected=activeFilter==='slg'&&button.dataset.slgMarket===activeMarket;
     button.classList.toggle('active',selected);
     button.setAttribute('aria-pressed',String(selected));
   });
@@ -386,6 +429,7 @@ function applyFilters(){
   });
   document.querySelectorAll('.content-group').forEach(group=>{group.hidden=![...group.querySelectorAll('.item')].some(card=>!card.hidden);});
   document.querySelectorAll('.market-section').forEach(section=>{section.hidden=![...section.querySelectorAll('.item')].some(card=>!card.hidden);});
+  document.querySelectorAll('.slg-market').forEach(section=>{section.hidden=![...section.querySelectorAll('.item')].some(card=>!card.hidden);});
   document.getElementById('noResults').style.display=visible?'none':'block';
 }
 filterButtons.forEach(btn=>btn.addEventListener('click',()=>{filterButtons.forEach(b=>b.classList.remove('active'));btn.classList.add('active');activeFilter=btn.dataset.filter;activeMarket='all';updateMarketButtons();applyFilters();}));
@@ -399,11 +443,42 @@ marketButtons.forEach(btn=>btn.addEventListener('click',()=>{
   applyFilters();
   document.querySelector(`.market-section[data-region="${activeMarket}"]`)?.scrollIntoView({behavior:'smooth',block:'start'});
 }));
+slgMarketButtons.forEach(btn=>btn.addEventListener('click',()=>{
+  activeMarket=btn.dataset.slgMarket;
+  activeFilter='slg';
+  search.value='';
+  platformFilter.value='all';
+  filterButtons.forEach(button=>button.classList.toggle('active',button.dataset.filter==='slg'));
+  updateMarketButtons();
+  applyFilters();
+  document.querySelector(`.slg-market[data-slg-region="${activeMarket}"]`)?.scrollIntoView({behavior:'smooth',block:'start'});
+}));
 platformFilter.addEventListener('change',applyFilters);
 search.addEventListener('input',applyFilters);
 
 const mkDailyPaid=(n,market,platform,sourceKind,style,title,url,signal,p1,p2,adapt,ue)=>({n,market,platform,sourceKind,style,title,game:title,url,signal,points:[p1,p2],adapt,ue});
 const mkDailyOrg=(n,market,platform,sourceKind,title,channel,url,signal,why,format,adapt,test)=>({n,market,platform,sourceKind,title,channel,url,signal,why,format,adapt,test});
+const mkSlgItem=(id,market,platform,sourceKind,mechanic,title,url,signal,p1,p2,adapt,ue)=>({id,market,platform,sourceKind,mechanic,title,url,signal,points:[p1,p2],adapt,ue});
+const slgItems=[
+  mkSlgItem('S01','JP','YouTube','video','资源首领','【晶石ボス】金塊をゲットせよ！【オフシーズン】/ラストウォー','https://www.youtube.com/watch?v=WHF3qsW_pcs','约 1,436 次观看 · 9 小时前','围绕晶石首领、伤害目标与金块奖励展开当期资源循环。','目标、出队、结算和资源回流集中在一次活动内。','改成纸雕矿脉争夺：三支小队同时采晶，玩家只调整一条补给线，结尾金块进入锻造坊并解锁新炉位。','0–10%'),
+  mkSlgItem('S02','JP','YouTube','video','赛季资源','【ラストウォー】『晶石イベント』解禁！６０日間で報酬GET！　　#ラストウォー #lastwar #vtuber','https://www.youtube.com/watch?v=RjB_n7wKUT8','约 3,689 次观看 · 14 小时前','介绍新开放的晶石活动与 60 日奖励周期。','长期目标被拆为每天可完成的资源积累和阶段结算。','把 60 天压成 20 秒体素日历：每天一格资源入库，三次关键选择改变最终仓库形态，最后用城墙升级收尾。','0–5%'),
+  mkSlgItem('S03','JP','YouTube','video','城建顺序','『黄金を無駄にするな！』　TG６～８育成計画　＃キングショット','https://www.youtube.com/watch?v=QtrO-0Rz0pY','约 2,942 次观看 · 4 个月前','拆解 TG6–8 建筑阶段的黄金消耗和成长计划。','把稀缺资源、建造时间和阶段目标放在同一条升级路线里比较。','做像素雪城“黄金只够升一座”：炉塔保产能、仓库保资源、兵营保守城，三选一后立即展示 24 小时后的城镇差异。','0–10%'),
+  mkSlgItem('S04','JP','YouTube','video','资源门槛','【キングショット】知らないと6.4億の大損!? 攻略サイトの罠を暴くTG5までの「真の必要資源」と最強の強化順','https://www.youtube.com/watch?v=hWwcl9XbPI4','约 1.3 万次观看 · 5 个月前','对比攻略表与实际资源需求，指出建造减免和军事设施顺序。','核心吸引点是错误升级会形成可量化的巨大损失。','用同一套纸雕城市做双线对照：A 先升大厅导致粮仓见底，B 先补运输与仓储，最后用“少花 6.4 亿”式日语数字牌收束。','0–5%'),
+  mkSlgItem('S05','JP','YouTube','video','联盟集结','熊狩りでダメージを出すために　〜英雄の選択〜 ＃キングショット','https://www.youtube.com/watch?v=tNbgwmHKINI','约 7,707 次观看 · 1 个月前','围绕联盟熊狩活动解释英雄选择和集结队伍配置。','同一目标下，不同英雄位置直接影响联盟总伤害。','改成木版画像素的巨兽集结：三路队伍从地图边缘汇合，只突出主将选择、到达时差和联盟总奖励三个反馈。','5–10%'),
+  mkSlgItem('S06','JP','YouTube','video','兵种升级','T12で何が変わった！？優先度・スキル・戦闘の変化まで徹底解説！【ホワイトアウトサバイバル / whiteout survival】','https://www.youtube.com/watch?v=cnINz_mvQo4','约 5,517 次观看 · 1 个月前','对比 T12 前后的优先级、技能和战斗结果变化。','升级价值不是只看数值，而是看兵种在具体战斗中的职责变化。','做赛璐璐兵种进化实验：同一路口前后各打一次，升级后单位轮廓、攻击范围和据点占领速度同时变化。','10–15%'),
+  mkSlgItem('S07','JP','YouTube','video','装备投资','【領主装備編】2026年夏、最新版！コスパ検証！！【ホワサバ】','https://www.youtube.com/watch?v=j69blaCTvFw','约 5,649 次观看 · 1 个月前','以 2026 夏季版本核算领主装备的投入产出。','用成本、材料和实际收益判断哪一件装备值得先做。','改成像素铁匠铺单任务：三件装备只够锻一件，锻造后立刻切到同一据点战，看运输量、守军和占领时间哪项真正改变。','0–5%'),
+  mkSlgItem('S08','JP','YouTube','video','赛季开荒','【三国志 真戦】実生活に支障をきたさず楽にスタダしても上位陣になれちゃう方法【三國志】【三国志战略版】1605','https://www.youtube.com/watch?v=LyJTCznkfLo','约 8,660 次观看 · 1 个月前','讲解低负担赛季开荒与资源节奏，目标是在较少操作下保持排名。','土地选择、体力和队伍行动被组织成可复用的开局路线。','做纸雕 12 小时开荒棋盘：每次只点一个资源地，错误路线卡在河道，正确路线连成补给链并点亮第一个据点。','5–10%'),
+  mkSlgItem('S09','JP','YouTube','video','据点攻防','【信長の野望 覇道】知らないと勝てない！港戦攻略のコツ！マップ別の立ち回りや攻略法について','https://www.youtube.com/watch?v=a_7pSUI-wQo','约 7,026 次观看 · 发布日期未在检索页显示','按不同港口地图讲解进攻路线、站位和争夺节奏。','玩法价值来自地形差异与据点目标，而不是单纯战力展示。','把港战重绘成剪纸冰港：先封一座桥，再让运输船绕行侧港；A 面突出路线误判，B 面突出最后 3 秒抢点。','5–10%'),
+  mkSlgItem('S10','JP','Google Play','store','合成城建','トップウォー','https://play.google.com/store/apps/details?id=com.topwar.gp&hl=ja','Google Play 日本页 · 4.6 分 · 77.9 万条评价 · 5,000 万+下载 · 2026-08-13 更新','商店页展示建筑、技能和单位通过合成立即升级。','从荒岛开拓到基地建设、训练部队和全球联盟战形成完整循环。','只借“拖拽合成即升级”：两座像素粮仓合成高级仓，运输车容量马上翻倍，再拉远出现新的边境格，不沿用现代军武画面。','0%'),
+  mkSlgItem('S11','TW','YouTube','video','活动路线','Kingshot 逐風/踏浪/沐光之旅完整攻略！羅盤這樣用最划算，微課、無課玩家必看！','https://www.youtube.com/watch?v=p9GP35wCGwM','约 3,454 次观看 · 发布日期未在检索页显示','讲解三类旅程活动、罗盘使用和微课/无课资源分配。','同一消耗品走不同路线会改变阶段奖励与后续成长。','繁中版做体素罗盘二选一：直走抢稀有矿，绕路补联盟物资；最后用两座城的资源差异回答“點樣用先最抵”。','0–5%'),
+  mkSlgItem('S12','TW','YouTube','video','生产运输','【Last War】賽季二新手快速上手！極寒風暴超詳細重點：職業技能怎麼點？煤炭鈦合金幹嘛用？緊急錄製經驗分享！','https://www.youtube.com/watch?v=w6eJ1-6j7gA','约 824 次观看 · 发布日期未在检索页显示','介绍极寒赛季职业技能、煤炭与钛合金的用途。','采集、加工、抗寒和职业选择共同决定赛季推进速度。','改成像素极寒生产链：煤矿→熔炉→钛构件→热源塔，故意让一辆运输车停错仓，观众能一眼找出断点。','0–10%'),
+  mkSlgItem('S13','TW','YouTube','video','剧本开荒','三戰2026年新劇本九州兵興，避坑指南及十天實用治軍戰法推薦！#三國志戰略版 #九州兵興 #治軍戰法','https://www.youtube.com/watch?v=ohIygKHpz1w','约 840 次观看 · 4 个月前','围绕九州兵兴剧本整理开局避坑和十天治军战法。','把新剧本规则、阶段目标和队伍方案放在同一条成长时间线上。','用木版画像素做十日军令板：每天只解锁一枚令牌，错误搭配导致粮线断开，正确搭配让地图边界连续推进。','5–10%'),
+  mkSlgItem('S14','TW','Google Play','store','自由行军','萬國覺醒-RoK','https://play.google.com/store/apps/details?id=com.lilithgame.roc.gp.tw&hl=zh_TW&gl=TW','Google Play 台湾页 · 4.0 分 · 2.1 万则评论 · 50 万+下载 · 2026-07-23 更新','商店页明确展示自由行军、包抄、资源点争夺与盟友增援。','世界地图缩放、城市自由布局和多兵线远征互相连接。','改成纸雕地图“同一支商队要不要绕路”：直线快但会撞敌，绕行可占资源点并接到盟友，结果直接落到城建产出。','5–10%'),
+  mkSlgItem('S15','HK','YouTube','video','兵种战法','【三國志戰略版】國際專屬新劇本——兵演春秋 介紹新武將新戰法同劇本講解！','https://www.youtube.com/watch?v=_LUDFsLV5N0','约 242 次观看 · 发布日期未在检索页显示 · HK player','介绍国际服兵演春秋剧本、新武将、新战法和新规则。','内容把角色、兵种和剧本机制放在同一套繁中解释框架里。','用粤语字幕做木版画军帐：先选兵种，再把战法令牌贴到地图路线；不要做角色大招混剪，结尾看据点是否守住。','5–10%'),
+  mkSlgItem('S16','HK','YouTube','video','港澳台剧本','《三國志．戰略版》 全新港台國際服專屬劇本，全新專屬武將、技能及兵種#삼국지전략판 #三國志戰略版 #三國志真戦 真戦','https://www.youtube.com/watch?v=GzCbA6Ryf9Q','约 4,324 次观看 · 1 个月前','聚焦港台国际服专属剧本、武将、技能与兵种差异。','专属版本节点给香港用户明确的“这次有什么不同”观看理由。','做纸雕港服“同一关口三种守法”：技能、兵种、运输路线各只改一个变量，用书面繁中主文案配一句轻粤语钩子。','5–10%'),
+  mkSlgItem('S17','HK','YouTube','video','联盟竞赛','#王國紀元 2026 IGG 全球巔峰賽線上選拔圓滿落幕！','https://www.youtube.com/watch?v=s431Lf-vD58','约 66 次观看 · 2 个月前 · 官方频道','官方短片记录 2026 全球巅峰赛线上选拔节点。','竞赛结果可作为联盟目标、赛制节点和强者对抗的公开内容信号。','不要复刻赛事混剪；改成低模三路据点计分板，联盟在最后十秒决定守仓还是抢中央点，结算数字直接翻转。','5–10%'),
+  mkSlgItem('S18','HK','Google Play','store','联盟扩张','王國紀元 - 變形金剛聯動','https://play.google.com/store/apps/details?id=com.igg.android.lordsmobile&hl=zh_HK&gl=HK','Google Play 香港页 · 4.1 分 · 917 万则评论 · 5 亿+下载 · 2026-07-31 更新','商店页列出建筑升级、科技研究、练兵、采粮挖矿与联盟远征。','兵种阵型、联盟集结、奇观争夺和王国扩张构成主要 SLG 循环。','改成纸雕浮空城：四类资源沿吊桥入库，联盟三队同时集结奇观；全程只保留图形化行军与扩建，不用写实战斗。','5–10%')
+];
 const dailyPaid=[
   mkDailyPaid(1,'JP','YouTube','video','低多边形交通','City Transport Simulator 2026 - Launch Trailer | PS5 Games','https://www.youtube.com/watch?v=d6mKqmbCnlY','2.5 万次观看 · 4 个月前','展示公交线路、车辆调度与城市客流的连续变化。','从站点规划到车辆运行，结果会反馈到街区繁忙度。','改成冰河驿路的马车班次：先安排一辆车解决断粮，再拉远看到第二条路线开通。','0–5%'),
   mkDailyPaid(2,'JP','YouTube','video','像素雪原','Above the Snow - Gameplay Trailer | Simulation 2026','https://www.youtube.com/watch?v=Hv1uS7Dfjo8','公开视频 · 4 个月前 · 玩法预告','展示雪地避难所的建造、居民需求与资源收集。','温度、床位和食物同时变化，经营选择决定避难所能否扩建。','保留“避难所需求同时亮红”的压力，改为像素冰河营地，避免写实雪景。','0–10%'),
@@ -495,6 +570,10 @@ document.getElementById('hkPaidList_20260820').innerHTML=dailyPaidByMarket.HK.ma
 document.getElementById('jpOrganicList_20260820').innerHTML=dailyOrgByMarket.JP.map(dailyOrganicCard).join('');
 document.getElementById('twOrganicList_20260820').innerHTML=dailyOrgByMarket.TW.map(dailyOrganicCard).join('');
 document.getElementById('hkOrganicList_20260820').innerHTML=dailyOrgByMarket.HK.map(dailyOrganicCard).join('');
+const slgByMarket={JP:slgItems.filter(x=>x.market==='JP'),TW:slgItems.filter(x=>x.market==='TW'),HK:slgItems.filter(x=>x.market==='HK')};
+document.getElementById('jpSlgList_20260820').innerHTML=slgByMarket.JP.map(slgCard).join('');
+document.getElementById('twSlgList_20260820').innerHTML=slgByMarket.TW.map(slgCard).join('');
+document.getElementById('hkSlgList_20260820').innerHTML=slgByMarket.HK.map(slgCard).join('');
 applyFilters();
 </script>
 </body>
