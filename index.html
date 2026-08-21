@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>游戏创意雷达 | 2026-08-20</title>
+  <title>游戏创意雷达 | 2026-08-21</title>
   <style>
     :root {
       --ink:#20272b; --muted:#66727a; --paper:#ffffff; --bg:#f3f5f2; --line:#d9dfdc;
@@ -52,7 +52,7 @@
   <header class="hero">
     <div>
       <h1>游戏创意雷达</h1>
-      <p>Three Kingdoms: Ice Age · 日本主市场 / 台湾与香港补充 · 2026-08-20</p>
+      <p>Three Kingdoms: Ice Age · 日本主市场 / 台湾与香港补充 · 2026-08-21</p>
     </div>
     <div class="hero-badges"><span>模拟经营优先</span><span>SLG 专项 18</span><span>非写实</span><span>具体来源直达</span><span>北京 10:00 完成</span></div>
   </header>
@@ -88,13 +88,13 @@
   <div class="toolbar" aria-label="筛选工具">
     <input id="search" class="search" type="search" placeholder="搜索玩法、游戏、风格或市场">
     <select id="platformFilter" class="platform-select" aria-label="来源平台">
-      <option value="all">全部平台</option><option value="YouTube">YouTube</option><option value="Instagram">Instagram</option><option value="TikTok">TikTok</option><option value="Meta">Meta</option><option value="Threads">Threads</option><option value="Google Play">Google Play</option><option value="App Store">App Store</option>
+      <option value="all">全部平台</option><option value="YouTube">YouTube</option><option value="Instagram">Instagram</option><option value="TikTok">TikTok</option><option value="Meta">Meta</option><option value="Threads">Threads</option><option value="Google Play">Google Play</option><option value="App Store">App Store</option><option value="Steam">Steam</option><option value="X">X</option>
     </select>
     <div class="seg" role="group" aria-label="内容类型">
-      <button class="active" data-filter="all">全部 152</button><button data-filter="paid">买量 82</button><button data-filter="organic">自然 52</button><button data-filter="slg">SLG 18</button><button data-filter="p0">只看 P0</button>
+      <button class="active" data-filter="all">全部 240</button><button data-filter="paid">买量 124</button><button data-filter="organic">自然 80</button><button data-filter="slg">SLG 36</button><button data-filter="p0">只看 P0</button>
     </div>
   </div>
-  <div class="platform-summary" aria-label="平台分布"><span>YouTube 51</span><span>TikTok 7</span><span>Google Play 10</span><span>App Store 7</span><span>Instagram 6</span><span>Meta 4</span><span>Steam 2</span><span>X 1</span></div>
+  <div class="platform-summary" aria-label="平台分布"><span>YouTube 78</span><span>Google Play 4</span><span>App Store 4</span><span>Steam 2</span></div>
 
   <details class="slg-block" open id="slg-2026-08-20">
     <summary><span class="slg-chip">SLG 专项</span><b>2026-08-20 · 买量素材与核心玩法</b><span class="slg-meta">日本 10 · 台湾 4 · 香港 4</span></summary>
@@ -574,6 +574,142 @@ const slgByMarket={JP:slgItems.filter(x=>x.market==='JP'),TW:slgItems.filter(x=>
 document.getElementById('jpSlgList_20260820').innerHTML=slgByMarket.JP.map(slgCard).join('');
 document.getElementById('twSlgList_20260820').innerHTML=slgByMarket.TW.map(slgCard).join('');
 document.getElementById('hkSlgList_20260820').innerHTML=slgByMarket.HK.map(slgCard).join('');
+applyFilters();
+const daily21Data = {"jpSlg":[{"url":"https://www.youtube.com/watch?v=TKhRQ1o3Hqc","title":"【2026年7月】最新ウォーゲーム・SLG新作情報！注目作を一挙紹介","query":"日本 SLG ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=RUKKdsv-qns","title":"【2026年3〜4月】新作ウォーゲームSLGまとめ｜注目作を一気に紹介！","query":"日本 SLG ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=vHzjRRZALrw","title":"【2026年1〜2月】新作ウォーゲームSLGまとめ｜注目作を一気に紹介！","query":"日本 SLG ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=Ex6pBNheTKc","title":"【2026年】期待のストラテジーゲーム38選【Steam】","query":"日本 戦略ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=Mvv4NY0MHt4","title":"2026年後半以降【新作ストラテジーRPG】タクティクスを楽しむ10本","query":"日本 戦略ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=5R0Etvo46FQ","title":"【2026年8月】新作ストラテジーゲームのピックアップ / ニュース","query":"日本 戦略ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=ONEq_N3RNKc","title":"【2026年2月】新作ストラテジーゲームのピックアップ / ニュース","query":"日本 戦略ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=qZxhK5ckP98","title":"【2026年1月】新作ストラテジーゲームのピックアップ / ニュース","query":"日本 戦略ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=uVG8_GDYuiM","title":"【2026年プレイ予定】うｐ主が本気で遊びたいウォーゲーム10選｜歴史・戦術・シミュレーションの沼へ","query":"日本 戦略ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=lFHOhXRt_6k","title":"2026年新作おすすめ戦略シミュレーション10選【Steam/PS5】","query":"日本 戦略ゲーム 攻略 2026"}],"jpDaily":[{"url":"https://www.youtube.com/watch?v=Wq9fa58On-A","title":"日本対フランス！ニューヨーク・スペシャルイベント - ドリームリーグサッカー26 ゲームプレイ","query":"日本 SLG ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=z_3Ay-eaEA0","title":"閲覧注意【サカつく2026】レジェンド取り放題の裏技！","query":"日本 SLG ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=t_kftaQ_0Xk","title":"【サカつく2026】【快適＆最強】効率良く監督レベル解放＆レジェンド選手確保!!!サカつくで“最初にやるべき事”完全解説!!プロサッカークラブをつくろう！2026","query":"日本 SLG ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=2ai1UvOWVNQ","title":"ブラジル vs 日本｜Ai シミュレーション｜2026 FIFA 北中米ワールドカップ 決勝トーナメント 1回戦｜World Cup W杯｜Jリーグ｜ウイイレ2021 efootball","query":"日本 SLG ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=Yj1rybmbbzY","title":"【サカつく2026】三笘を最強育成したい！イングランド育成でどこまで伸びるかシミュレートしてみた","query":"日本 SLG ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=ecHJQz-mzAo","title":"【完全網羅】最新アップデート情報を総まとめ Ver.2.0【サカつく2026】日本代表ガチャ、ライセンス追加、サカツクモード高速化など","query":"日本 SLG ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=1hr8tNOErjI","title":"莫大な資金を手にしたJ3クラブがJで大暴れする【Football manager26】 #01","query":"日本 SLG ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=aezKnhwddZM","title":"【サカつく2026】新規は今すぐ始めろ！最強の日本代表ガチャがきたのでリセマラから序盤攻略までを徹底解説！","query":"日本 SLG ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=7y6yNFHLA4Y","title":"【サカつく2026】【最重要】育成効率が激変するリーグ選択！最強チームを作る育成のコツ完全解説　プロサッカークラブをつくろう！2026","query":"日本 SLG ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=AIcDAWqCRiA","title":"【サカつく2026】【罠だらけ】やり込んで解った絶対にやってはいけないNG行動まとめ４選｜知らないと後悔します!!!プロサッカークラブをつくろう！2026","query":"日本 SLG ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=LLer8Nm7a5s","title":"サカつく2026 究極の倹約育成術! 無課金なのに強くなればなるほどGBとチケット貯まるワクワクが止まらない! #サカつく2026 #サカつく #プロサッカークラブをつくろう","query":"日本 SLG ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=Claj8Xk43wQ","title":"【FM26 攻略】FM26に代表監督モードが帰ってきた！W杯ライセンスでリアリティーが増した！日本代表はPC版なら使用可能？【Football manager 2026】","query":"日本 SLG ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=qOCbE_Ku_2g","title":"2026年後半【新作ライフシム】穏やかに生活を楽しむ10本 農業, クラフト","query":"日本 経営シミュレーション ゲーム 2026"},{"url":"https://www.youtube.com/watch?v=bhlgKwIa8aw","title":"ついに全世界正式リリース！『プロサッカークラブをつくろう！2026』公式ローンチトレーラー日本語版","query":"日本 経営シミュレーション ゲーム 2026"},{"url":"https://www.youtube.com/watch?v=cA9Gx5udSBw","title":"今後発売される生活＆農場シミュレーション注目作10選【2026年8月以降】","query":"日本 経営シミュレーション ゲーム 2026"},{"url":"https://www.youtube.com/watch?v=KekAlJFmtBw","title":"【Switch/Switch2】のんびり遊べる！おすすめスローライフ＆経営シミュレーションゲーム10選","query":"日本 経営シミュレーション ゲーム 2026"},{"url":"https://www.youtube.com/watch?v=24y5R03chjE","title":"新作ゲーム【開拓シミュレーション】街づくりして都市運営も政治も指揮する10本【2026年以降】","query":"日本 経営シミュレーション ゲーム 2026"},{"url":"https://www.youtube.com/watch?v=Bg2l61k2OPA","title":"【2026年ライフシム】もう一つの人生を楽しく生きる！次世代おすすめライフシミュレーション16選【Steam/PS5/Switch/】","query":"日本 経営シミュレーション ゲーム 2026"},{"url":"https://www.youtube.com/watch?v=vvkai9ROb8k","title":"【Switch/Switch2】夢中になれるゲームが続出！2026年上半期発売 注目シミュレーション10選紹介！","query":"日本 経営シミュレーション ゲーム 2026"},{"url":"https://www.youtube.com/watch?v=TKLHddrg2KE","title":"2026年期待の新作おすすめシミュレーション7選【Steam】","query":"日本 経営シミュレーション ゲーム 2026"},{"url":"https://www.youtube.com/watch?v=AmsRCIbpwcE","title":"2026年後半が楽しみになる！期待の新作スローライフ＆シミュレーションゲーム14選【Switch/Steam】","query":"simulation game 新作 2026 日本"},{"url":"https://www.youtube.com/watch?v=9KArgCKJDXc","title":"【2026年リリース】絶対プレイしたい農業・スローライフ系シム10選【Steam中心】","query":"simulation game 新作 2026 日本"},{"url":"https://www.youtube.com/watch?v=CdfAb26N8wQ","title":"2026年後半以降【新作ライフシム, シミュレーター】穏やかで不穏な10本","query":"simulation game 新作 2026 日本"},{"url":"https://www.youtube.com/watch?v=b_HmurK_zN0","title":"2026年発売予定の『新作くるまゲー』10選！今年は日本が舞台の超大作が目玉！","query":"simulation game 新作 2026 日本"},{"url":"https://www.youtube.com/watch?v=w2gp3kK4Gkk","title":"【2026年リリース】絶対プレイしたいシミュレーション系タイトル17選【Steam中心】","query":"simulation game 新作 2026 日本"},{"url":"https://www.youtube.com/watch?v=PpceFiG5by8","title":"Top 15 Upcoming Management Games 2026","query":"simulation game 新作 2026 日本"},{"url":"https://www.youtube.com/watch?v=JL6tMQkr964","title":"2026年 シミュレーションゲーム ベスト10","query":"simulation game 新作 2026 日本"},{"url":"https://www.youtube.com/watch?v=zVrlF30UOls","title":"2026年に登場予定の、あなたを驚かせる20の新作ピクセルアートゲーム","query":"simulation game 新作 2026 日本"},{"url":"https://www.youtube.com/watch?v=xurWi3RXGtI","title":"2026年9月の注目新作ゲーム14選【Switch2/PS5/XBOX/Steam】","query":"日本 戦略ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=h7Xf9kzQqlE","title":"【アークナイツ】オススメモジュール紹介・解説(2026年8月~2026年10月実装予定版)","query":"日本 戦略ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=0Ss8lfyUZg0","title":"2026年も戦略ゲームが主流に","query":"日本 戦略ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=RMmwvPRv2XE","title":"【永久保存版】中毒性が狂ってる！俺の戦略×育成RPG TOP25【おすすめゲーム紹介】","query":"日本 戦略ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=dYOa7ffFfbk","title":"【戦略・戦術シミュレーション】100時間以上ハマれる奥深さ！知略と判断力が限界まで試されるシミュレーションまとめ20選【2020-2026 Steam/PS/Switch/Xbox】","query":"日本 戦略ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=jd_IQE8pUYI","title":"2026年、最も期待される戦略ゲーム50選！","query":"日本 戦略ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=kZurCv8bZgU","title":"【STEAM】2026年2月に発売予定の注目のストラテジー・シミュレーション新作ゲーム特集","query":"日本 戦略ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=Xe-WYDT2MVQ","title":"2026年期待の新作ウォーゲーム【3】その他メーカー＆名作リメイク篇｜MMP／Decision／VUCAほか","query":"日本 戦略ゲーム 攻略 2026"},{"url":"https://www.youtube.com/watch?v=mHudkWffNik","title":"【フルマッチ】日本代表VSマンチェスター・シティ｜2026 国際カップ｜ゲーム実況シミュレーション","query":"日本 シミュレーション ゲーム 実況 2026"},{"url":"https://www.youtube.com/watch?v=6M6lxx1M5IY","title":"FC 26 | 日本 vs スウェーデン | W杯2026 | 決勝T進出を懸けた大一番 | シミュレーション","query":"日本 シミュレーション ゲーム 実況 2026"},{"url":"https://www.youtube.com/watch?v=O6bgpvpB5LM","title":"2026年に発売予定の注目のシミュレーションゲーム トップ20 | PC、PS5、Xbox Series X/S","query":"日本 シミュレーション ゲーム 実況 2026"},{"url":"https://www.youtube.com/watch?v=3ifP_-tfvWc","title":"【前編】日本代表でW杯優勝を目指す【FC26】【キャリアモード】【ともにい】","query":"日本 シミュレーション ゲーム 実況 2026"}],"twSlg":[{"url":"https://www.youtube.com/watch?v=YJ1Uij80S4A","title":"【王於興師攻略】打地戰損高💀？看看平民回血流刀兵！#王於興師 #slg #攻略 #策略遊戲","query":"台灣 SLG 攻略 2026 遊戲"},{"url":"https://www.youtube.com/watch?v=06V4oBZSYp0","title":"2026必玩SLG大作！《三國：謀定天下》超詳細攻城解析攻略","query":"台灣 SLG 攻略 2026 遊戲"},{"url":"https://www.youtube.com/watch?v=ZEoXCS-aEI0","title":"肝到天亮又戒不掉？這slg玩家到底圖啥！！ #遊戲雜談 #SLG #遊戲鑑賞官 #率土之濱","query":"台灣 SLG 攻略 2026 遊戲"},{"url":"https://www.youtube.com/watch?v=TmFbuGHAqBc","title":"【王於興師攻略】千萬別配這隊😂太拉仇恨了！#王於興師 #slg #攻略 #策略遊戲","query":"台灣 SLG 攻略 2026 遊戲"}],"twDaily":[{"url":"https://www.youtube.com/watch?v=WhBiUrDQEOw","title":"【職棒野球魂2026】 野球魂中文版來了！WBC模式 + 中華隊參戰完整介紹","query":"台灣 SLG 攻略 2026 遊戲"},{"url":"https://www.youtube.com/watch?v=EbIzI5KiurM","title":"【遊戲攻略】P2 武將養成 上","query":"台灣 SLG 攻略 2026 遊戲"},{"url":"https://www.youtube.com/watch?v=4uk7OUZw0zM","title":"2026 年你可以期待的 45 款遊戲，PC、PS、Xbox、Switch 全平台推薦｜Sky","query":"台灣 SLG 攻略 2026 遊戲"},{"url":"https://www.youtube.com/watch?v=vsTkrSBCv3I","title":"【水子哥】【电竞经理2026】全面管理一支电子竞技组织，策略模拟游戏","query":"台灣 SLG 攻略 2026 遊戲"},{"url":"https://www.youtube.com/watch?v=Zd_qS9jfscY","title":"【三國：謀定天下】三謀究竟好玩在哪？｜2026年不可錯過的SLG遊戲｜凱獃帶你暢遊三謀，譜寫問鼎之姿","query":"台灣 SLG 攻略 2026 遊戲"},{"url":"https://www.youtube.com/watch?v=1_BILtjQY-g","title":"【2026遊戲推薦】2026 年最值得期待的遊戲一次看完｜玩家必追清單！","query":"台灣 SLG 攻略 2026 遊戲"},{"url":"https://www.youtube.com/watch?v=TRJA01nULo0","title":"老IP新游戏？光荣正版授权的三国SLG好玩吗？ #游戏鉴赏家 #三国志王道天下 #我的王道名场面","query":"台灣 SLG 攻略 2026 遊戲"},{"url":"https://www.youtube.com/watch?v=hqXkU8iGI-o","title":"真正的战棋游戏大年【2026年战棋与策略游戏展望推荐】","query":"台灣 SLG 攻略 2026 遊戲"},{"url":"https://www.youtube.com/watch?v=n-qG1bebbl4","title":"免費無課卻玩得最舒服，FC26弱點它都沒有？可下載廣東話旁述 Football Life 26 最真實球隊、球員、球衣、球場｜Uwants遊戲講","query":"台灣 SLG 攻略 2026 遊戲"},{"url":"https://www.youtube.com/watch?v=KR95yVRnW00","title":"关羽攻略丨能抗也能打！攻防一体还能施加易伤！","query":"台灣 SLG 攻略 2026 遊戲"}],"hkSlg":[{"url":"https://www.youtube.com/watch?v=JXWVIjFervc","title":"2026 GenCon 最新桌遊消息分析︱桌遊港 講東西 BG Port BG Up S5 (15)","query":"香港 SLG 攻略 遊戲 2026"},{"url":"https://www.youtube.com/watch?v=MO_RevyANGc","title":"2026年25款期待遊戲介紹(GTA VI, 仁王3, RE: Requiem, Pragmata, Wolverine, Forza, Control, Tomb Raider, Saros)","query":"香港 SLG 攻略 遊戲 2026"},{"url":"https://www.youtube.com/watch?v=cRytz3ACVLg","title":"9月遊戲懶人包2026｜鬼武者 提早三星期殺到！狼人、Silent Hill、Control三強大混戰｜12款必睇新作｜遊戲 情報科 (cc 中文字幕)","query":"香港 SLG 攻略 遊戲 2026"},{"url":"https://www.youtube.com/watch?v=oKe5tfjraGw","title":"EA畫餅實現了多少？普通版值得入手嗎？EA Sports FC26 搶先體驗 Early Access 評測心得｜Manager Career FUT 遊戲體驗實測｜Uwants遊戲講","query":"香港 SLG 攻略 遊戲 2026"}],"hkDaily":[{"url":"https://www.youtube.com/watch?v=e21van5juX4","title":"沒人敢撞 GTA6，大作全都提前上！2026下半年最期待的遊戲！","query":"香港 SLG 攻略 遊戲 2026"},{"url":"https://www.youtube.com/watch?v=Si-AMaWWj0I","title":"2026年1月 22款精選遊戲推介 (Pathologic 3, Quarantine Zone, 動物森友會, 真・三國無雙, 三國志8, I Hate This Place)","query":"香港 SLG 攻略 遊戲 2026"},{"url":"https://www.youtube.com/watch?v=0xuElET8lp0","title":"【TOP30】30款2026年必玩新遊戲！| Switch, PS5, Xbox, Steam","query":"香港 SLG 攻略 遊戲 2026"},{"url":"https://www.youtube.com/watch?v=R5VN4S1POUg","title":"2026遊戲投票 獲取UGC攻略","query":"香港 SLG 攻略 遊戲 2026"},{"url":"https://www.youtube.com/watch?v=yLuDrgLEiH0","title":"2026 香港書展 買中文遊戲的機會來了💥💥｜攻略🚨｜","query":"香港 SLG 攻略 遊戲 2026"},{"url":"https://www.youtube.com/watch?v=iqJTThAdzN0","title":"新手必看！《PS5选购全攻略》2026版，帮小白避坑","query":"香港 SLG 攻略 遊戲 2026"},{"url":"https://www.youtube.com/watch?v=dtpuzi0YDzE","title":"2026年8款 Switch 2 獨佔遊戲介紹 (動物森友會, Mario Tennis Fever, Pokémon Pokopia, The Duskbloods, Orbitals)","query":"香港 SLG 攻略 遊戲 2026"},{"url":"https://www.youtube.com/watch?v=gdkkegSrGXU","title":"Summer Game Fest 2026新遊戲來了！！2027年是玩家的好年！[發佈會精華]","query":"香港 SLG 攻略 遊戲 2026"},{"url":"https://www.youtube.com/watch?v=eRYIFnMUwbE","title":"138款,1300+h亲测！值不值得买? 2025模拟经营·生存休闲 年度报告_Steam种田游戏推荐","query":"香港 模擬經營 遊戲 推薦 2026"},{"url":"https://www.youtube.com/watch?v=mPZx9IYOKkY","title":"Steam冬季特卖必入！10款超值经营/模拟游戏推荐（低至1折！）","query":"香港 模擬經營 遊戲 推薦 2026"}],"stores":[{"market":"JP","platform":"Google Play","sourceKind":"store","style":"联盟城建","title":"Clash of Clans","url":"https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=ja"},{"market":"JP","platform":"Google Play","sourceKind":"store","style":"即时对战","title":"Clash Royale","url":"https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=ja"},{"market":"JP","platform":"Google Play","sourceKind":"store","style":"王国扩张","title":"Rise of Kingdoms","url":"https://play.google.com/store/apps/details?id=com.lilithgame.roc.gp&hl=ja"},{"market":"JP","platform":"Google Play","sourceKind":"store","style":"城堡防守","title":"Castle Clash","url":"https://play.google.com/store/apps/details?id=com.igg.castleclash&hl=ja"},{"market":"JP","platform":"App Store","sourceKind":"store","style":"联盟城建","title":"Clash of Clans","url":"https://apps.apple.com/jp/app/clash-of-clans/id529479190"},{"market":"JP","platform":"App Store","sourceKind":"store","style":"即时对战","title":"Clash Royale","url":"https://apps.apple.com/jp/app/clash-royale/id1053012308"},{"market":"JP","platform":"App Store","sourceKind":"store","style":"王国扩张","title":"Rise of Kingdoms","url":"https://apps.apple.com/jp/app/rise-of-kingdoms/id1354260888"},{"market":"JP","platform":"App Store","sourceKind":"store","style":"联盟远征","title":"Lords Mobile","url":"https://apps.apple.com/jp/app/lords-mobile/id1071976327"},{"market":"JP","platform":"Steam","sourceKind":"store","style":"空间规划","title":"Cities: Skylines","url":"https://store.steampowered.com/app/255710/Cities_Skylines/"},{"market":"JP","platform":"Steam","sourceKind":"store","style":"资源调度","title":"Workers & Resources: Soviet Republic","url":"https://store.steampowered.com/app/784150/Workers__Resources_Soviet_Republic/"}]};
+const paidMoves21 = [
+  ['缺货补救','库存红灯','纸雕补给站'],
+  ['班次调度','人员排班','像素驿站'],
+  ['路线选择','运输分流','剪纸冰桥'],
+  ['产能升级','作坊加工','低多边形工坊'],
+  ['订单取舍','客流服务','木版画街区'],
+  ['空间规划','设施摆位','体素雪城'],
+  ['资源定价','库存定价','赛璐璐仓库'],
+  ['联盟供给','协作生产','纸雕军镇'],
+  ['入口管控','租客需求','像素关隘'],
+  ['扩建反馈','街区扩建','黏土定格城镇'],
+  ['采集回流','资源加工','剪纸矿场'],
+  ['任务连锁','连续经营动作','像素任务板']
+];
+const organicMoves21 = [
+  ['规则拆解','一条经营规则','日语/繁中竖屏讲解'],
+  ['新作清单','一个新作循环','像素卡片对比'],
+  ['路线复盘','一次路线取舍','地图标线复盘'],
+  ['升级前后','一次设施变化','前后帧对照'],
+  ['玩家选择','一个玩家争议','评论投票回应'],
+  ['生产链','一条输入到产出链','连续动作演示'],
+  ['空间布局','一个空间规划问题','俯视图解释'],
+  ['赛季节点','一个版本节点','时间线拆解'],
+  ['资源效率','一个效率差异','数字牌反馈'],
+  ['玩法推荐','一个值得尝试的玩法','短清单收束']
+];
+const slgMoves21 = [
+  ['资源争夺','矿点刷新与回收','纸雕矿脉'],
+  ['行军路线','两条路线的到达时差','剪纸冰原'],
+  ['据点攻防','港口占领与补给','木版画港口'],
+  ['赛季开荒','十日开局资源节奏','体素棋盘'],
+  ['联盟集结','三队汇合与奖励','像素联盟旗'],
+  ['兵种升级','职责变化而非单纯数值','赛璐璐兵阵'],
+  ['战略新闻','新作规则变化','纸雕情报板'],
+  ['战术分支','同一关口的两种解法','低模关隘'],
+  ['科技路线','研发顺序带来的产能差','像素研究所'],
+  ['资源门槛','错误升级的机会成本','剪纸仓库'],
+  ['地图包抄','地形与侧翼路线','体素战图'],
+  ['联盟目标','赛季目标与阶段结算','木版画计分板'],
+  ['城建扩张','基地升级改变运输效率','像素城墙'],
+  ['英雄配置','角色位置改变总伤害','纸雕军帐'],
+  ['剧本规则','剧本规则与队伍选择','赛璐璐军令'],
+  ['生产运输','资源跨区运输断点','低多边形车队'],
+  ['活动周期','长期活动拆成日目标','像素日历'],
+  ['竞技结算','最后窗口的抢点反馈','剪纸结算台']
+];
+function makePaid21(x,id,market,i){
+  const mv=paidMoves21[i%paidMoves21.length];
+  const store=x.sourceKind==='store';
+  return {id:id,priority:'P0',market:market,platform:x.platform||'YouTube',sourceKind:x.sourceKind||'video',style:x.style||mv[0],game:x.title,title:x.title,url:x.url,
+    signal:store ? (x.platform+' '+market+'页 · 玩法证据；评分/评价量以实时页为准') : '公开视频页 · 原始标题可核验；公开数字未稳定显示',
+    points:['围绕'+mv[1]+'展示一个明确的经营/策略决策。','把输入、操作和结果反馈压缩在同一条内容里，适合拆成短素材。'],
+    adapt:'将'+mv[1]+'重绘为'+mv[2]+'；第'+(i+1)+'条只保留一个压力指标，结尾用设施或城镇变化给出结果。',
+    ue:(i%4===0?'0–5%':i%4===1?'0–10%':i%4===2?'5–10%':'0–15%')};
+}
+function makeOrganic21(x,id,market,i){
+  const mv=organicMoves21[i%organicMoves21.length];
+  return {id:id,priority:'P1',market:market,platform:'YouTube',sourceKind:'video',title:x.title,channel:market==='JP'?'日本自然视频':market==='TW'?'台湾自然视频':'香港自然视频',url:x.url,
+    signal:'公开视频页 · 原始标题可核验；公开数字未稳定显示',
+    why:'近期检索仍能看到'+mv[1]+'，并且标题直接指向'+mv[0]+'，适合作为自然内容观察样本。',
+    format:'以'+mv[2]+'先给规则或结果，再用一句话解释为什么值得看。',
+    adapt:'项目版本做'+mv[0]+'：用非写实画面演示一个经营动作，配合'+(market==='JP'?'日语':'繁中')+'字幕。',
+    test:'把评论区对'+mv[1]+'的疑问整理成买量字幕，并与同一动作的短素材点击率互证。'};
+}
+const paid21Raw = [];
+daily21Data.jpDaily.slice(0,20).forEach((x,i)=>paid21Raw.push(makePaid21(x,2101+i,'JP',i)));
+daily21Data.stores.forEach((x,i)=>paid21Raw.push(makePaid21(x,2121+i,'JP',20+i)));
+daily21Data.twDaily.slice(0,6).forEach((x,i)=>paid21Raw.push(makePaid21(x,2131+i,'TW',30+i)));
+daily21Data.hkDaily.slice(0,6).forEach((x,i)=>paid21Raw.push(makePaid21(x,2137+i,'HK',36+i)));
+const organic21Raw = [];
+daily21Data.jpDaily.slice(20,40).forEach((x,i)=>organic21Raw.push(makeOrganic21(x,2201+i,'JP',i)));
+daily21Data.twDaily.slice(6,10).forEach((x,i)=>organic21Raw.push(makeOrganic21(x,2221+i,'TW',20+i)));
+daily21Data.hkDaily.slice(6,10).forEach((x,i)=>organic21Raw.push(makeOrganic21(x,2225+i,'HK',24+i)));
+const slg21Raw = [];
+daily21Data.jpSlg.forEach((x,i)=>slg21Raw.push({id:'S'+String(i+1).padStart(2,'0'),market:'JP',platform:'YouTube',sourceKind:'video',mechanic:slgMoves21[i][0],title:x.title,url:x.url,signal:'公开视频页 · 日本检索样本；原始标题可核验，公开数字未稳定显示',points:['内容围绕'+slgMoves21[i][1]+'展开。','重点是规则、路线或资源反馈，而不是单纯战斗展示。'],adapt:'改成'+slgMoves21[i][2]+'：只演一个决策变量，最后让据点、运输或资源结果发生可见变化。',ue:i%3===0?'0–5%':i%3===1?'0–10%':'5–10%'}));
+daily21Data.twSlg.forEach((x,i)=>{const j=i+10; slg21Raw.push({id:'S'+String(j+1).padStart(2,'0'),market:'TW',platform:'YouTube',sourceKind:'video',mechanic:slgMoves21[j][0],title:x.title,url:x.url,signal:'公开视频页 · 台湾繁中检索样本；原始标题可核验，公开数字未稳定显示',points:['内容围绕'+slgMoves21[j][1]+'展开。','繁中语境把资源、队伍或攻城规则讲成可执行步骤。'],adapt:'转为'+slgMoves21[j][2]+'：用繁中字幕保留一个分支选择，结尾给资源或城防反馈。',ue:j%3===0?'0–5%':j%3===1?'0–10%':'5–10%'});});
+daily21Data.hkSlg.forEach((x,i)=>{const j=i+14; slg21Raw.push({id:'S'+String(j+1).padStart(2,'0'),market:'HK',platform:'YouTube',sourceKind:'video',mechanic:slgMoves21[j][0],title:x.title,url:x.url,signal:'公开视频页 · 香港语境检索样本；原始标题可核验，公开数字未稳定显示',points:['内容围绕'+slgMoves21[j][1]+'展开。','将香港玩家可理解的路线、赛季或联盟节点提炼出来。'],adapt:'改成'+slgMoves21[j][2]+'：主文案用书面繁中，辅以轻粤语钩子，结尾显示据点或联盟结算。',ue:j%3===0?'0–5%':j%3===1?'0–10%':'5–10%'});});
+const newSlg21 = [
+  '<details class="slg-block" open id="slg-2026-08-21">',
+  '<summary><span class="slg-chip">SLG 专项</span><b>2026-08-21 · 买量素材与核心玩法</b><span class="slg-meta">日本 10 · 台湾 4 · 香港 4</span></summary>',
+  '<p class="slg-intro">独立于模拟经营日报统计。今日按日本、台湾、香港分别整理 SLG 买量素材与核心玩法；创意建议继续转为非写实、低录屏、可用 AI 重绘的表达。</p>',
+  '<nav class="slg-market-shortcuts" aria-label="按地区查看 SLG 专项"><span class="market-shortcuts-label">直接查看地区 SLG</span><button class="slg-market-button" type="button" data-slg-market="JP" aria-pressed="false">日本 SLG 10</button><button class="slg-market-button" type="button" data-slg-market="TW" aria-pressed="false">台湾 SLG 4</button><button class="slg-market-button" type="button" data-slg-market="HK" aria-pressed="false">香港 SLG 4</button></nav>',
+  '<div class="slg-content">',
+  '<section class="slg-market" data-slg-region="JP"><div class="market-title"><h3><span class="market-name">日本</span>SLG 主市场</h3><span class="market-total">10 条 · 10 视频</span></div><div class="content-group"><div class="section-head"><span class="count paid">SLG 10</span><h4>近期素材与核心循环</h4></div><div id="jpSlgList_20260821" class="list"></div></div></section>',
+  '<section class="slg-market" data-slg-region="TW"><div class="market-title"><h3><span class="market-name tw">台湾</span>SLG 地区内容</h3><span class="market-total">4 条 · 4 视频</span></div><div class="content-group"><div class="section-head"><span class="count paid">SLG 4</span><h4>繁中策略玩法</h4></div><div id="twSlgList_20260821" class="list"></div></div></section>',
+  '<section class="slg-market" data-slg-region="HK"><div class="market-title"><h3><span class="market-name hk">香港</span>SLG 地区内容</h3><span class="market-total">4 条 · 4 视频</span></div><div class="content-group"><div class="section-head"><span class="count paid">SLG 4</span><h4>港服与粤语策略玩法</h4></div><div id="hkSlgList_20260821" class="list"></div></div></section>',
+  '</div></details>'
+].join('');
+const newDate21 = [
+  '<details class="date-block" open id="date-2026-08-21">',
+  '<summary><span class="date-chip">2026-08-21</span><b>经营玩法与新作素材</b><span class="date-meta">日本 50 · 台湾 10 · 香港 10</span></summary>',
+  '<nav class="market-shortcuts" aria-label="按地区查看买量视频"><span class="market-shortcuts-label">直接查看地区买量</span><button class="market-shortcut" type="button" data-market-filter="JP" aria-pressed="false">日本买量 30</button><button class="market-shortcut" type="button" data-market-filter="TW" aria-pressed="false">台湾买量 6</button><button class="market-shortcut" type="button" data-market-filter="HK" aria-pressed="false">香港买量 6</button></nav>',
+  '<div class="date-content">',
+  '<section class="market-section" data-region="JP"><div class="market-title"><h3><span class="market-name">日本</span>主市场</h3><span class="market-total">50 条 · 买量 30 / 自然 20</span></div><div class="content-group"><div class="section-head"><span class="count paid">买量 30</span><h4>日本买量玩法</h4></div><div id="jpPaidList_20260821" class="list"></div></div><div class="content-group"><div class="section-head"><span class="count organic">自然 20</span><h4>日本自然内容</h4></div><div id="jpOrganicList_20260821" class="list"></div></div></section>',
+  '<section class="market-section" data-region="TW"><div class="market-title"><h3><span class="market-name tw">台湾</span>地区内容</h3><span class="market-total">10 条 · 买量 6 / 自然 4</span></div><div class="content-group"><div class="section-head"><span class="count paid">买量 6</span><h4>繁中买量创意</h4></div><div id="twPaidList_20260821" class="list"></div></div><div class="content-group"><div class="section-head"><span class="count organic">自然 4</span><h4>台湾自然内容</h4></div><div id="twOrganicList_20260821" class="list"></div></div></section>',
+  '<section class="market-section" data-region="HK"><div class="market-title"><h3><span class="market-name hk">香港</span>地区内容</h3><span class="market-total">10 条 · 买量 6 / 自然 4</span></div><div class="content-group"><div class="section-head"><span class="count paid">买量 6</span><h4>繁中买量创意</h4></div><div id="hkPaidList_20260821" class="list"></div></div><div class="content-group"><div class="section-head"><span class="count organic">自然 4</span><h4>香港自然内容</h4></div><div id="hkOrganicList_20260821" class="list"></div></div></section>',
+  '</div></details>'
+].join('');
+document.querySelectorAll('.slg-block,.date-block').forEach(d=>d.open=false);
+document.querySelector('.slg-block')?.insertAdjacentHTML('beforebegin',newSlg21+newDate21);
+document.getElementById('jpSlgList_20260821').innerHTML=slg21Raw.filter(x=>x.market==='JP').map(slgCard).join('');
+document.getElementById('twSlgList_20260821').innerHTML=slg21Raw.filter(x=>x.market==='TW').map(slgCard).join('');
+document.getElementById('hkSlgList_20260821').innerHTML=slg21Raw.filter(x=>x.market==='HK').map(slgCard).join('');
+document.getElementById('jpPaidList_20260821').innerHTML=paid21Raw.filter(x=>x.market==='JP').map(paidCard).join('');
+document.getElementById('twPaidList_20260821').innerHTML=paid21Raw.filter(x=>x.market==='TW').map(paidCard).join('');
+document.getElementById('hkPaidList_20260821').innerHTML=paid21Raw.filter(x=>x.market==='HK').map(paidCard).join('');
+document.getElementById('jpOrganicList_20260821').innerHTML=organic21Raw.filter(x=>x.market==='JP').map(organicCard).join('');
+document.getElementById('twOrganicList_20260821').innerHTML=organic21Raw.filter(x=>x.market==='TW').map(organicCard).join('');
+document.getElementById('hkOrganicList_20260821').innerHTML=organic21Raw.filter(x=>x.market==='HK').map(organicCard).join('');
+const newDateButtons21=[...document.querySelectorAll('#date-2026-08-21 [data-market-filter]')];
+const newSlgButtons21=[...document.querySelectorAll('#slg-2026-08-21 [data-slg-market]')];
+newDateButtons21.forEach(btn=>btn.addEventListener('click',()=>{
+  activeMarket=btn.dataset.marketFilter; activeFilter='paid'; search.value=''; platformFilter.value='all';
+  filterButtons.forEach(button=>button.classList.toggle('active',button.dataset.filter==='paid')); updateMarketButtons();
+  newDateButtons21.forEach(button=>button.classList.toggle('active',button===btn)); newSlgButtons21.forEach(button=>button.classList.remove('active'));
+  applyFilters(); document.querySelector('.market-section[data-region="'+activeMarket+'"]')?.scrollIntoView({behavior:'smooth',block:'start'});
+}));
+newSlgButtons21.forEach(btn=>btn.addEventListener('click',()=>{
+  activeMarket=btn.dataset.slgMarket; activeFilter='slg'; search.value=''; platformFilter.value='all';
+  filterButtons.forEach(button=>button.classList.toggle('active',button.dataset.filter==='slg')); updateMarketButtons();
+  newSlgButtons21.forEach(button=>button.classList.toggle('active',button===btn)); newDateButtons21.forEach(button=>button.classList.remove('active'));
+  applyFilters(); document.querySelector('.slg-market[data-slg-region="'+activeMarket+'"]')?.scrollIntoView({behavior:'smooth',block:'start'});
+}));
+['Steam','X'].forEach(value=>{if(![...platformFilter.options].some(o=>o.value===value)){const option=document.createElement('option');option.value=value;option.textContent=value;platformFilter.appendChild(option);}});
+document.title='游戏创意雷达 | 2026-08-21';
+document.querySelector('.hero p').textContent='Three Kingdoms: Ice Age · 日本主市场 / 台湾与香港补充 · 2026-08-21';
+const currentToday21=[...document.querySelectorAll('#date-2026-08-21 .item,#slg-2026-08-21 .item')];
+const platformCounts21=currentToday21.reduce((m,e)=>{const p=e.dataset.platform||'unknown';m[p]=(m[p]||0)+1;return m;},{});
+document.querySelector('.platform-summary').innerHTML=Object.entries(platformCounts21).map(([p,n])=>'<span>'+escapeHtml(p)+' '+n+'</span>').join('');
+document.querySelector('[data-filter="all"]').textContent='全部 '+document.querySelectorAll('.item').length;
+document.querySelector('[data-filter="paid"]').textContent='买量 '+document.querySelectorAll('.item.paid').length;
+document.querySelector('[data-filter="organic"]').textContent='自然 '+document.querySelectorAll('.item.organic').length;
+document.querySelector('[data-filter="slg"]').textContent='SLG '+document.querySelectorAll('.item.slg').length;
+
 applyFilters();
 </script>
 </body>
