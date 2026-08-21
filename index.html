@@ -1,14 +1,50 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>游戏创意雷达 | 竖屏买量热度榜</title>
+  <title>游戏创意雷达 | 2026-08-20</title>
   <style>
-    :root{--ink:#1f292c;--muted:#657279;--line:#d9e1de;--paper:#fff;--bg:#f2f5f3;--jp:#b34b32;--tw:#22745d;--hk:#2c638f;--violet:#694967;--shadow:0 8px 24px rgba(31,41,44,.08)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","Noto Sans JP",Arial,sans-serif;letter-spacing:0}a{color:inherit}button,input,select{font:inherit;letter-spacing:0}.shell{max-width:1380px;margin:auto;padding:22px 18px 58px}.hero{background:#20292c;color:#fff;border-radius:8px;padding:25px 28px;display:flex;justify-content:space-between;gap:24px;align-items:flex-end}.hero h1{font-size:30px;line-height:1.2;margin:0}.hero p{margin:8px 0 0;color:#d7e0e0}.hero-meta{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.hero-meta span{border:1px solid #68777a;border-radius:4px;padding:5px 9px;font-size:12px;white-space:nowrap}.live{display:inline-flex;align-items:center;gap:6px}.live:before{content:"";width:7px;height:7px;background:#68d28c;border-radius:50%;box-shadow:0 0 0 4px rgba(104,210,140,.16)}
-    h2{font-size:20px;margin:28px 0 11px;border-bottom:2px solid var(--ink);padding-bottom:7px}h3{margin:0;line-height:1.35}.intro{background:#fff;border:1px solid var(--line);border-radius:7px;padding:17px 18px;margin-top:14px}.intro p{margin:5px 0;color:#4b5a61}.intro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}.intro-grid div{border-left:3px solid var(--ink);padding:7px 10px;background:#f7f9f7}.intro-grid strong{display:block;font-size:13px}.intro-grid span{display:block;color:var(--muted);font-size:12px;margin-top:2px}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:13px 0}.kpi{background:#fff;border:1px solid var(--line);border-radius:6px;padding:13px 15px}.kpi b{display:block;font-size:22px;line-height:1.2}.kpi span{display:block;color:var(--muted);font-size:12px;margin-top:3px}.toolbar{position:relative;background:#fff;border:1px solid var(--line);border-radius:7px;padding:11px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:17px 0 12px}.search{flex:1;min-width:240px;border:1px solid #bdc9c5;border-radius:4px;padding:8px 10px}.toolbar select{border:1px solid #bdc9c5;border-radius:4px;background:#fff;padding:8px 30px 8px 10px;color:var(--ink)}.seg{display:flex;border:1px solid #bdc9c5;border-radius:4px;overflow:hidden}.seg button{border:0;border-right:1px solid #bdc9c5;background:#fff;padding:8px 11px;cursor:pointer}.seg button:last-child{border-right:0}.seg button.active{background:var(--ink);color:#fff}.filter-note{width:100%;font-size:12px;color:var(--muted);margin:0 2px}.platform-summary{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}.platform-summary span{background:#e9efec;border:1px solid #d5dfdb;color:#405159;border-radius:3px;padding:3px 8px;font-size:12px}.region-board{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px;margin:16px 0 20px;box-shadow:var(--shadow)}.region-board.jp{border-top:4px solid var(--jp)}.region-board.tw-hk{border-top:4px solid var(--tw)}.board-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:13px}.board-head h2{border:0;margin:0;padding:0;font-size:22px}.board-head p{margin:4px 0 0;color:var(--muted);font-size:12px}.board-stats{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.board-stats span{border:1px solid var(--line);border-radius:4px;padding:4px 8px;font-size:12px;color:#4e5c62;white-space:nowrap}.board-stats .jp-tag{border-color:#e1b8aa;color:#8d3d2a}.board-stats .tw-tag{border-color:#a9d2c4;color:#236c58}.board-stats .hk-tag{border-color:#b8cee0;color:#2d6086}.board-tabs{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 13px}.board-tab{border:1px solid #b7c3bf;background:#fff;border-radius:4px;padding:6px 10px;color:#39494f;cursor:pointer}.board-tab.active{background:var(--ink);border-color:var(--ink);color:#fff}.board-tab[data-market="TW"].active{background:var(--tw);border-color:var(--tw)}.board-tab[data-market="HK"].active{background:var(--hk);border-color:var(--hk)}.rank-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.rank-card{border:1px solid var(--line);border-left:5px solid #899a95;background:#fff;border-radius:6px;padding:13px;min-width:0;transition:transform .16s ease,box-shadow .16s ease}.rank-card:hover{transform:translateY(-2px);box-shadow:0 5px 16px rgba(31,41,44,.1)}.rank-card.jp{border-left-color:var(--jp)}.rank-card.tw{border-left-color:var(--tw)}.rank-card.hk{border-left-color:var(--hk)}.rank-top{display:flex;gap:9px;align-items:flex-start}.rank-no{width:33px;height:33px;display:grid;place-items:center;border-radius:4px;background:#f0f3f1;font-size:16px;font-weight:800;flex:0 0 auto}.rank-card.jp .rank-no{background:#f8e9e4;color:#8f3e2b}.rank-card.tw .rank-no{background:#e4f2ec;color:#236e59}.rank-card.hk .rank-no{background:#e8f0f7;color:#2b6186}.card-title{min-width:0;flex:1}.card-title h3{font-size:16px;overflow-wrap:anywhere}.labels{display:flex;gap:5px;flex-wrap:wrap;margin:0 0 5px}.label{font-size:11px;padding:1px 6px;border-radius:3px;border:1px solid #cad4d0;color:#4d5b61;background:#f6f8f7}.label.product{background:#eef0f0;color:#313f44}.label.platform{background:#e7f1ec;color:#23604e;border-color:#c0d9cf}.label.visual{background:#eef0f6;color:#405478;border-color:#d1d9e7}.trend{font-size:13px;font-weight:800;white-space:nowrap;padding:2px 5px;border-radius:3px}.trend.up{background:#e3f2e8;color:#227049}.trend.down{background:#f8e7e4;color:#a43f2f}.trend.flat{background:#edf0ef;color:#5e6a6d}.signal{margin:11px 0 0;padding:8px 9px;background:#f6f8f6;border-radius:4px;color:#45545b;font-size:12px}.signal strong{color:var(--ink)}.metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin-top:9px}.metric{border:1px solid var(--line);border-radius:4px;padding:7px 8px;background:#fcfdfc;min-width:0}.metric b{display:block;font-size:11px;color:#56656b}.metric span{display:block;font-weight:750;margin-top:1px;overflow-wrap:anywhere}.metric.heat span{color:#a04a2e}.metric.muted span{color:#68757a;font-weight:600}.detail-list{margin:10px 0 0;padding-left:18px;color:#35444a;font-size:13px}.detail-list li+li{margin-top:3px}.creative{border-left:3px solid #9a6a12;background:#fff8e6;padding:8px 10px;margin-top:10px;font-size:13px}.creative b{display:block;color:#76500c;font-size:12px;margin-bottom:2px}.source-row{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-top:10px}.source-row a{display:inline-flex;align-items:center;gap:5px;border:1px solid #aebbb6;border-radius:4px;padding:6px 9px;text-decoration:none;background:#fff;font-size:12px}.source-row a.primary{background:var(--ink);border-color:var(--ink);color:#fff}.source-row a:hover{filter:brightness(.96)}.source-hint{color:var(--muted);font-size:11px}.empty{display:none;text-align:center;color:var(--muted);padding:33px;border:1px dashed var(--line);border-radius:5px}.footnote{color:var(--muted);font-size:12px;margin-top:22px}.footnote p{margin:5px 0}.footnote strong{color:#46545a}@media(max-width:960px){.hero{display:block}.hero-meta{justify-content:flex-start;margin-top:15px}.intro-grid{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}.rank-grid{grid-template-columns:1fr}.board-head{display:block}.board-stats{justify-content:flex-start;margin-top:9px}}@media(max-width:590px){.shell{padding:10px 9px 40px}.hero{padding:21px 17px}.hero h1{font-size:24px}.kpis{gap:7px}.kpi{padding:11px}.kpi b{font-size:19px}.toolbar select,.search{width:100%;min-width:0}.seg{width:100%;display:grid;grid-template-columns:repeat(3,1fr)}.seg button{padding:8px 3px}.region-board{padding:12px 10px}.board-tabs{display:grid;grid-template-columns:repeat(3,1fr)}.board-tab{padding:7px 3px;text-align:center}.metric-grid{grid-template-columns:repeat(2,1fr)}.rank-card{padding:11px}}
+    :root {
+      --ink:#20272b; --muted:#66727a; --paper:#ffffff; --bg:#f3f5f2; --line:#d9dfdc;
+      --paid:#c34f32; --organic:#24735d; --blue:#255d8d; --gold:#9a6a12; --soft:#eef1ed;
+      --p0:#b62f2f; --p1:#8b6410; --slg:#7b4356; --shadow:0 7px 24px rgba(24,35,39,.08);
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","Noto Sans JP",Arial,sans-serif;letter-spacing:0}
+    button,input{font:inherit;letter-spacing:0} a{color:var(--blue)}
+    .shell{max-width:1320px;margin:auto;padding:22px 18px 64px}
+    .hero{background:#20272b;color:#fff;padding:25px 28px;border-radius:7px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:end}
+    .hero h1{margin:0;font-size:27px;line-height:1.25}.hero p{margin:7px 0 0;color:#d9e0e2}
+    .hero-badges{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.hero-badges span{border:1px solid #657177;padding:5px 9px;border-radius:4px;color:#f5f7f7;font-size:12px}
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:13px 0}
+    .kpi{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:13px 15px}.kpi b{display:block;font-size:22px;line-height:1.2}.kpi span{color:var(--muted);font-size:12px}
+    h2{font-size:20px;margin:28px 0 11px;border-bottom:2px solid var(--ink);padding-bottom:6px}h3{font-size:16px;line-height:1.45;margin:0}
+    .signal-table{width:100%;border-collapse:collapse;background:#fff}.signal-table th,.signal-table td{border:1px solid var(--line);padding:10px 11px;text-align:left;vertical-align:top}.signal-table th{background:#e9eeeb;font-size:13px}.signal-table td:first-child{font-weight:700;white-space:nowrap}
+    .rule-band{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:10px}.rule{background:#fff;border:1px solid var(--line);padding:14px;border-radius:6px}.rule strong{display:block;margin-bottom:4px}.rule p{margin:0;color:var(--muted)}
+    .toolbar{background:#fff;border:1px solid var(--line);padding:10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;border-radius:6px;margin:18px 0 7px}
+    .search{flex:1;min-width:220px;border:1px solid #bfc8c5;border-radius:4px;padding:8px 10px;background:#fff}
+    .platform-select{border:1px solid #bfc8c5;border-radius:4px;padding:8px 31px 8px 10px;background:#fff;color:var(--ink)}
+    .seg{display:flex;border:1px solid #bfc8c5;border-radius:4px;overflow:hidden}.seg button{border:0;border-right:1px solid #bfc8c5;background:#fff;padding:8px 11px;cursor:pointer}.seg button:last-child{border-right:0}.seg button.active{background:var(--ink);color:#fff}
+    .platform-summary{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}.platform-summary span{font-size:12px;background:#e8eeeb;border:1px solid #d3dcda;border-radius:3px;padding:3px 7px;color:#405058}
+    .slg-block{border:1px solid #d8c5cc;border-radius:7px;background:#fff;overflow:hidden;margin:15px 0 18px}.slg-block>summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:center;padding:14px 15px;background:#f4ecef;border-bottom:1px solid #decbd2}.slg-block>summary::-webkit-details-marker{display:none}.slg-chip{background:var(--slg);color:#fff;border-radius:4px;padding:4px 9px;font-weight:750;white-space:nowrap}.slg-meta{color:var(--muted);font-size:12px}.slg-intro{margin:0;padding:11px 15px;color:#4f5d64;background:#fcf9fa;border-bottom:1px solid #e8dce0}.slg-market-shortcuts{display:grid;grid-template-columns:auto repeat(3,minmax(112px,auto));gap:8px;align-items:center;padding:10px 15px;background:#faf7f8;border-bottom:1px solid #e8dce0}.slg-market-button{min-height:34px;border:1px solid #bda9b1;border-radius:4px;background:#fff;color:var(--ink);padding:6px 10px;font-weight:700;white-space:nowrap;cursor:pointer}.slg-market-button:hover{background:#f5eef1}.slg-market-button.active{background:var(--slg);border-color:var(--slg);color:#fff}.slg-content{padding:0 14px 18px}.slg-market{padding:20px 0 5px;border-top:1px solid var(--line)}.slg-market:first-child{border-top:0}.item.slg{border-left-color:var(--slg)}.slg .num{background:#f2e7eb;color:var(--slg)}.tag.slg{background:#f3e9ed;color:#6f354a;border-color:#dfc6cf}
+    .date-block{border:1px solid var(--line);border-radius:7px;background:#fff;overflow:hidden}.date-block>summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:center;padding:13px 15px;background:#edf0ec;border-bottom:1px solid var(--line)}.date-block>summary::-webkit-details-marker{display:none}
+    .date-chip{background:#c34f32;color:#fff;border-radius:4px;padding:4px 9px;font-weight:750;white-space:nowrap}.date-meta{color:var(--muted);font-size:12px}
+    .market-shortcuts{display:grid;grid-template-columns:auto repeat(3,minmax(112px,auto));align-items:center;justify-content:start;gap:8px;padding:10px 15px;background:#f8faf8;border-bottom:1px solid var(--line)}.market-shortcuts-label{color:var(--muted);font-size:12px;font-weight:700}.market-shortcut{min-height:34px;border:1px solid #aeb9b5;border-radius:4px;background:#fff;color:var(--ink);padding:6px 10px;font-weight:700;white-space:nowrap;cursor:pointer}.market-shortcut:hover{background:#f1f4f2}.market-shortcut[data-market-filter="JP"].active{background:var(--ink);border-color:var(--ink);color:#fff}.market-shortcut[data-market-filter="HK"].active{background:var(--blue);border-color:var(--blue);color:#fff}.market-shortcut[data-market-filter="TW"].active{background:var(--organic);border-color:var(--organic);color:#fff}
+    .date-content{padding:0 14px 18px}.market-section{padding:20px 0 5px;border-top:1px solid var(--line)}.market-section:first-child{border-top:0}.market-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:2px}.market-title h3{font-size:20px}.market-name{display:inline-block;margin-right:8px;padding:3px 8px;border-radius:3px;background:var(--ink);color:#fff;font-size:12px;vertical-align:2px}.market-name.tw{background:#24735d}.market-name.hk{background:#255d8d}.market-total{color:var(--muted);font-size:12px;white-space:nowrap}.section-head{display:flex;gap:8px;align-items:center;margin:15px 0 9px}.section-head h4{font-size:16px;margin:0}.count{font-size:12px;color:#fff;border-radius:3px;padding:2px 7px}.count.paid{background:var(--paid)}.count.organic{background:var(--organic)}
+    .list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .item{border:1px solid var(--line);border-left:5px solid var(--paid);background:#fff;border-radius:6px;padding:14px;min-width:0}.item.organic{border-left-color:var(--organic)}
+    .item-top{display:flex;gap:9px;align-items:flex-start}.num{width:30px;height:30px;display:grid;place-items:center;background:#f2e8e4;color:#8f3924;border-radius:4px;font-weight:800;flex:0 0 auto}.organic .num{background:#e3f0eb;color:#1f674f}
+    .title-wrap{min-width:0;flex:1}.tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:4px}.tag{font-size:11px;padding:1px 6px;border-radius:3px;border:1px solid #cbd2cf;background:#f7f8f7;color:#546167}.tag.p0{background:#fde8e8;color:var(--p0);border-color:#efc6c6}.tag.p1{background:#fff3d2;color:var(--p1);border-color:#ead89d}.tag.style{background:#e8eef5;color:#365d7f;border-color:#c8d7e7}.tag.platform{background:#e7f1ec;color:#24604f;border-color:#bfd8cc}
+    .source{margin:10px 0;padding:8px 9px;background:#f5f7f5;border-radius:4px;color:#4f5d64}.source b{color:var(--ink)}
+    .source-summary{margin-top:12px;padding:12px 13px;border:1px solid var(--line);border-radius:5px;background:#fbfcfb}.source-summary>b{font-size:13px}.source-points{margin:7px 0 0;padding-left:19px;color:#354148;font-size:13px;line-height:1.65}.source-points li+li{margin-top:4px}.kept-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(180px,1fr);gap:8px 14px;margin-top:10px}.kept-grid .detail{min-width:0}
+    .actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:5px;border:1px solid #aeb9b5;background:#fff;color:var(--ink);border-radius:4px;padding:6px 9px;text-decoration:none;cursor:pointer}.btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}.btn:hover{filter:brightness(.96)}
+    .detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;margin-top:10px}.detail{min-width:0}.detail b{font-size:12px;color:#4f5a60}.detail p{margin:2px 0 0}.detail.full{grid-column:1/-1}.ue{font-weight:750;color:#8f3924}
+    .no-results{display:none;text-align:center;color:var(--muted);padding:35px}
+    .footer{margin-top:28px;color:var(--muted);font-size:12px}.footer p{margin:5px 0}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.hero-badges{justify-content:flex-start}.kpis{grid-template-columns:repeat(2,1fr)}.rule-band{grid-template-columns:1fr}.list{grid-template-columns:1fr}}
+    @media(max-width:580px){.shell{padding:10px 9px 38px}.hero{padding:20px 16px}.hero h1{font-size:22px}.kpis{grid-template-columns:1fr 1fr}.kpi b{font-size:19px}.signal-wrap{overflow:auto}.signal-table{min-width:760px}.date-content,.slg-content{padding:0 9px 13px}.detail-grid,.kept-grid{grid-template-columns:1fr}.detail.full{grid-column:auto}.seg{width:100%;display:grid;grid-template-columns:repeat(5,1fr)}.seg button{padding:8px 3px;font-size:12px}.platform-select{width:100%}.market-shortcuts,.slg-market-shortcuts{grid-template-columns:repeat(3,minmax(0,1fr));padding:9px}.market-shortcuts-label{grid-column:1/-1}.market-shortcut,.slg-market-button{min-width:0;padding:6px 3px}.slg-block>summary{align-items:flex-start;flex-wrap:wrap}.item{padding:12px}.item-top{gap:7px}}
   </style>
 </head>
 <body>
@@ -16,133 +52,529 @@
   <header class="hero">
     <div>
       <h1>游戏创意雷达</h1>
-      <p>Three Kingdoms: Ice Age · 竖屏手机游戏买量热度监测 · 日本 / 港台</p>
+      <p>Three Kingdoms: Ice Age · 日本主市场 / 台湾与香港补充 · 2026-08-20</p>
     </div>
-    <div class="hero-meta"><span class="live">实时监测</span><span>快照 2026-08-21 10:00（北京时间）</span><span>只更新此榜单</span><span>非写实筛选</span></div>
+    <div class="hero-badges"><span>模拟经营优先</span><span>SLG 专项 18</span><span>非写实</span><span>具体来源直达</span><span>北京 10:00 完成</span></div>
   </header>
 
-  <section class="intro" aria-label="监测说明">
-    <h2>监测口径</h2>
-    <p>每小时检查日本、台湾、香港公开可访问的 Google Play、App Store、Meta Ad Library、TikTok、Instagram、YouTube 与游戏社区信号；北京时间 10:00 只更新本榜单，不再生成原来的 70 条日报。</p>
-    <div class="intro-grid">
-      <div><strong>热度指数</strong><span>公开互动、广告在库状态、商店更新和近期讨论的综合评分；不是平台原始播放量。</span></div>
-      <div><strong>趋势箭头</strong><span>相对上一个监测快照的公开信号变化；首次建立基线时按“新入榜/基线”显示。</span></div>
-      <div><strong>ROI / CPI</strong><span>平台不公开真实投放 KPI，统一显示“未公开”；不会用播放量或评分反推 ROAS。</span></div>
+  <section class="kpis" aria-label="今日摘要">
+    <div class="kpi"><b>42</b><span>买量创意 · 可直接立项</span></div>
+    <div class="kpi"><b>28</b><span>自然流量 · 近期视频</span></div>
+    <div class="kpi"><b>9</b><span>已核验来源平台</span></div>
+    <div class="kpi"><b>0–15%</b><span>UE 或真实录屏上限</span></div>
+  </section>
+
+  <h2>一、近期平台分发与内容信号</h2>
+  <div class="signal-wrap">
+    <table class="signal-table">
+      <thead><tr><th>信号</th><th>今日公开样本</th><th>创意结论</th><th>执行方式</th></tr></thead>
+      <tbody>
+        <tr><td>Meta 日本投放</td><td><a href="https://www.facebook.com/ads/library/?id=1760176685733678" target="_blank" rel="noopener">Township Mobile 广告 #1760176685733678</a>（2026-07-29 起投）与 <a href="https://www.facebook.com/ads/library/?id=1403789940813145" target="_blank" rel="noopener">Dream Hotel 广告 #1403789940813145</a>（仍可见）。</td><td>公开广告库能确认起投日和多版本状态，但不能当作 ROAS；“一个经营压力 + 设施结果”更值得拆。</td><td>开场只放温度、库存或房间需求一个红指标，8 秒内完成补救，最后给设施扩建反馈。</td></tr>
+        <tr><td>Google Play / App Store</td><td>今日新增日本、台湾、香港商店玩法页，覆盖 Township、Dream Hotel、Kairosoft、Pocket City 2、Coffee Inc 2 等；评分与评价量按实时商店页读取。</td><td>商店页是产品玩法信号，不代表广告素材表现；补货、排班、路线和空间规划仍是高频循环。</td><td>商店页只拆“输入—决策—反馈—扩建”，卡片按钮统一写“打开商店玩法页”。</td></tr>
+        <tr><td>Instagram Reels</td><td><a href="https://www.instagram.com/reel/Daf50pYIpDp/" target="_blank" rel="noopener">Roblox tycoon 五选</a>约 200+ 赞；<a href="https://www.instagram.com/reel/DbBOSvyu712/" target="_blank" rel="noopener">生产音乐 tycoon</a>约 2210+ 赞；<a href="https://www.instagram.com/reel/Da9pRERIgAE/" target="_blank" rel="noopener">E-Shop Tycoon demo 评测</a>约 7710+ 赞。</td><td>这些是结构样本，互动数字不等于买量转化；生产链、榜单和 demo 评测都能支持自然内容。</td><td>保留竖屏、单任务、快速结果，全部重绘为像素/纸雕，不使用写实录屏。</td></tr>
+        <tr><td>日本 YouTube</td><td>《おにぎり屋さんシミュレーター》约 435 万 / 10 个月；《寿司屋を経営する》约 99 万 / 2 个月；日本经营清单 9.2 万 / 2 个月。</td><td>单店经营、定价冲突和年份筛选都有公开观看信号；播放量不等于转化，但可作为创意关注度参考。</td><td>自然视频讲清规则，买量只演一个库存或价格冲突并给经营结果。</td></tr>
+        <tr><td>台湾 / 香港</td><td>台湾《Steam夏促史低必買·城市建造遊戲》约 6.9 万 / 1 个月；香港 TikTok 团队经营内容约 6750+ / 1 个月；香港本地开发者 Reel 约 180+ 赞 / 3 周。</td><td>港台样本分别有购买节点、团队资源分配和本地开发者语境，不能只把日本条目换字幕。</td><td>台湾强调“補貨/出貨/擴建”，香港测试“倉庫見底/人手分工”与轻粤语钩子。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>二、参考视频后的制作准绳</h2>
+  <section class="rule-band">
+    <div class="rule"><strong>保留的创意语法</strong><p>局部任务特写 → 2–3 次连续操作 → 资源进入下一工序 → 拉远看到设施或城镇升级。马厩参考里的“修蹄—清理—喂水—扩编”最接近可用结构。</p></div>
+    <div class="rule"><strong>明确删除</strong><p>写实动物/食物特写、真人手、电影感空镜、长世界观 CG、与经营结果无关的战斗，以及超过 15% 的基础 UE 操作。</p></div>
+    <div class="rule"><strong>AI 交付标准</strong><p>每条先产 1 张风格锚图、1 张场景俯视图、3–5 个道具与 2 个动作循环；镜头用首尾帧与局部重绘连接，UI 只做结果反馈。</p></div>
+  </section>
+
+  <div class="toolbar" aria-label="筛选工具">
+    <input id="search" class="search" type="search" placeholder="搜索玩法、游戏、风格或市场">
+    <select id="platformFilter" class="platform-select" aria-label="来源平台">
+      <option value="all">全部平台</option><option value="YouTube">YouTube</option><option value="Instagram">Instagram</option><option value="TikTok">TikTok</option><option value="Meta">Meta</option><option value="Threads">Threads</option><option value="Google Play">Google Play</option><option value="App Store">App Store</option>
+    </select>
+    <div class="seg" role="group" aria-label="内容类型">
+      <button class="active" data-filter="all">全部 152</button><button data-filter="paid">买量 82</button><button data-filter="organic">自然 52</button><button data-filter="slg">SLG 18</button><button data-filter="p0">只看 P0</button>
     </div>
-  </section>
+  </div>
+  <div class="platform-summary" aria-label="平台分布"><span>YouTube 51</span><span>TikTok 7</span><span>Google Play 10</span><span>App Store 7</span><span>Instagram 6</span><span>Meta 4</span><span>Steam 2</span><span>X 1</span></div>
 
-  <section class="kpis" aria-label="榜单摘要">
-    <div class="kpi"><b id="totalCount">20</b><span>当前榜单条目</span></div>
-    <div class="kpi"><b id="jpCount">10</b><span>日本地区</span></div>
-    <div class="kpi"><b id="twHkCount">10</b><span>港台地区（台湾 / 香港）</span></div>
-    <div class="kpi"><b>0–15%</b><span>建议保留的 UE / 真实录屏上限</span></div>
-  </section>
+  <details class="slg-block" open id="slg-2026-08-20">
+    <summary><span class="slg-chip">SLG 专项</span><b>2026-08-20 · 买量素材与核心玩法</b><span class="slg-meta">日本 10 · 台湾 4 · 香港 4</span></summary>
+    <p class="slg-intro">独立于模拟经营日报统计。重点观察资源争夺、行军路线、联盟集结、据点攻防、城建升级与生产运输；创意建议统一转为非写实、低录屏、可用 AI 重绘的表达。</p>
+    <nav class="slg-market-shortcuts" aria-label="按地区查看 SLG 专项">
+      <span class="market-shortcuts-label">直接查看地区 SLG</span>
+      <button class="slg-market-button" type="button" data-slg-market="JP" aria-pressed="false">日本 SLG 10</button>
+      <button class="slg-market-button" type="button" data-slg-market="TW" aria-pressed="false">台湾 SLG 4</button>
+      <button class="slg-market-button" type="button" data-slg-market="HK" aria-pressed="false">香港 SLG 4</button>
+    </nav>
+    <div class="slg-content">
+      <section class="slg-market" data-slg-region="JP">
+        <div class="market-title"><h3><span class="market-name">日本</span>SLG 主市场</h3><span class="market-total">10 条 · 9 视频 / 1 商店玩法页</span></div>
+        <div class="content-group"><div class="section-head"><span class="count paid">SLG 10</span><h4>近期素材与核心循环</h4></div><div id="jpSlgList_20260820" class="list"></div></div>
+      </section>
+      <section class="slg-market" data-slg-region="TW">
+        <div class="market-title"><h3><span class="market-name tw">台湾</span>SLG 地区内容</h3><span class="market-total">4 条 · 3 视频 / 1 商店玩法页</span></div>
+        <div class="content-group"><div class="section-head"><span class="count paid">SLG 4</span><h4>繁中策略玩法</h4></div><div id="twSlgList_20260820" class="list"></div></div>
+      </section>
+      <section class="slg-market" data-slg-region="HK">
+        <div class="market-title"><h3><span class="market-name hk">香港</span>SLG 地区内容</h3><span class="market-total">4 条 · 3 视频 / 1 商店玩法页</span></div>
+        <div class="content-group"><div class="section-head"><span class="count paid">SLG 4</span><h4>港服与粤语策略玩法</h4></div><div id="hkSlgList_20260820" class="list"></div></div>
+      </section>
+    </div>
+  </details>
 
-  <section class="toolbar" aria-label="榜单筛选">
-    <input id="search" class="search" type="search" placeholder="搜索产品、原视频标题、玩法或平台" autocomplete="off">
-    <div class="seg" role="group" aria-label="地区筛选"><button type="button" class="active" data-region-filter="ALL">全部地区</button><button type="button" data-region-filter="JP">日本</button><button type="button" data-region-filter="TW_HK">港台</button></div>
-    <select id="marketFilter" aria-label="港台细分地区"><option value="ALL">港台：全部</option><option value="TW">台湾</option><option value="HK">香港</option></select>
-    <select id="platformFilter" aria-label="平台筛选"><option value="ALL">全部平台</option><option>Meta</option><option>Google Play</option><option>App Store</option><option>YouTube</option><option>Instagram</option><option>TikTok</option></select>
-    <select id="visualFilter" aria-label="视觉筛选"><option value="NON_REAL">非写实（默认）</option><option value="pixel">像素 / 像素等距</option><option value="paper">纸雕 / 剪纸</option><option value="lowpoly">低多边形 / 体素</option><option value="woodblock">木版画像素</option></select>
-    <p class="filter-note">已排除：写实真人、写实动物/食物、电影感空镜、动画片/二次元包装、股票与金融题材。筛选不会改变监测原始记录。</p>
-  </section>
-  <div id="platformSummary" class="platform-summary" aria-live="polite"></div>
+  <details class="date-block" open id="date-2026-08-20">
+    <summary><span class="date-chip">2026-08-20</span><b>经营玩法与新作素材</b><span class="date-meta">日本 50 · 台湾 10 · 香港 10</span></summary>
+    <nav class="market-shortcuts" aria-label="按地区查看买量视频">
+      <span class="market-shortcuts-label">直接查看地区买量</span>
+      <button class="market-shortcut" type="button" data-market-filter="JP" aria-pressed="false">日本买量 30</button>
+      <button class="market-shortcut" type="button" data-market-filter="TW" aria-pressed="false">台湾买量 6</button>
+      <button class="market-shortcut" type="button" data-market-filter="HK" aria-pressed="false">香港买量 6</button>
+    </nav>
+    <div class="date-content">
+      <section class="market-section" data-region="JP">
+        <div class="market-title"><h3><span class="market-name">日本</span>主市场</h3><span class="market-total">50 条 · 买量 30 / 自然 20</span></div>
+        <div class="content-group"><div class="section-head"><span class="count paid">买量 30</span><h4>非写实模拟经营创意</h4></div><div id="jpPaidList_20260820" class="list"></div></div>
+        <div class="content-group"><div class="section-head"><span class="count organic">自然 20</span><h4>近期高动量内容</h4></div><div id="jpOrganicList_20260820" class="list"></div></div>
+      </section>
+      <section class="market-section" data-region="TW">
+        <div class="market-title"><h3><span class="market-name tw">台湾</span>地区内容</h3><span class="market-total">10 条 · 买量 6 / 自然 4</span></div>
+        <div class="content-group"><div class="section-head"><span class="count paid">买量 6</span><h4>繁中买量创意</h4></div><div id="twPaidList_20260820" class="list"></div></div>
+        <div class="content-group"><div class="section-head"><span class="count organic">自然 4</span><h4>台湾自然内容</h4></div><div id="twOrganicList_20260820" class="list"></div></div>
+      </section>
+      <section class="market-section" data-region="HK">
+        <div class="market-title"><h3><span class="market-name hk">香港</span>地区内容</h3><span class="market-total">10 条 · 买量 6 / 自然 4</span></div>
+        <div class="content-group"><div class="section-head"><span class="count paid">买量 6</span><h4>繁中买量创意</h4></div><div id="hkPaidList_20260820" class="list"></div></div>
+        <div class="content-group"><div class="section-head"><span class="count organic">自然 4</span><h4>香港自然内容</h4></div><div id="hkOrganicList_20260820" class="list"></div></div>
+      </section>
+    </div>
+  </details>
 
-  <section class="region-board jp" data-board="JP">
-    <div class="board-head"><div><h2>日本地区 · 竖屏买量热度 Top 10</h2><p>按日本区公开广告、商店与视频信号排序；素材风格已限定为像素、纸雕、低多边形或木版画像素。</p></div><div class="board-stats"><span class="jp-tag">买量 10</span><span>最近监测：10:00 JST</span><span>ROI/CPI：未公开</span></div></div>
-    <div class="rank-grid" id="jpRankList"></div><div class="empty" data-empty="JP">当前筛选下日本没有匹配条目。</div>
-  </section>
+  <details class="date-block">
+    <summary><span class="date-chip">2026-08-19</span><b>模拟经营专项</b><span class="date-meta">日本 44 · 台湾 10 · 香港 10</span></summary>
+    <nav class="market-shortcuts" aria-label="按地区查看买量视频">
+      <span class="market-shortcuts-label">直接查看地区买量</span>
+      <button class="market-shortcut" type="button" data-market-filter="JP" aria-pressed="false">日本买量 28</button>
+      <button class="market-shortcut" type="button" data-market-filter="HK" aria-pressed="false">香港买量 6</button>
+      <button class="market-shortcut" type="button" data-market-filter="TW" aria-pressed="false">台湾买量 6</button>
+    </nav>
+    <div class="date-content">
+      <section class="market-section" data-region="JP">
+        <div class="market-title"><h3><span class="market-name">日本</span>主市场</h3><span class="market-total">44 条 · 优先保证数量</span></div>
+        <div class="content-group"><div class="section-head"><span class="count paid">买量 28</span><h4>非写实模拟经营创意</h4></div><div id="jpPaidList" class="list"></div></div>
+        <div class="content-group"><div class="section-head"><span class="count organic">自然 16</span><h4>近期高动量内容与改法</h4></div><div id="jpOrganicList" class="list"></div></div>
+      </section>
+      <section class="market-section" data-region="TW">
+        <div class="market-title"><h3><span class="market-name tw">台湾</span>地区内容</h3><span class="market-total">10 条 · 买量 6 / 自然 4</span></div>
+        <div class="content-group"><div class="section-head"><span class="count paid">买量 6</span><h4>繁中买量创意与商店玩法证据</h4></div><div id="twPaidList" class="list"></div></div>
+        <div class="content-group"><div class="section-head"><span class="count organic">自然 4</span><h4>台湾自然内容</h4></div><div id="twOrganicList" class="list"></div></div>
+      </section>
+      <section class="market-section" data-region="HK">
+        <div class="market-title"><h3><span class="market-name hk">香港</span>地区内容</h3><span class="market-total">10 条 · 买量 6 / 自然 4</span></div>
+        <div class="content-group"><div class="section-head"><span class="count paid">买量 6</span><h4>香港买量创意与商店玩法证据</h4></div><div id="hkPaidList" class="list"></div></div>
+        <div class="content-group"><div class="section-head"><span class="count organic">自然 4</span><h4>香港自然内容</h4></div><div id="hkOrganicList" class="list"></div></div>
+      </section>
+      <div id="noResults" class="no-results">没有匹配内容。</div>
+    </div>
+  </details>
 
-  <section class="region-board tw-hk" data-board="TW_HK">
-    <div class="board-head"><div><h2>港台地区 · 竖屏买量热度 Top 10</h2><p>台湾、香港合并展示，卡片保留地区标签；港台公开广告库和社媒可能受登录墙或地区限制。</p></div><div class="board-stats"><span class="tw-tag">台湾 7</span><span class="hk-tag">香港 3</span><span>最近监测：10:00（北京时间）</span></div></div>
-    <div class="board-tabs" role="group" aria-label="港台细分查看"><button type="button" class="board-tab active" data-market="ALL">港台全部 10</button><button type="button" class="board-tab" data-market="TW">台湾 7</button><button type="button" class="board-tab" data-market="HK">香港 3</button></div>
-    <div class="rank-grid" id="twHkRankList"></div><div class="empty" data-empty="TW_HK">当前筛选下港台没有匹配条目。</div>
-  </section>
-
-  <footer class="footnote">
-    <p><strong>阅读规则：</strong>热度指数是研究用相对评分，不等于播放量、转化率或 ROAS；商店评分只代表产品信号，不代表买量素材表现。ROI、CPI 若平台或发行方未公开，页面不会猜测。</p>
-    <p><strong>访问限制：</strong>本轮 20 个来源中 17 个可直连核验；3 个 Meta Ad Library 广告因登录/地区限制无法在当前环境确认，保留具体广告 ID 并标注限制。Instagram、TikTok 也可能要求登录；按钮会打开具体广告/原帖，不用搜索页冒充正式来源。</p>
-    <p>本页面仅保留榜单日更；历史 70 条经营/SLG 日报不再注入首页。采集时间：2026-08-21 10:00（北京时间）。</p>
+  <footer class="footer">
+    <p>采集时间：2026-08-20（Asia/Shanghai）。播放、点赞、评分、评价量和广告活跃状态均为采集时平台公开值；任何单项都不等于广告转化。</p>
+    <p>本页已核验并收录 YouTube、Instagram、TikTok、Meta、Google Play、App Store、Steam、X 的具体条目。商店页只作玩法证据，并与视频/广告分开标注；地区标签表示建议投放或运营市场，不等同于素材发布账号所在地。部分平台受登录墙、地区或动态加载限制，页面仅记录可直接打开的具体来源，不对无法稳定读取的数字做推测。</p>
   </footer>
 </main>
+
 <script>
-const rankData = [
-  {rank:1,region:'JP',market:'JP',platform:'Meta',sourceKind:'ad',product:'Whiteout Survival',title:'Whiteout Survival — Ad #2287178538489217',url:'https://www.facebook.com/ads/library/?id=2287178538489217',heat:91,trend:'up',delta:'+4',visual:'pixel',visualLabel:'像素剖面',signal:'Meta Ad Library 具体广告 ID；日本区在库状态可复核，广告存在多个版本。',points:['温度、饥饿与人员工作状态同时变化。','连续操作后回到设施点亮和城镇反馈。'],creative:'改成像素冰河驿站：只保留“燃料分配→热汤生产→居民复工→扩建”四步，结尾用 2D 城镇扩张承接。',ue:'0–5%'},
-  {rank:2,region:'JP',market:'JP',platform:'Meta',sourceKind:'ad',product:'Whiteout Survival',title:'Whiteout Survival — Ad #1021776857205624',url:'https://www.facebook.com/ads/library/?id=1021776857205624',heat:88,trend:'up',delta:'+2',visual:'paper',visualLabel:'纸雕地图',signal:'Meta Ad Library 具体广告 ID；日本区起投/版本信息需以广告库当前页面为准。',points:['资源点同时告急，玩家必须删掉一条路线。','路线受暴雪阻断后，改道与入库反馈清楚。'],creative:'用纸雕地图和 2D 路线动画表现商队调度；不使用写实雪景，重点是路线、库存和回款的连续反馈。',ue:'0%'},
-  {rank:3,region:'JP',market:'JP',platform:'Google Play',sourceKind:'store',product:'My Convenience Store',title:'My Convenience Store',url:'https://play.google.com/store/apps/details?id=com.funple.game.mycon.g&hl=ja',heat:84,trend:'up',delta:'+3',visual:'pixel',visualLabel:'像素俯视',signal:'Google Play 日本商品页；补货、货架、客流和门店升级是可核验的玩法信号。',points:['单店补货与顾客需求形成短循环。','商品上架后通过店面扩建承接长期成长。'],creative:'重绘为雪夜补给铺：三格库存只够补两类物资，用“缺货→补货→排队缩短→解锁后仓”做竖屏闭环。',ue:'0%'},
-  {rank:4,region:'JP',market:'JP',platform:'Google Play',sourceKind:'store',product:'Rent Please! Landlord Sim',title:'Rent Please! Landlord Sim',url:'https://play.google.com/store/apps/details?id=com.shimmergames.tenants.gp&hl=ja',heat:82,trend:'flat',delta:'→ 0',visual:'paper',visualLabel:'纸雕剖面',signal:'Google Play 日本商品页；租客需求、房间设施和收租循环可直接核验。',points:['住客需求与房间状态同屏，决策目标明确。','设施投入会反馈到满意度和租金。'],creative:'做成纸雕客栈剖面：先修漏风窗还是先加炉火，用单房间状态变化带出整层扩建。',ue:'0–5%'},
-  {rank:5,region:'JP',market:'JP',platform:'App Store',sourceKind:'store',product:'経営シミュレーション：起業',title:'経営シミュレーション：起業',url:'https://apps.apple.com/jp/app/%E7%B5%8C%E5%96%B6%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3-%E8%B5%B7%E6%A5%AD/id6761575000',heat:79,trend:'up',delta:'+1',visual:'lowpoly',visualLabel:'低多边形看板',signal:'App Store 日本具体商品页；新作经营决策信号，商品页玩法可复核。',points:['第一笔资金在招人和买机器之间取舍。','生产速度、订单和现金流即时反馈。'],creative:'改成雪城小作坊：用低多边形工坊和 2D 决策卡表现“岗位还是设备”，让现金流结果在 15 秒内出现。',ue:'0%'},
-  {rank:6,region:'JP',market:'JP',platform:'App Store',sourceKind:'store',product:'バー経営物語',title:'バー経営物語',url:'https://apps.apple.com/jp/app/%E3%83%90%E3%83%BC%E7%B5%8C%E5%96%B6%E7%89%A9%E8%AA%9E/id6780888458',heat:77,trend:'flat',delta:'→ 0',visual:'woodblock',visualLabel:'木版画像素',signal:'App Store 日本具体商品页；库存、价格和客流的经营信号可复核。',points:['价格牌、库存和客流形成当晚结算。','下一天进货把一次经营结果带回循环。'],creative:'不拍写实食物，改成木版画热汤铺：价格、库存、排队三项只显示一项冲突，最后给扩座反馈。',ue:'0%'},
-  {rank:7,region:'JP',market:'JP',platform:'YouTube',sourceKind:'video',product:'TCG Card Shop Simulator',title:'TCG Card Shop Simulator',url:'https://www.youtube.com/watch?v=GyRGipDUZrQ',heat:75,trend:'down',delta:'-1',visual:'lowpoly',visualLabel:'低多边形店铺',signal:'公开视频/玩法素材样本；原视频链接可打开，播放量需以平台当前页面核验。',points:['上架、定价、补货和客流反馈集中在店内。','稀有订单让“卖不卖”成为即时冲突。'],creative:'改为军令牌铺：低多边形柜台中只放一个稀有订单，先鉴定再定价，扩柜作为结尾结果。',ue:'0–5%'},
-  {rank:8,region:'JP',market:'JP',platform:'YouTube',sourceKind:'video',product:'Go-Go Town!',title:'Go-Go Town!',url:'https://www.youtube.com/watch?v=djNGVJBQMgM',heat:73,trend:'flat',delta:'→ 0',visual:'lowpoly',visualLabel:'低多边形小镇',signal:'公开视频/玩法素材样本；原视频链接可打开，公开互动数字不稳定时不推测。',points:['运输堵塞会直接影响店铺和仓库。','调整路线后，客流和供给同时恢复。'],creative:'改成低多边形冰河驿路：只演“堵车→临时仓→路线重排→街区扩建”，不要真实雪景和写实车辆。',ue:'0%'},
-  {rank:9,region:'JP',market:'JP',platform:'YouTube',sourceKind:'video',product:'inKONBINI',title:'inKONBINI',url:'https://www.youtube.com/watch?v=Ft0IuX3sxNI',heat:71,trend:'down',delta:'-2',visual:'woodblock',visualLabel:'木版画像素',signal:'公开视频/玩法素材样本；原视频链接可打开，信号只作为创意观察。',points:['补货、服务和排队在小空间内连续发生。','门店结果通过顾客反馈和收银数字回传。'],creative:'改成木版画雪夜杂货铺：热汤、草料、火把缺一不可，服务顺序决定下一格仓库是否解锁。',ue:'0–5%'},
-  {rank:10,region:'JP',market:'JP',platform:'YouTube',sourceKind:'video',product:'Tiny Bookshop',title:'Tiny Bookshop',url:'https://www.youtube.com/watch?v=7pRTcbsuTV4',heat:69,trend:'up',delta:'+2',visual:'pixel',visualLabel:'像素移动商店',signal:'公开视频/玩法素材样本；原视频链接可打开，标题与玩法可核验。',points:['移动店铺用有限容量回应顾客需求。','选品和剩余库存会影响下一站经营。'],creative:'做像素移动兵书铺：天气只改变需求，不做治愈动画；用“装六本→卖错→折价→换路线”表现经营判断。',ue:'0%'} ,
-  {rank:1,region:'TW_HK',market:'TW',platform:'Meta',sourceKind:'ad',product:'Dream Hotel: Hotel Manager Simulation Game',title:'Dream Hotel: Hotel Manager Simulation Game — Ad #27700060929635743',url:'https://www.facebook.com/ads/library/?id=27700060929635743',heat:86,trend:'up',delta:'+3',visual:'paper',visualLabel:'纸雕酒店剖面',signal:'Meta Ad Library 台湾可核验广告 ID；广告状态与版本以当前广告库为准。',points:['房间升级、员工分工和服务结果连成一条链。','客人需求是单一任务，容易做成竖屏冲突。'],creative:'改成纸雕雪城客栈：先摆床还是先修炉火，选择后让入住、收租、扩层连续反馈。',ue:'0–5%'},
-  {rank:2,region:'TW_HK',market:'TW',platform:'TikTok',sourceKind:'video',product:'Tabletop Game Shop Simulator',title:'Tabletop Game Shop Simulator Just Got A Massive Upgrade ...',url:'https://www.tiktok.com/@skytzsy/video/7644952325588667666',heat:83,trend:'up',delta:'+4',visual:'lowpoly',visualLabel:'低多边形商店',signal:'TikTok 台湾具体视频入口；观看与互动以页面当前公开数字为准。',points:['升级前后对照让货架、补货、客流变化可见。','同一店铺状态适合做前后帧和版本对比。'],creative:'改成低多边形军令牌铺：A 面先爆单后缺货，B 面先重排货架再接单，结尾统一给第二排柜台。',ue:'0%'},
-  {rank:3,region:'TW_HK',market:'TW',platform:'Instagram',sourceKind:'video',product:'Ramen Shop Simulator',title:'一锅清汤变成爆单拉面摊',url:'https://www.instagram.com/reel/DZos0HkgQPE/',heat:80,trend:'up',delta:'+2',visual:'pixel',visualLabel:'像素摊位',signal:'Instagram Reels 台湾具体链接；赞数/评论需以当前页面为准，不能反推 CPI。',points:['一锅基础产出经过选择后快速变成订单。','补桌和扩摊把短视频结果带到长期成长。'],creative:'用像素雪夜热汤铺替换写实食物：先给单锅产能，再让玩家在“补料/扩座”二选一。',ue:'0%'},
-  {rank:4,region:'TW_HK',market:'TW',platform:'Google Play',sourceKind:'store',product:'Sim Companies',title:'Sim Companies',url:'https://play.google.com/store/apps/details?id=com.simcompanies.simcompaniespwa&hl=zh_TW',heat:78,trend:'flat',delta:'→ 0',visual:'woodblock',visualLabel:'木版画生产链',signal:'Google Play 台湾商品页；生产链、运输和订单玩法可复核。',points:['原料、加工、运输和订单一条链可视化。','缺口定位比战斗镜头更适合做玩法广告。'],creative:'改成木版画军需作坊：箭头只指向一个断点，修通运输后立刻结算库存和扩建费用。',ue:'≤5%'},
-  {rank:5,region:'TW_HK',market:'TW',platform:'App Store',sourceKind:'store',product:'Airline Manager 2026',title:'Airline Manager 2026',url:'https://apps.apple.com/tw/app/airline-manager-2026/id1487669805',heat:76,trend:'up',delta:'+1',visual:'lowpoly',visualLabel:'低多边形路线图',signal:'App Store 台湾具体商品页；航线、机队和现金流是可核验的经营信号。',points:['短航线和高收益路线形成直观取舍。','运输到达与现金流回款能做连续反馈。'],creative:'改成低多边形商队路线：只能派一辆车，玩家在补给安全和回款速度之间选择。',ue:'0%'},
-  {rank:6,region:'TW_HK',market:'TW',platform:'YouTube',sourceKind:'video',product:'三國：謀定天下',title:'2026必玩SLG大作！《三國：謀定天下》超詳細攻城解析攻略',url:'https://www.youtube.com/watch?v=06V4oBZSYp0',heat:74,trend:'down',delta:'-1',visual:'paper',visualLabel:'纸雕攻城地图',signal:'台湾繁中公开视频；核心玩法可核验，播放/评论需以平台当前页为准。',points:['攻城前的队伍、资源和路线决策是主要内容。','结果反馈落在据点与资源变化，而非单纯战斗。'],creative:'只保留纸雕路线和资源条：先画进军路径，再用一次据点占领反馈引出冰河运输扩建，删掉角色卡面堆叠。',ue:'0–10%'},
-  {rank:7,region:'TW_HK',market:'TW',platform:'Instagram',sourceKind:'video',product:'PlayStation Taiwan',title:'PlayStation Taiwan：用一段 Reels 只讲一个可玩动作',url:'https://www.instagram.com/reel/DaPokVLyU7n/',heat:70,trend:'flat',delta:'→ 0',visual:'pixel',visualLabel:'像素动作拆解',signal:'台湾官方账号具体 Reel；互动数字以当前公开页为准。',points:['短片只讲一个动作，不堆完整功能。','结尾用问题引导评论和二次传播。'],creative:'做繁中“先修炉火还是先补货？”像素二选一，评论票数再决定下一条买量版本。',ue:'0%'},
-  {rank:8,region:'TW_HK',market:'HK',platform:'TikTok',sourceKind:'video',product:'港味小舖',title:'體驗經營港味小舖，從製作點心到招待客人，樂趣一手掌握',url:'https://www.tiktok.com/@mrgamerloveu_/video/7552853432214801678',heat:81,trend:'up',delta:'+5',visual:'pixel',visualLabel:'像素店务',signal:'香港语境 TikTok 具体视频；公开观看数/互动以当前页面为准。',points:['制作、招待、收银连续发生，地方语境清楚。','服务流程比角色剧情更容易转成竖屏买量。'],creative:'改成像素冰河驿站热汤铺，使用轻粤语问题句，主画面仍是库存、服务和扩店，不做写实食物。',ue:'0%'},
-  {rank:9,region:'TW_HK',market:'HK',platform:'Instagram',sourceKind:'video',product:'Plant Shop Simulator',title:'一格窗台如何变成满店绿植',url:'https://www.instagram.com/reel/DbetRgcAl2f/',heat:68,trend:'up',delta:'+2',visual:'lowpoly',visualLabel:'低多边形货架',signal:'香港 Instagram 具体 Reel；新近结构样本，互动数字以当前页面为准。',points:['有限空间内培育、陈列、出售形成闭环。','从空店到满店的状态变化适合前后帧。'],creative:'改成低多边形药草铺：先培育一格药草，再决定扩货架或扩仓库，去掉治愈包装。',ue:'0%'},
-  {rank:10,region:'TW_HK',market:'HK',platform:'TikTok',sourceKind:'video',product:'Paralives',title:'小屋第一天：只够先盖厨房或卧室',url:'https://www.tiktok.com/@gameshort_tt/video/7637028867122793749',heat:66,trend:'down',delta:'-2',visual:'paper',visualLabel:'纸雕剖面屋',signal:'香港可访问的 TikTok 具体视频入口；公开互动数字需实时复核。',points:['有限预算下的空间规划形成即时选择。','住客需求变化推动第二间房的扩建。'],creative:'改成纸雕雪城客栈：厨房和床位只留一个选择，结束时用入住率和第二层解锁给出回报。',ue:'0–5%'}
+const paid = [
+  {id:1,market:'JP',priority:'P0',style:'像素等距',title:'猫工坊罢工：先发工资还是先修机器？',game:'MeowFactory / 马厩参考',url:'https://www.youtube.com/watch?v=oae5OPq3NIA',video:'oae5OPq3NIA',signal:'日本实况约 8,056 播放 · 17 小时前',hook:'0–2 秒：三名工匠集体坐下，订单倒计时继续走。',beats:'2–6 秒拖粮饷给工人；6–11 秒修水槽和工作台；11–18 秒恢复生产；18–22 秒订单装车，拉远看到马厩扩建。',ai:'像素角色表情表 + 两段循环动作 + 首尾帧扩建；数值/UI 后期合成。',assets:'工坊 1、工匠 3、马 2、工作台/水槽/粮袋/订单牌。',ab:'A 生气罢工；B 体力归零。A 像素；B 黏土。',adapt:'不强调战争，做“马厩经营日”。顾客是商队和驿使，满意度影响订单。',ue:'0–10%'},
+  {id:2,market:'JP',priority:'P0',style:'低多边形',title:'军令牌铺：抽到稀有订单要不要高价卖？',game:'TCG Card Shop Simulator',url:'https://www.youtube.com/watch?v=GyRGipDUZrQ',video:'GyRGipDUZrQ',signal:'1.0 预告约 14 万播放 · 3 天前',hook:'0–2 秒撕开封套，金色“紧急军令”闪出。',beats:'抽令牌→估价→摆上货架→客人砍价→卖出后解锁第二排柜台；每步 2–3 秒。',ai:'统一低多边形店铺，令牌用 2D 插画；手部只做卡通手套，不用真人手。',assets:'柜台、货架、6 张令牌、3 类顾客、金币/声望 UI。',ab:'A 抽稀有；B 抽赝品。A 先定价；B 先鉴定。',adapt:'改成驿站里的军令/地图铺，玩法重点是鉴定、定价、陈列、补货。',ue:'0–5%'},
+  {id:3,market:'JP',priority:'P0',style:'体素像素',title:'空地 20 秒变成驿站街',game:'Town to City',url:'https://www.youtube.com/watch?v=eOKb2R3GBNE',video:'eOKb2R3GBNE',signal:'1.0 Launch 约 3.6 万播放 · 2 个月前',hook:'荒地中央只有一根路标，第一位旅人停下。',beats:'铺路→摆马槽→建客栈→摊位开张→夜灯点亮→镜头拉高显示完整街区。',ai:'同一俯视机位做 6 个阶段首尾帧，遮罩增量生成建筑；粒子和人流后期叠加。',assets:'空地、道路、马槽、客栈、摊位、灯笼、人群循环。',ab:'A 自由摆放；B 三选一。A 白天变夜晚；B 暴雪转晴。',adapt:'以“驿站经营”代替主城 UE，最后仅用 2 秒真实城建界面承接。',ue:'≤10%'},
+  {id:4,market:'JP',priority:'P1',style:'黏土定格',title:'全镇都堵在一座桥：你会怎么排货车？',game:'Go-Go Town!',url:'https://www.youtube.com/watch?v=djNGVJBQMgM',video:'djNGVJBQMgM',signal:'Launch Trailer 约 9,726 播放 · 1 个月前',hook:'六辆小货车挤在独木桥，最后一车粮开始冒雪。',beats:'拖走空车→设单行标牌→工人接力卸货→桥边开临时仓→车流恢复。',ai:'黏土材质小镇与循环车流；堵车/通畅两版镜头共机位生成。',assets:'桥、货车 6、仓库、路牌、工人 4、粮箱。',ab:'A 交通堵塞；B 仓库爆仓。A 拖拽；B 点选路线。',adapt:'改为冰河驿路调度，经营逻辑比战斗更前置。',ue:'0%'},
+  {id:5,market:'JP',priority:'P0',style:'赛璐璐',title:'雪夜便利驿：30 秒服务 8 位客人',game:'inKONBINI',url:'https://www.youtube.com/watch?v=Ft0IuX3sxNI',video:'Ft0IuX3sxNI',signal:'Gameplay Trailer 约 1.4 万播放 · 3 个月前',hook:'门铃连响三次，热汤、草料、地图同时缺货。',beats:'补热汤→称草料→找地图→客人表情反馈→收银→店外排队变短。',ai:'日系赛璐璐角色立绘 + 俯视店内背景 + 5 个局部动作；避免真实便利店质感。',assets:'柜台、货架、热汤锅、草料、地图、客人 8、表情 3 套。',ab:'A 高峰排队；B 神秘客差评。A 无旁白；B 日语店员独白。',adapt:'做成“雪夜驿站杂货铺”，商品与三冰资源真实对应。',ue:'0–5%'},
+  {id:6,market:'JP',priority:'P0',style:'像素近景',title:'书店一日爆单：只剩一本兵法该卖给谁？',game:'Bookshop Simulator / Tiny Bookshop',url:'https://www.youtube.com/watch?v=7pRTcbsuTV4',video:'7pRTcbsuTV4',signal:'Mobile Launch Trailer 约 2,420 播放 · 3 周前',hook:'两名客人同时伸手拿最后一本兵法。',beats:'看需求气泡→选择顾客→盖章收银→补货失败→用旧书修复合成新版→满意度提升。',ai:'像素书页与赛璐璐顾客混合；只生成手部剪影，不用写实手。',assets:'书架、兵法书 6、印章、两名顾客、需求气泡、满意度。',ab:'A 卖给富商；B 卖给穷学徒。A 先冲突；B 先展示稀缺。',adapt:'改为“兵书铺/地图铺”，让选择真正改变声望与金币。',ue:'0%'},
+  {id:7,market:'JP',priority:'P0',style:'卡通低模',title:'从一间小铺到整条商街，只靠第一笔订单',game:'Big Ambitions',url:'https://www.youtube.com/watch?v=4OLiFPnYgJw',video:'4OLiFPnYgJw',signal:'1.0 预告约 5.8 万播放 · 4 天前',hook:'桌上只有 10 枚铜钱和一张欠款单。',beats:'买材料→做首单→雇一人→租隔壁→开第二铺→俯视商街出现配送路线。',ai:'卡通低模固定角色；店铺扩张用模块增量；钱币与订单做动效。',assets:'小铺 3 阶段、主角、员工、货箱、欠款单、路线图。',ab:'A 欠债开局；B 破店开局。A 赚钱速度；B 顾客数量。',adapt:'不局限三国叙事，核心就是“穷店翻身”的经营爽感。',ue:'≤5%'},
+  {id:8,market:'JP',priority:'P1',style:'纸雕模型',title:'一条商路救活五个作坊',game:'A列車で行こう9 Evolution',url:'https://www.youtube.com/watch?v=WeSdn6eMAHk',video:'WeSdn6eMAHk',signal:'官方 Teaser 约 50 万播放 · 6 个月前',hook:'五座作坊同时亮红灯：原料 0。',beats:'画一条驿路线→马车出发→木坊/铁坊/布坊依次恢复→市场开门→税收上涨。',ai:'纸雕等距地图，路线用 2D 动线；作坊开/关两状态批量生成。',assets:'地图、驿路、马车、作坊 5、市场、资源图标。',ab:'A 最短路线；B 经过更多村落。A 纸雕；B 像素。',adapt:'借交通经营，不借现代铁路；改为三冰商队和驿站网络。',ue:'≤10%'},
+  {id:9,market:'JP',priority:'P1',style:'木版画像素',title:'货到了，为什么市场还是空的？',game:'A列車で行こう9 Evolution',url:'https://www.youtube.com/watch?v=8PMRnDuGk4Y',video:'8PMRnDuGk4Y',signal:'官方介绍约 12 万播放 · 2 个月前',hook:'粮车进城，摊位却全部关门。',beats:'检查仓库→发现搬运工不足→重新排班→开城门→货物流入市场→人流恢复。',ai:'木版画纹理覆盖像素地图；角色动作只需搬、走、开门三循环。',assets:'城门、仓库、市场、粮车、搬运工、排班板。',ab:'A 工人不足；B 道路堵塞。A 红色警报；B 顾客抱怨。',adapt:'把系统问题做成可见经营故障，而不是用 UI 长解释。',ue:'≤10%'},
+  {id:10,market:'JP',priority:'P1',style:'低模昼夜',title:'同一座小城，白天赚钱还是夜里保暖？',game:'A列車で行こう9 Evolution',url:'https://www.youtube.com/watch?v=GWNxHBBd_QE',video:'GWNxHBBd_QE',signal:'官方 Opening 约 13 万播放 · 3 个月前',hook:'太阳落下，店铺收入停止，炉火温度也下降。',beats:'白天分配商队→傍晚收摊→夜间补煤→次日升级仓库→循环对比收益。',ai:'同一低模场景生成昼/夕/夜三版，人物用剪影循环，减少一致性压力。',assets:'小城、店铺、炉火、煤车、昼夜天空、收益/温度 UI。',ab:'A 先赚钱；B 先囤煤。A 一天循环；B 三天加速。',adapt:'将昼夜变成经营节拍，避免战斗镜头。',ue:'≤5%'},
+  {id:11,market:'JP',priority:'P1',style:'彩色积木',title:'盐场、鱼市、客栈：先修哪个才能不断粮？',game:'Tropico 7',url:'https://www.youtube.com/watch?v=OzXbPExj4uU',video:'OzXbPExj4uU',signal:'Gameplay Teaser 约 3.6 万播放 · 3 个月前',hook:'三个设施上方同时出现“缺货”。',beats:'选择盐场→腌鱼产出→鱼市开摊→客栈来客→金币回流修第二设施。',ai:'彩色积木式建筑模块，资源流用实体小图标沿路径移动。',assets:'盐场、鱼市、客栈、鱼/盐/金币、工人 4。',ab:'A 盐场优先；B 客栈优先。A 资源流；B 顾客流。',adapt:'借生产链而不是政治题材；结果必须在 15 秒内闭环。',ue:'0%'},
+  {id:12,market:'JP',priority:'P1',style:'像素沙盘',title:'一间杂货铺如何改变整条街？',game:'Cities: Skylines Remastered JP',url:'https://www.youtube.com/watch?v=Tb8PLcfT8Z0',video:'Tb8PLcfT8Z0',signal:'涩谷商店街预告约 1.2 万播放 · 9 天前',hook:'空街上第一间铺子亮灯，三个居民立刻改道。',beats:'摆店→客流出现→新增摊位→道路拥堵→加侧巷→整街繁荣。',ai:'像素沙盘锁定俯视机位，居民用粒子人群；街道模块增量生成。',assets:'街道、商铺 5、居民群、侧巷、灯牌、客流线。',ab:'A 先店铺；B 先道路。A 人流热力；B 金币热力。',adapt:'做“商业街经营”而非大地图城建，UE 只负责落地页承接。',ue:'≤10%'},
+  {id:13,market:'JP',priority:'P1',style:'赛璐璐沙盘',title:'暴雪前 60 秒，商店街要关哪三家？',game:'Cities: Skylines Remastered JP',url:'https://www.youtube.com/watch?v=W_BR-2ZaBb0',video:'W_BR-2ZaBb0',signal:'日本特别版预告约 2.5 万播放 · 1 个月前',hook:'暴雪倒计时出现，五家店都在耗煤。',beats:'看库存→关闭低收益店→集中燃料→核心店继续服务→暴雪后全街复工。',ai:'赛璐璐等距街区，风雪和灯光后期；关闭/营业两套状态。',assets:'街区、店铺 5、煤箱、顾客、风雪、计时器。',ab:'A 玩家主动关店；B 系统随机断供。A 60 秒；B 3 天。',adapt:'经营取舍是主角，寒灾只是压力变量。',ue:'≤10%'},
+  {id:14,market:'JP',priority:'P1',style:'像素体育经理',title:'预算只够签一人：掌柜、马夫还是厨师？',game:'サカつく2026',url:'https://www.youtube.com/watch?v=F5kA9MrjyE0',video:'F5kA9MrjyE0',signal:'官方“俱乐部篇”约 2.6 万播放 · 8 个月前',hook:'三张雇员卡落桌，预算只能点一张。',beats:'选员工→岗位上岗→顾客/马匹/菜品数据变化→一周结算→出现意外副作用。',ai:'像素员工卡 + 等距设施；用三套结果镜头复用主场景。',assets:'员工卡 3、店铺/马厩/厨房、周报 UI、顾客。',ab:'A 三选一；B 高薪全能员工。A 立即结果；B 七日后结果。',adapt:'把武将强度改成岗位经营能力，减少传统 SLG 卡面感。',ue:'≤10%'},
+  {id:15,market:'JP',priority:'P1',style:'低模地图',title:'小驿站怎样做成跨城连锁？',game:'サカつく2026',url:'https://www.youtube.com/watch?v=5cG0BsS-1lk',video:'5cG0BsS-1lk',signal:'官方“世界篇”约 2.7 万播放 · 7 个月前',hook:'地图只有一个发光点，订单却来自三座远城。',beats:'完成本地订单→声望满格→选第二城→复制核心设施→两城共享商队→地图点亮。',ai:'低模地图和模块化店铺；转场靠地图推进，不需要写实旅行镜头。',assets:'地图、城点 4、驿站两套、商队、声望条。',ab:'A 向北扩张；B 沿河扩张。A 声望门槛；B 利润门槛。',adapt:'借“俱乐部成长”结构，改成驿站连锁经营。',ue:'≤5%'},
+  {id:16,market:'JP',priority:'P1',style:'纸片角色',title:'排错一班人，客栈整晚都会乱',game:'サカつく2026',url:'https://www.youtube.com/watch?v=FEFLlp6SmNo',video:'FEFLlp6SmNo',signal:'官方“团队篇”约 1.6 万播放 · 8 个月前',hook:'厨师被排去喂马，马夫站在前台发呆。',beats:'错误排班→连续出错→拖动换岗→动作恢复→顾客评价翻绿。',ai:'纸片角色头大身小但不幼态；三种职业用工具和轮廓区分。',assets:'前台、厨房、马厩、员工 3、错误/正确动作、评价星。',ab:'A 一眼找错；B 逐个试岗。A 搞笑；B 紧张倒计时。',adapt:'最适合自然评论互动，也可做可试玩广告。',ue:'0%'},
+  {id:17,market:'JP',priority:'P1',style:'水彩像素',title:'雨天书车：今天带兵书还是菜谱？',game:'Tiny Bookshop',url:'https://www.youtube.com/watch?v=C_6FRDWyuZM',video:'C_6FRDWyuZM',signal:'Mobile Announcement 约 1,482 播放 · 1 个月前',hook:'天气预报“雨”，书车只能装 6 本。',beats:'选择库存→到达村口→客群出现→两类书销量差异→剩余库存折价→第二天调整。',ai:'水彩背景 + 像素物件；天气层、顾客层、书本层可独立生成。',assets:'书车、书 8、本地村口、顾客 4、雨层、销量 UI。',ab:'A 天气决定需求；B 节日决定需求。A 兵书/菜谱；B 地图/药书。',adapt:'做移动商队经营，弱化三国标签也能成立。',ue:'0%'},
+  {id:18,market:'JP',priority:'P1',style:'黏土小镇',title:'旅店冬季改造：一晚多住 6 个客人',game:'Hotel Galactic',url:'https://www.youtube.com/watch?v=kqGV8rP-44Y',video:'kqGV8rP-44Y',signal:'冬季改造视频约 6,324 播放 · 8 个月前',hook:'门外排着六人，店内只有两张床。',beats:'拆仓房→铺床→加炉火→客人入住→早餐流水线→收益翻倍。',ai:'黏土材质、固定剖面机位；房间模块用遮罩增删。',assets:'客栈剖面、床 8、炉火、早餐桌、客人、收益牌。',ab:'A 扩床位；B 提升单价。A 满房；B 差评危机。',adapt:'完全以客栈经营为主，结尾才露出冰河世界。',ue:'0–5%'},
+  {id:19,market:'JP',priority:'P1',style:'像素经理',title:'三场比赛之外：真正好看的其实是后台经营',game:'ぼくのプロ野球',url:'https://www.youtube.com/watch?v=dKt6kI49MsY',video:'dKt6kI49MsY',signal:'介绍 PV 约 7,554 播放 · 3 天前',hook:'胜率 20%，但问题不是队员，而是补给店亏损。',beats:'看周报→砍掉滞销品→调整训练/休息→士气上升→下一场结果跳变。',ai:'像素周报、员工卡和训练场；比赛只用 1 秒图标结算。',assets:'周报、补给店、训练场、员工 4、士气/利润 UI。',ab:'A 先经营后胜利；B 先惨败再复盘。A 数据派；B 剧情派。',adapt:'把战斗压成结算，把资源、人岗、后勤作为主体。',ue:'≤5%'},
+  {id:20,market:'HK',priority:'P1',style:'剪纸低模',title:'同一间驿站，日文与繁中不是只换字幕',game:'Go-Go Town! / Town to City',url:'https://www.youtube.com/watch?v=6XqJOvzNX_w',video:'6XqJOvzNX_w',signal:'Release Date Trailer 约 1.5 万播放 · 2 个月前',hook:'A 面日区：深夜最后一位客人；B 面繁中：连续爆单仓库见底。',beats:'同一资产做两套开场；中段共用补货/服务/扩店；结尾分别强调细节完成感与效率爽感。',ai:'同一剪纸低模资产，替换人物表情、字幕密度和结果 UI。',assets:'驿站、顾客 6、库存架、货箱、两套字幕与 UI。',ab:'A 日本“丁寧な店づくり”；B 港台“爆单翻倍”。',adapt:'用同一经营玩法做真正不同的市场叙事，控制制作成本。',ue:'0%'},
+  {id:21,market:'JP',priority:'P0',platform:'Google Play',sourceKind:'store',style:'像素俯视',title:'暴雪便利驿：八种货只够补三格',game:'My Convenience Store',url:'https://play.google.com/store/apps/details?id=com.funple.game.mycon.g&hl=ja',signal:'Google Play 日区 3.6 分、约 6,350 条评价 · 2026-04-23 更新',hook:'门外排起队，热汤、草料、火把三个货架同时亮红。',beats:'扫一眼需求气泡→只选三箱补货→拖到货架→顾客分流→收银数字跳升→解锁后仓。',ai:'像素俯视店铺做缺货/满货两套状态，顾客用 4 帧循环；补货箱和数字 UI 后期叠加。',assets:'便利驿、货架 8、货箱 6、顾客 5、需求气泡、收银 UI。',ab:'A 三选一补货；B 自动补货但资金不足。A 先缺货；B 先排队。',adapt:'改成雪夜驿站补给铺，商品直接对应木材、药草、草料、火把；不出现现代便利店。',ue:'0%'},
+  {id:22,market:'JP',priority:'P0',platform:'Google Play',sourceKind:'store',style:'纸雕剖面',title:'客栈房东：先修漏风窗还是先涨房租？',game:'Rent Please! Landlord Sim',url:'https://play.google.com/store/apps/details?id=com.shimmergames.tenants.gp&hl=ja',signal:'Google Play 日区 4.4 分、约 38.8 万条评价 · 2026-08-08 更新',hook:'三间房同时冒出“冷”，金币只够修一间。',beats:'查看住客需求→选房修窗→温度回升→收租→用租金加炉火→整层满意度翻绿。',ai:'纸雕客栈剖面固定机位，房间做冷/暖状态替换；住客只做走动、发抖、入睡三套循环。',assets:'三层客栈、房间 6、住客 6、窗/炉火模块、金币与满意度 UI。',ab:'A 修设施；B 降租安抚。A 单间特写；B 整层剖面。',adapt:'只借“需求—租金—升级”循环，角色和包装改成中性、克制的雪城住客管理。',ue:'0–5%'},
+  {id:23,market:'TW',priority:'P1',platform:'Google Play',sourceKind:'store',style:'木版画像素',title:'一张订单卡住六座作坊：到底缺在哪一步？',game:'Sim Companies',url:'https://play.google.com/store/apps/details?id=com.simcompanies.simcompaniespwa&hl=ja',signal:'Google Play 4.5 分、约 3.44 万条评价 · 生产链经营页',hook:'军需订单倒计时 12 秒，六个工坊只有铁匠铺停摆。',beats:'点开链路→发现木炭不足→临时调车→铁锭出炉→武器装箱→利润覆盖扩建费用。',ai:'木版画纹理等距地图，资源流用粗线动画；作坊只需运行/停摆两状态。',assets:'作坊 6、仓库、马车、资源图标 8、订单卡、利润 UI。',ab:'A 找断点；B 先乱升级再纠错。A 订单压力；B 利润压力。',adapt:'把复杂 SLG 资源压成一条可视化供应链，让观众一眼找到断点。',ue:'≤5%'},
+  {id:24,market:'JP',priority:'P1',platform:'Instagram',sourceKind:'video',style:'像素近景',title:'旧物铺鉴价：这把破刀是废铁还是稀有货？',game:'Thrift Shop Simulator Reel',url:'https://www.instagram.com/reel/DV8xdiBu5L4/',signal:'Instagram Reel · 约 20 秒 · 5 个月前 · 互动量较小，仅作结构参考',hook:'标价 2 文的锈刀突然弹出“隐藏纹章”。',beats:'收货→擦拭→翻面发现纹章→选择普通价/收藏价→顾客反应→用利润扩一格展示柜。',ai:'像素道具近景 + 俯视小铺；物品旋转用 6 帧序列，鉴定光效和价格 UI 后期完成。',assets:'旧物铺、锈刀/盔甲/地图 6 件、展示柜、顾客 3、价格签。',ab:'A 先低价捡漏；B 先高价收错货。A 鉴定成功；B 假货翻车。',adapt:'改成驿站旧军械铺，主角经营判断而非战斗；保持中性硬朗，不做治愈杂货店。',ue:'0%'},
+  {id:25,market:'JP',priority:'P0',platform:'Instagram',sourceKind:'video',style:'低多边形夜景',title:'最后一座驿站：午夜来客要水还是要马料？',game:'The Last Gas Station Reel',url:'https://www.instagram.com/reel/DY6azjIvbVq/',signal:'Instagram Reel · 120+ 赞 · 约 36 秒 · 2 个月前',hook:'雪夜只剩一盏灯，两支商队同时进站，仓库库存各剩 1。',beats:'看车队气泡→选先服务谁→打水/喂马→收取路费→被放弃的队伍降声望→升级第二个水槽。',ai:'低多边形夜间驿站，镜头固定在斜俯视；雪、灯光、马车循环分层合成。',assets:'驿站、水槽、草料棚、两支商队、库存/声望 UI、暴雪层。',ab:'A 资源二选一；B 服务顺序。A 安静悬疑；B 倒计时紧张。',adapt:'保留“偏远夜班站点”的孤立经营压力，去掉写实第一人称和现代加油站。',ue:'0–5%'},
+  {id:26,market:'JP',priority:'P1',platform:'Instagram',sourceKind:'video',style:'黏土剖面',title:'酒店只剩一格：加床位还是加厨房？',game:'Hotel Architect Reel',url:'https://www.instagram.com/reel/DTdBBYNjR-c/',signal:'Instagram Reel · 20+ 赞 · 约 23 秒 · 7 个月前 · 结构参考',hook:'客栈剖面只剩一个空格，门外同时出现住客和饥饿图标。',beats:'拖入床位方案→收入预览；切到厨房方案→满意度预览；选择后快速施工→一晚结算→下一层解锁。',ai:'黏土模块化剖面，床/厨房直接换件；施工用遮挡烟尘连接首尾帧。',assets:'两层客栈、空房格、床模块、厨房模块、客人 5、结算 UI。',ab:'A 床位赚钱；B 厨房留客。A 先给选择；B 先给排队危机。',adapt:'把“酒店设计”改成雪城客栈空间规划，核心是有限格子的经营取舍。',ue:'0%'},
+  {id:27,market:'JP',priority:'P0',platform:'Meta',sourceKind:'ad',style:'像素剖面',title:'炉火熄灭前 15 秒：先救温度还是先煮饭？',game:'Whiteout Survival Meta Ad',url:'https://www.facebook.com/ads/library/?id=2287178538489217',signal:'Meta 日区具体广告 ID · 2026-08-13 起投 · 可见多个版本',hook:'温度计归零，厨房和宿舍同时结冰。',beats:'拖木材进炉→温度回升一格→派一人煮汤→饥饿下降→居民恢复工作→拉远显示新房点亮。',ai:'像素剖面城固定机位，冰层/火光/居民动作独立生成；只用两个大指标。',assets:'剖面城、炉火、厨房、宿舍、居民 5、木材/温度/饥饿 UI。',ab:'A 先温度；B 先饥饿。A 红色警报；B 居民倒地。',adapt:'这是最贴三冰的经营母题，但必须把镜头中心放在人员与设施联动，结尾才承接主城。',ue:'0–5%'},
+  {id:28,market:'JP',priority:'P0',platform:'Meta',sourceKind:'ad',style:'纸雕地图',title:'冰原搜集路线：三辆雪橇只能派两辆',game:'Whiteout Survival Meta Ad',url:'https://www.facebook.com/ads/library/?id=1021776857205624',signal:'Meta 日区具体广告 ID · 2026-06-18 起投 · 仍可在广告库查看',hook:'木材、食物、药草三个点同时告急，雪橇只剩两辆。',beats:'画两条路线→雪橇出发→暴雪封住近路→改走村落补给→资源入库→解锁第三辆雪橇。',ai:'纸雕地图 + 2D 路线动画；雪橇与暴雪做短循环，资源到仓用图标结算。',assets:'冰原地图、资源点 3、雪橇 3、村落、暴雪层、仓库 UI。',ab:'A 选错资源；B 路线被封。A 自由画线；B 三选二。',adapt:'把野外采集变成运输调度小游戏，战斗完全移除，重点是路线与库存反馈。',ue:'0%'},
+  {id:29,market:'JP',priority:'P1',platform:'App Store',sourceKind:'store',style:'赛璐璐看板',title:'小作坊创业：第一笔钱该招人还是买机器？',game:'経営シミュレーション：起業 / Startup Simulator',url:'https://apps.apple.com/jp/app/%E7%B5%8C%E5%96%B6%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3-%E8%B5%B7%E6%A5%AD/id6761575000',signal:'日本 App Store 具体页面 · 2026-08-08 新作 · 决策驱动公司成长',hook:'桌上只有 100 铜钱，订单要求一天做完 20 件货。',beats:'查看招人/机器两张卡→选一张→生产速度变化→交单→现金流转正或亏损→开启第二个岗位。',ai:'赛璐璐角色 + 像素工坊看板；生产过程用循环，决策卡和现金流用 2D 动效。',assets:'工坊、员工 3、机器 2、决策卡、订单、现金流 UI。',ab:'A 招人；B 买机器。A 成功开局；B 先失败再重来。',adapt:'改成雪城新作坊创业，不讲宏大政务，只讲第一笔钱如何让生产跑起来。',ue:'0%'},
+  {id:30,market:'JP',priority:'P1',platform:'App Store',sourceKind:'store',style:'木版画酒馆',title:'酒馆今晚卖什么：库存、价格、客流三选二',game:'バー経営物語 / Bar Management Story',url:'https://apps.apple.com/jp/app/%E3%83%90%E3%83%BC%E7%B5%8C%E5%96%B6%E7%89%A9%E8%AA%9E/id6780888458',signal:'日本 App Store 具体页面 · 2026 年经营新作 · 库存/定价/获客循环',hook:'门外来了十人，酒桶只剩半桶，今日价格牌还没写。',beats:'定两档价格→选择兑水或限量→开门营业→顾客表情与排队变化→夜间结算→第二天进货。',ai:'木版画酒馆固定侧剖面，顾客分三类循环；酒量、价格、口碑用简洁图标反馈。',assets:'酒馆、吧台、酒桶 3、价格牌、顾客 10、口碑/库存/收益 UI。',ab:'A 高价限量；B 低价爆单。A 客流开场；B 空酒桶开场。',adapt:'改成雪城热汤馆或驿站食堂，避免写实食物特写，主打库存和定价。',ue:'0%'},
+  {id:31,market:'TW',priority:'P0',platform:'Instagram',sourceKind:'video',style:'像素摊位',title:'一锅清汤变成爆单拉面摊',game:'Ramen Shop Simulator Reel',url:'https://www.instagram.com/reel/DZos0HkgQPE/',signal:'Instagram Reel · 1.1 万+赞 · 2 个月前',hook:'摊位只有一锅清汤，门口却突然出现十张订单。',beats:'煮面→选两种配料→递给顾客→金币连跳→补一张桌→镜头拉远看到夜市排队。',ai:'像素摊位固定侧视，面碗和配料用 2D 叠层；顾客做等待/取餐/离开三段循环。',assets:'摊位、汤锅、配料 6、顾客 8、订单条、金币与扩建 UI。',ab:'A 先爆单再补货；B 先缺料再救场。A 深夜摊；B 雪城食堂。',adapt:'台湾版改成雪夜驿站热汤铺，保留连续出餐和扩座爽感，不做写实食物特写。',ue:'0%'},
+  {id:32,market:'TW',priority:'P1',platform:'TikTok',sourceKind:'video',style:'赛璐璐看板',title:'制片公司一天接三单：人手只够拍一部',game:'王牌制片人',url:'https://www.tiktok.com/@aceproducer.tw/video/7618924472346692872',signal:'TikTok 台湾账号具体视频 · 200+播放 · 5 个月前',hook:'三张高价通告同时落桌，倒计时只剩 10 秒。',beats:'看题材需求→拖员工组队→拍摄进度快切→评分结算→差评项目返工→解锁第二摄影棚。',ai:'赛璐璐员工卡与等距工作室分层生成；拍摄过程只做三套岗位循环，评分 UI 后期合成。',assets:'通告卡 3、员工 5、工作室、进度条、评分与现金流 UI。',ab:'A 先选高价单；B 先选擅长单。A 成功扩建；B 失误返工。',adapt:'把制片公司替换为军需工坊，选择订单、排岗位、交付结算，核心仍是经营调度。',ue:'0–5%'},
+  {id:33,market:'TW',priority:'P0',platform:'YouTube',sourceKind:'video',style:'像素锻造',title:'废铁三步锻成高价订单',game:'铸剑经营 Shorts',url:'https://www.youtube.com/shorts/DRX8paUUiXE',video:'DRX8paUUiXE',signal:'YouTube Shorts · 3,007 播放 / 37 赞 · 7 个月前',hook:'顾客拍下高价订单，铁匠台上只有一块锈铁。',beats:'熔炼→锤击节奏点→选刀型→淬火变色→交货估价→用利润升级风箱。',ai:'像素近景只做熔炉、铁砧、淬火槽三个镜位；火花、价格和品质条后期完成。',assets:'锈铁/成品 4、熔炉、铁砧、风箱、顾客手部剪影、品质 UI。',ab:'A 先展示高价订单；B 先展示废铁。A 完美锻造；B 一锤失误。',adapt:'三冰可改成雪城铁匠铺订单日，去掉战斗展示，用品质、定价和设备升级闭环。',ue:'0%'},
+  {id:34,market:'TW',priority:'P1',platform:'App Store',sourceKind:'store',style:'纸模机场',title:'三条航线堵在一个登机口',game:'Airport Empire 2026',url:'https://apps.apple.com/tw/app/airport-empire-2026/id6760105102',signal:'台湾 App Store · 4.7 分 / 414 条评分 · 机场经营新作',hook:'三架飞机同时落地，唯一登机口开始红灯倒计时。',beats:'安排停机位→先卸高价值货→调接驳车→旅客清空→收入结算→扩建第二登机口。',ai:'纸模等距机场替换为纸雕驿站，运输单位做沿线循环；拥堵和畅通共用同一机位。',assets:'枢纽、运输单位 3、停靠位 2、乘客/货物图标、调度与收入 UI。',ab:'A 三选一停靠；B 自动画线。A 客流堵塞；B 货运爆仓。',adapt:'借枢纽调度，不借现代机场美术；改成雪城三支商队抢一个驿站泊位。',ue:'0%'},
+  {id:35,market:'TW',priority:'P1',platform:'App Store',sourceKind:'store',style:'低模路线图',title:'航空公司第一笔钱：买大飞机还是开短航线？',game:'Airline Manager 2026',url:'https://apps.apple.com/tw/app/airline-manager-2026/id1487669805',signal:'台湾 App Store 具体页面 · 航线、机队与现金流经营',hook:'地图上有两座高收益城市，现金只够买一架小飞机。',beats:'查看航程与需求→买机→画首条航线→首班结算→油费吃掉利润→换短线后现金转正。',ai:'低模地图与 2D 路线动画；运输单位只做出发、行进、到达循环，财务曲线后期合成。',assets:'地图、城市点 5、运输单位 2、航线、需求气泡、现金流 UI。',ab:'A 先开远线；B 先跑短线。A 立即盈利；B 先亏损再纠错。',adapt:'改成商队经理：买马车、选路线、算补给和回款，经营判断比战争世界观更前置。',ue:'0%'},
+  {id:36,market:'HK',priority:'P1',platform:'Instagram',sourceKind:'video',style:'像素盆栽铺',title:'一格窗台如何变成满店绿植',game:'Plant Shop Simulator Reel',url:'https://www.instagram.com/reel/DbetRgcAl2f/',signal:'Instagram Reel · 20+赞 · 2 周前 · 新近玩法结构参考',hook:'空店只放得下一盆苗，第一位顾客要求“大型成株”。',beats:'浇水→长叶→换盆→摆上货架→成交→解锁第二排窗台→全店由空变满。',ai:'像素盆栽用幼苗/半成株/成株三状态替换；店铺固定机位，浇水和金币做短动效。',assets:'店铺、植物 6、花盆 4、货架、顾客 4、生长与收入 UI。',ab:'A 空店成长；B 枯苗救活。A 自动生长；B 玩家选择肥料。',adapt:'香港版改成屋顶药草铺，用有限空间做培育、陈列和出售，画风硬朗，不走女性向治愈包装。',ue:'0%'},
+  {id:37,market:'HK',priority:'P0',platform:'TikTok',sourceKind:'video',style:'低模剖面',title:'小屋第一天：只够先盖厨房或卧室',game:'Paralives',url:'https://www.tiktok.com/@gameshort_tt/video/7637028867122793749',signal:'TikTok 具体视频 · 520+播放 · 3 个月前',hook:'空屋中央只有 100 金币，两名住客同时出现饥饿和疲劳。',beats:'摆厨房预览→切卧室预览→选择后住客需求变化→接小订单赚钱→补上第二房间。',ai:'低模剖面屋做模块替换，人物只保留走路、吃饭、睡觉循环；需求和现金 UI 后期叠加。',assets:'空屋、厨房/卧室模块、住客 2、订单板、需求与金币 UI。',ab:'A 先厨房；B 先卧室。A 两名住客；B 四人拥挤开场。',adapt:'改成香港受众易理解的“细单位经营”：雪城客栈先建厨房还是床位，20 秒内完成回报闭环。',ue:'0–5%'},
+  {id:38,market:'HK',priority:'P1',platform:'App Store',sourceKind:'store',style:'像素商业街',title:'第一笔利润：开第二家店还是升级老店？',game:'Profit Money: Business Game',url:'https://apps.apple.com/hk/app/profit-money-business-game/id6764817146',signal:'香港 App Store · 2026-05-24 上线 · 商业扩张经营新作',hook:'第一家铺刚赚到 500 金币，隔壁空铺同时亮起限时租约。',beats:'查看升级/租铺回报→选择开分店→客流被分走→调货补库存→两店收入合并→解锁统一仓库。',ai:'像素商业街固定俯视，店铺做关门/营业/升级三状态；客流用粒子路径模拟。',assets:'街道、店铺 2、仓库、货箱、顾客流、租金与利润 UI。',ab:'A 开分店；B 升老店。A 正确扩张；B 现金流断裂。',adapt:'改成雪城商街连锁经营，突出选址、调货和回款，结尾只短接三冰真实主城。',ue:'≤5%'},
+  {id:39,market:'HK',priority:'P0',platform:'App Store',sourceKind:'store',style:'像素超市',title:'临期货架只剩一晚：打折还是直接清仓？',game:'Discounty 打骨折超市日记',url:'https://apps.apple.com/hk/app/discounty-%E6%89%93%E9%AA%A8%E6%8A%98%E8%B6%85%E5%B8%82%E6%97%A5%E8%A8%98/id6753793150',signal:'香港 App Store 具体页面 · 定价、补货、店铺扩建经营',hook:'关店前 30 秒，三排临期货还没卖完。',beats:'拖折扣牌→顾客涌入→收银排队→临时开第二柜台→库存清零→利润与口碑结算。',ai:'像素俯视店铺用空/满货架替换，顾客做排队循环；价格牌和结算数字后期合成。',assets:'货架 3、商品 8、折扣牌、收银台 2、顾客 10、库存/利润/口碑 UI。',ab:'A 打五折爆单；B 坚持原价滞销。A 倒计时；B 顾客砍价。',adapt:'改成驿站临冬清仓：草料、药材、火把在暴雪前卖完，重点是定价和效率，不做现代超市复刻。',ue:'0%'},
+  {id:40,market:'HK',priority:'P1',platform:'YouTube',sourceKind:'video',style:'等距像素',title:'2026 城建新游：最值得拆的是一条生产链',game:'2026 City-building Games',url:'https://www.youtube.com/watch?v=cyCFeUSWcbQ',video:'cyCFeUSWcbQ',signal:'YouTube 具体视频 · 4.2 万+播放 · 7 个月前',hook:'木材明明满仓，房屋却一直显示“无法施工”。',beats:'沿生产链反查→发现运输断点→补一辆货车→木料进工地→房屋落成→新居民带来税收。',ai:'等距像素地图只需仓库、道路、工地三段；资源图标沿路线移动，施工用遮罩递增。',assets:'仓库、道路、运输单位、工地三阶段、资源与税收 UI。',ab:'A 让观众找断点；B 先错误升级。A 像素；B 纸雕。',adapt:'面向香港买量时压成 25 秒“找出卡住的一格”，把宏观城建改成可一眼理解的经营故障。',ue:'0–5%'}
 ];
 
-const esc = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-const cta = item => item.sourceKind === 'ad' ? '查看具体广告' : item.sourceKind === 'store' ? '打开商店玩法页' : '打开原视频';
-const card = item => `<article class="rank-card ${item.market === 'JP' ? 'jp' : item.market === 'TW' ? 'tw' : 'hk'}" data-region="${item.region}" data-market="${item.market}" data-platform="${esc(item.platform)}" data-visual="${item.visual}" data-search="${esc([item.product,item.title,item.platform,item.visualLabel,item.signal,item.points.join(' ')].join(' '))}">
-  <div class="rank-top"><span class="rank-no">${item.rank}</span><div class="card-title"><div class="labels"><span class="label product">${esc(item.product)}</span><span class="label platform">${esc(item.platform)} · ${esc(item.sourceKind)}</span><span class="label visual">${esc(item.visualLabel)}</span></div><h3>${esc(item.title)}</h3></div><span class="trend ${item.trend}">${item.trend === 'up' ? '↑' : item.trend === 'down' ? '↓' : '→'} ${esc(item.delta)}</span></div>
-  <div class="signal"><strong>公开信号：</strong>${esc(item.signal)}</div>
-  <ul class="detail-list">${item.points.map(point => `<li>${esc(point)}</li>`).join('')}</ul>
-  <div class="metric-grid"><div class="metric heat"><b>热度指数</b><span>${item.heat}/100</span></div><div class="metric"><b>趋势</b><span>${item.trend === 'up' ? '上升' : item.trend === 'down' ? '下降' : '平稳'} ${esc(item.delta)}</span></div><div class="metric muted"><b>ROI</b><span>未公开</span></div><div class="metric muted"><b>CPI</b><span>未公开</span></div></div>
-  <div class="creative"><b>创意建议</b>${esc(item.creative)} <span>（UE / 录屏占比：${esc(item.ue)}）</span></div>
-  <div class="source-row"><a class="primary" href="${esc(item.url)}" target="_blank" rel="noopener">▶ ${cta(item)}</a><span class="source-hint">platform: ${esc(item.platform)} · sourceKind: ${esc(item.sourceKind)}</span></div>
-</article>`;
+const organic = [
+  {id:21,market:'JP',priority:'P0',title:'2026 模拟经营现状：玩家真正会留下看的三个反馈',channel:'模拟经营玩法观察',url:'https://www.youtube.com/watch?v=dgqfBhTBGwg',video:'dgqfBhTBGwg',signal:'约 1,370+播放 · 4 个月前',why:'“现状”型内容能承接品类搜索，重点不是列游戏，而是解释哪些重复动作仍让人愿意看完。',format:'固定比较三种反馈：库存清零、设施升级、街区扩张；每种只放一次操作和一次结果。',adapt:'做日语“経営ゲームで気持ちいい瞬間 3 選”，三冰只作为第三个案例，先建立内容可信度再露出项目。',test:'把自然内容中重播最高的反馈动作，单独改成下一轮日区买量 6 秒开场。'},
+  {id:22,market:'JP',priority:'P0',title:'书店千客万来：实时爆单直播',channel:'コーマ',url:'https://www.youtube.com/watch?v=P3ccsM2cauI',video:'P3ccsM2cauI',signal:'约 5,098 播放 · 直播于 1 天前',why:'“千客万来”给了明确经营目标，观众能持续看订单是否崩盘。',format:'长直播保留完整经营过程，再剪“最忙 60 秒”和“最大失误”。',adapt:'雪夜客栈直播：目标一晚接待 30 位客人，失败点剪成 Shorts。',test:'直播切片的完播/评论反推下一轮买量冲突。'},
+  {id:23,market:'JP',priority:'P0',title:'Go-Go Town Switch 评测与性能',channel:'SwitchUp',url:'https://www.youtube.com/watch?v=gJmPHXUh3dg',video:'gJmPHXUh3dg',signal:'约 31 万播放 · 3 周前',why:'新平台节点 + “值得买吗/性能如何”是强决策型需求。',format:'先给一句结论，再以三个具体经营细节证明。',adapt:'做日语“广告里的经营玩法到底能不能玩到？”真实演示系列。',test:'自然区被追问最多的功能，进入落地页首屏。'},
+  {id:24,market:'JP',priority:'P0',title:'2026 下半年经营模拟 15 选',channel:'おみゲームズ',url:'https://www.youtube.com/watch?v=HmZbqThrH6o',video:'HmZbqThrH6o',signal:'约 9.1 万播放 · 2 个月前',why:'年份、时间范围、品类、数量四个信息齐全，搜索意图明确。',format:'每款只讲一个“最值得借的经营动作”，避免功能罗列。',adapt:'每周做“日本近期 3 个经营玩法”，三冰只占其中一席，不硬广。',test:'记录评论提名，作为下周广告题材池。'},
+  {id:25,market:'JP',priority:'P1',title:'2026 街建模拟 14 选',channel:'カナメックス スタジオ',url:'https://www.youtube.com/watch?v=Bv4PtPYATnE',video:'Bv4PtPYATnE',signal:'约 16 万播放 · 7 个月前',why:'街建是经营内容的稳定大类，数字清单适合收藏。',format:'按“自由摆放/生产链/灾害压力”三类快速比较。',adapt:'做“一张图看懂三冰经营循环”，突出驿路与作坊而非战斗。',test:'收藏率高的分类做成三条独立短视频。'},
+  {id:26,market:'JP',priority:'P1',title:'2026 模拟游戏 20 选',channel:'GameWith 新作ゲームレビュー',url:'https://www.youtube.com/watch?v=9oxOIPalg6U',video:'9oxOIPalg6U',signal:'约 6.3 万播放 · 6 个月前',why:'大名单利于覆盖多个需求，但必须有清晰章节。',format:'开头 10 秒给“本期只看经营爽点”的筛选规则。',adapt:'不做三国专场，做“非写实经营游戏里最舒服的 5 个反馈”。',test:'点击最高的章节拆成单条 Shorts。'},
+  {id:27,market:'JP',priority:'P1',title:'一个人也能沉迷的策略经营 10 选',channel:'おみゲームズ',url:'https://www.youtube.com/watch?v=OElKtSW20dk',video:'OElKtSW20dk',signal:'约 7.5 万播放 · 7 个月前',why:'“一个人也能玩”是明确使用场景，降低社交压力。',format:'每款展示一次独立做决定、立即见结果的瞬间。',adapt:'做“今晚只经营一座雪城”，强调独立经营也成立。',test:'独狼诉求与联盟诉求分开投放，不混一个视频。'},
+  {id:28,market:'JP',priority:'P1',title:'2026 城建 10 选：慢节奏讲清差异',channel:'あなぐま / ANAGUMA',url:'https://www.youtube.com/watch?v=SlB6Zww9yJQ',video:'SlB6Zww9yJQ',signal:'约 8.6 万播放 · 7 个月前',why:'ゆっくり実況把复杂经营系统压成可听懂的比较。',format:'固定三问：建什么、怎么赚钱、失败会怎样。',adapt:'日语解说用固定栏目“今日の経営ミス”，长期积累辨识度。',test:'用评论里的失败案例反向写广告 B 面。'},
+  {id:29,market:'JP',priority:'P1',title:'Switch 2026 新作模拟 7 选',channel:'みたこんのゲームチャンネル',url:'https://www.youtube.com/watch?v=4TbA3N8joXw',video:'4TbA3N8joXw',signal:'约 4.6 万播放 · 4 个月前',why:'平台 + 年份 + 期待榜适合主机用户的采购决策。',format:'先给画风、再给核心循环、最后给适合谁。',adapt:'做“喜欢像素经营的人能不能接受三冰”的坦诚评测。',test:'首图用像素城 vs 角色大脸，比较点击率。'},
+  {id:30,market:'JP',priority:'P1',title:'Switch 农业/经营 11 选',channel:'きくらげ',url:'https://www.youtube.com/watch?v=5jweo45CYFQ',video:'5jweo45CYFQ',signal:'约 3.2 万播放 · 2 个月前',why:'种田内容证明“投入—等待—收获”循环仍有稳定受众。',format:'只剪播种、加工、售卖三步，不做漫长走路。',adapt:'换成冬季温室、药草加工和集市出售，避免女性向包装。',test:'ASMR 版与倒计时压力版分别测试。'},
+  {id:31,market:'JP',priority:'P1',title:'2026 模拟游戏总集编 35 选',channel:'カナメックス スタジオ',url:'https://www.youtube.com/watch?v=LPRYGQmK34U',video:'LPRYGQmK34U',signal:'约 9,971 播放 · 1 个月前',why:'总集编有长尾搜索价值，章节清晰时可持续获得流量。',format:'按心情分类：放松、头脑、作业，不按题材堆叠。',adapt:'三冰自然内容可用“放松经营/极限经营”双标签覆盖不同人群。',test:'看章节跳转判断用户真正想看的节奏。'},
+  {id:32,market:'JP',priority:'P1',title:'2026 新作模拟 67 选',channel:'カナメックス スタジオ',url:'https://www.youtube.com/watch?v=RFchXtpwJ5A',video:'RFchXtpwJ5A',signal:'约 2.8 万播放 · 4 个月前',why:'覆盖面大，但观看靠明确品类时间轴维持。',format:'每 8–10 分钟切换一个大类，封面只突出一个强品类。',adapt:'季度做一次“经营玩法趋势盘点”，三冰用作案例而非全部内容。',test:'高停留大类进入下月买量母题。'},
+  {id:33,market:'JP',priority:'P1',title:'2026 城建/殖民 15 选',channel:'やまチャンネル',url:'https://www.youtube.com/watch?v=MJwfJxCRb6Y',video:'MJwfJxCRb6Y',signal:'约 2.4 万播放 · 7 个月前',why:'“会忘记时间”是结果型承诺，适合深经营用户。',format:'展示一个能不断优化的布局问题，而非纯建筑展示。',adapt:'做“粮仓离市场差一格会发生什么”，引导用户讨论布局。',test:'评论答案最多的布局做可试玩广告。'},
+  {id:34,market:'JP',priority:'P1',title:'Go-Go Town 正式版实况',channel:'めばちこ',url:'https://www.youtube.com/watch?v=rvLklDqzLxo',video:'rvLklDqzLxo',signal:'约 2 万播放 · 1 个月前',why:'“忙しくて楽しい”来自连续小任务与场景变忙，不靠剧情。',format:'剪 5 个连续动作，最后用全景奖励观众。',adapt:'复刻马厩视频的任务链，但全程非写实；每次动作都改变场景。',test:'5 动作版与 3 动作版比较完播。'},
+  {id:35,market:'JP',priority:'P1',title:'2026 最佳城建新作',channel:'Orbital Potato',url:'https://www.youtube.com/watch?v=GXTw7oxyvxE',video:'GXTw7oxyvxE',signal:'约 1.1 万播放 · 1 个月前',why:'强结论标题适合高意向用户，但内容要迅速给理由。',format:'开场 20 秒给前三名的独特循环，不留长前言。',adapt:'做日语“今週いちばん気持ちいい経営操作”，每周只选一个。',test:'自然封面点击率指导广告首帧。'},
+  {id:36,market:'JP',priority:'P1',title:'5–7 月经营模拟 4 款一口气看完',channel:'noynoy',url:'https://www.youtube.com/watch?v=0Tb5VJG_n8o',video:'0Tb5VJG_n8o',signal:'约 5,685 播放 · 9 天前',why:'时间段明确且只有 4 款，信息密度比 50 款合集更容易完成观看。',format:'每款固定“1 个亮点 + 1 个缺点 + 适合谁”。',adapt:'做“三冰经营素材 4 个版本实测”，公开 A/B 结果而非硬讲优点。',test:'让评论投票决定下一条广告 A 面。'},
+  {id:37,market:'TW',priority:'P0',title:'20 款上瘾模拟经营手游',channel:'花現新大鹿 DoeDaDa',url:'https://www.youtube.com/watch?v=QkJz0_4-HQc',video:'QkJz0_4-HQc',signal:'约 4,744 播放 · 8 天前',why:'“上瘾”直接承诺循环强度，手游与经营双关键词清楚。',format:'每款只展示最上瘾的 6–8 秒操作。',adapt:'繁中内容标题用“越整理越順”的经营成就感，不使用女性向治愈话术。',test:'港台广告复用最高停留的操作片段。'},
+  {id:38,market:'TW',priority:'P1',title:'2026 下半年 Switch 新作 25 款',channel:'狐狸牧場 foxranch',url:'https://www.youtube.com/watch?v=FQEbX-Bh2Dc',video:'FQEbX-Bh2Dc',signal:'约 13 万播放 · 1 个月前',why:'大档期清单自带收藏价值，标题有明确时间边界。',format:'用“经营类只看这 3 款”做二次垂直剪辑。',adapt:'三冰参与跨品类盘点时只讲非写实经营差异，不讲世界观。',test:'收藏率高于点赞率时，增加图表和清单资产。'},
+  {id:39,market:'TW',priority:'P1',title:'7 月多人合作与单人游戏推荐',channel:'Kim和Nana的遊戲世界',url:'https://www.youtube.com/watch?v=ghwdoQtIvdA',video:'ghwdoQtIvdA',signal:'约 11 万播放 · 1 个月前',why:'把多人/单人并列，帮助观众快速找到自己的玩法场景。',format:'同一经营动作分别展示单人效率与合作混乱。',adapt:'自然内容做“一个人经营 vs 两人分工”，评论区选更想玩的版本。',test:'胜出版本进入对应受众广告组。'},
+  {id:40,market:'HK',priority:'P0',title:'8 月新作：10+6 款精简清单',channel:'Kim和Nana的遊戲世界',url:'https://www.youtube.com/watch?v=DKWh2Bk7aiA',video:'DKWh2Bk7aiA',signal:'约 5.6 万播放 · 11 天前',why:'月份非常新，标题把多人和单人数量写清，点击前就能判断价值。',format:'开场先列今日筛选标准，再进入具体游戏。',adapt:'每月做繁中“经营玩法素材雷达”，展示 3 个细节并公开下一条制作选择。',test:'把自然投票最高细节做港台买量 B 面。'},
+  {id:41,market:'TW',priority:'P0',platform:'Instagram',sourceKind:'video',title:'PlayStation Taiwan：用一段 Reels 只讲一个可玩动作',channel:'PlayStation Taiwan',url:'https://www.instagram.com/reel/DaPokVLyU7n/',signal:'Instagram Reel · 170+赞 · 1 个月前',why:'台湾本地官方账号的近期短视频信号，单一动作比长功能罗列更适合 Reels 停留。',format:'首帧先出现一个可操作难题，8 秒内完成一次操作和结果，结尾只留一个问题。',adapt:'做“你会先修炉火还是先补货？”繁中系列，每条只演一个经营选择，不把三冰功能全塞进去。',test:'评论选项最高的选择进入下一条台湾买量 A 面。'},
+  {id:42,market:'HK',priority:'P1',platform:'Instagram',sourceKind:'video',title:'香港本地农庄：一块地从播种到爆仓',channel:'谷爆农庄 / 香港本地创作',url:'https://www.instagram.com/reel/DTAVGPukkl1/',signal:'Instagram Reel · 20+赞 · 7 个月前 · 香港本地账号',why:'本地创作身份和明确的劳作过程，适合做可连续追更的经营日志。',format:'每条固定“今日目标—一次失误—仓库结果”，让观众追下一次改进。',adapt:'改成像素雪地小农庄周记：播药草、加工、送驿站，人物中性硬朗，不走可爱治愈路线。',test:'自然内容中收藏最高的生产步骤，单独拆成香港买量 6 秒开场。'},
+  {id:43,market:'HK',priority:'P1',platform:'Instagram',sourceKind:'video',title:'Act Plus HK：本地发行账号的短预告节奏',channel:'Act Plus HK',url:'https://www.instagram.com/reel/DV0oTHmkqvp/',signal:'Instagram Reel · 10+赞 · 5 个月前 · 香港本地账号',why:'本地发行账号能验证繁中包装、字幕密度和落点节奏，适合用来校正香港版表达。',format:'0–2 秒玩法异常，3–10 秒连续操作，11–15 秒结果翻转，最后只给游戏名和商店入口。',adapt:'做港式繁中“今晚做唔切呢张单？”系列，画面仍保持像素/低模，粤语只做字幕钩子。',test:'同素材测试书面繁中与轻粤语标题，按 3 秒留存决定买量文案。'},
+  {id:44,market:'HK',priority:'P0',platform:'Threads',sourceKind:'post',title:'IndieSummit 最新帖：独立游戏一眼玩法投票',channel:'IndieSummit / Indie Guider',url:'https://www.threads.com/@indieguider/post/DcLmWSrk3nd',signal:'Threads 具体帖子 · 采集时约 21 小时前',why:'发布时间很新，Threads 适合用一句选择题配短片或动图，快速收集玩法偏好。',format:'只放两个同资产版本：爆单经营 vs 生产链断点，正文让用户二选一并说明理由。',adapt:'三冰用非官方口吻发布“同一个雪城，你想先开店还是先修路？”；次日公布投票和制作片段。',test:'票数决定香港买量 A 面，评论理由直接进入字幕文案池。'}
+];
 
-const jpList = document.querySelector('#jpRankList');
-const twHkList = document.querySelector('#twHkRankList');
-const search = document.querySelector('#search');
-const marketFilter = document.querySelector('#marketFilter');
-const platformFilter = document.querySelector('#platformFilter');
-const visualFilter = document.querySelector('#visualFilter');
-let regionFilter = 'ALL';
-let boardMarket = 'ALL';
+const paidSourceTitles = {
+  1:"労働者ネコの機嫌を取りながら生産する最新の工場経営シム【MeowFactory】",
+  2:"TCG Card Shop Simulator - Official Version 1.0 Release Date Trailer",
+  3:"Town to City | 1.0 Launch Trailer",
+  4:"Go-Go Town! - Official Launch Trailer",
+  5:"inKONBINI - Official Gameplay Trailer | ID@Xbox April 2026 Showcase",
+  6:"Tiny Bookshop - Official Mobile Launch Trailer",
+  7:"Big Ambitions 1.0 Release Date Announcement Trailer",
+  8:"「A列車で行こう9 Evolution」ティザー【Nintendo Switch 2】",
+  9:"Nintendo Switch 2「A列車で行こう9 Evolution」ゲーム紹介動画",
+  10:"Nintendo Switch 2「A列車で行こう9 Evolution」オープニング",
+  11:"【Tropico 7】トロピコ 7 | ゲームプレイティザー",
+  12:"PS5『シティーズ：スカイライン リマスター ジャパン・スペシャル・エディション』ショップオブシブヤトレーラー",
+  13:"『シティーズ：スカイライン リマスター ジャパン・スペシャル・エディション』プロモーショントレーラー",
+  14:"『プロサッカークラブをつくろう！2026』公式PV「実況サカつく！クラブ篇」",
+  15:"『プロサッカークラブをつくろう！2026』公式PV「実況サカつく！世界へ篇」",
+  16:"『プロサッカークラブをつくろう！2026』公式PV「実況サカつく！チーム篇」",
+  17:"Tiny Bookshop Mobile Announcement Trailer",
+  18:"Hotel Galactic - Official Winter Rework Overview",
+  19:"新作ゲーム「ぼくのプロ野球」（野球GMシミュレーション）【紹介PV】",
+  20:"Go-Go Town! - Official Release Date Trailer | Wholesome Direct 2026",
+  21:"マイコンビニ　コンビニ 経営 シミュレーション ゲーム",
+  22:"大家さんになろう！",
+  23:"Sim Companies",
+  24:"Playable at New Game Plus — Thrifty Business",
+  25:"The Last Gas Station",
+  26:"Calling all business sim game players! — Hotel Architect",
+  27:"Whiteout Survival — Meta Ad #2287178538489217",
+  28:"Whiteout Survival — Meta Ad #1021776857205624",
+  29:"経営シミュレーション: 起業",
+  30:"バー経営物語",
+  31:"《拉麵模擬器》6 月 22 日推出　收錄超過 100 種配料",
+  32:"不服氣你也來拍一部之《愛你一萬年》",
+  33:"【新游前瞻】我要成为中世纪铸剑大师！打铁模拟经营游戏《铸剑吟》",
+  34:"Airport Empire 2026",
+  35:"Airline Manager - 2026",
+  36:"全新模擬經營遊戲《綠植小築》現已登陸 Steam / PlayStation / Nintendo / Xbox",
+  37:"這款《Paralives》可能比模擬人生更像「人」",
+  38:"Profit Money: Business Game",
+  39:"Discounty : 打骨折超市日記",
+  40:"2026年10款Steam上值得期待城市建造模拟经营游戏推荐-Upcomming Citybuilder 2026"
+};
 
-function render(){
-  const query = search.value.trim().toLowerCase();
-  const selectedPlatform = platformFilter.value;
-  const selectedVisual = visualFilter.value;
-  const selectedMarket = marketFilter.value;
-  const matches = item => {
-    const inRegion = regionFilter === 'ALL' || (regionFilter === 'JP' && item.region === 'JP') || (regionFilter === 'TW_HK' && item.region === 'TW_HK');
-    const inBoardMarket = boardMarket === 'ALL' || item.market === boardMarket;
-    const inMarket = selectedMarket === 'ALL' || item.market === selectedMarket;
-    const inPlatform = selectedPlatform === 'ALL' || item.platform === selectedPlatform;
-    const inVisual = selectedVisual === 'NON_REAL' || item.visual === selectedVisual;
-    const inSearch = !query || item._search.includes(query);
-    return inRegion && inBoardMarket && inMarket && inPlatform && inVisual && inSearch;
-  };
-  const filtered = rankData.filter(item => { item._search = [item.product,item.title,item.platform,item.visualLabel,item.signal,item.points.join(' '),item.creative].join(' ').toLowerCase(); return matches(item); });
-  jpList.innerHTML = filtered.filter(item => item.region === 'JP').map(card).join('');
-  twHkList.innerHTML = filtered.filter(item => item.region === 'TW_HK').map(card).join('');
-  document.querySelector('[data-empty="JP"]').style.display = filtered.some(item => item.region === 'JP') ? 'none' : 'block';
-  document.querySelector('[data-empty="TW_HK"]').style.display = filtered.some(item => item.region === 'TW_HK') ? 'none' : 'block';
-  document.querySelectorAll('[data-region-filter]').forEach(button => button.classList.toggle('active', button.dataset.regionFilter === regionFilter));
-  document.querySelectorAll('.board-tab').forEach(button => button.classList.toggle('active', button.dataset.market === boardMarket));
-  updatePlatformSummary();
+const paidSourcePoints = {
+  1:["展示猫咪工厂中工人情绪、生产设备与流水线之间的关系。","重点是生产受阻后如何调整资源，让工厂重新运转。"],
+  2:["展示卡店从开卡包、鉴价、定价到上架销售的完整循环。","顾客交易、补货和店铺扩建是主要经营反馈。"],
+  3:["从空地开始铺路、摆放建筑并逐步形成完整小镇。","视频主要展示自由布局、居民进入与城镇成长过程。"],
+  4:["展示采集资源、建设设施、运输物资和服务居民等连续任务。","小镇会随玩家操作逐步变忙，车辆和居民反馈明显。"],
+  5:["展示便利店内补货、陈列、收银和处理顾客需求。","重点可看第一人称经营动作与日常店务的节奏。"],
+  6:["展示移动书店的选书、陈列、推荐和销售过程。","顾客偏好与库存选择共同影响当天经营结果。"],
+  7:["从小生意起步，逐渐招聘员工、租赁店面并扩大公司。","视频强调现金流、人员管理与多店扩张。"],
+  8:["预告展示铁路、列车和城市共同发展的整体画面。","核心看点是交通网络如何带动街区与产业扩张。"],
+  9:["系统介绍铺设铁路、配置列车和规划城市的主要玩法。","运输效率、站点布局与城市成长互相影响。"],
+  10:["用开场影像集中展示铁路网络、城市景观和时代氛围。","内容偏整体世界呈现，经营细节相对较少。"],
+  11:["展示岛屿建设、资源生产、道路规划与城市管理。","地形改造和产业布局是预告中的主要新玩法。"],
+  12:["围绕涩谷商业街内容展示店铺、街区和城市景观。","重点是商业建筑组合与日本城市风格的落地效果。"],
+  13:["概览日本特别版中的城市建设、交通和公共设施。","视频通过多个发展阶段展示城市规模变化。"],
+  14:["展示俱乐部创建、人员配置和日常经营管理。","球队成绩之外，也强调设施、资金和俱乐部成长。"],
+  15:["展示俱乐部从本地发展到进入更大赛事和海外舞台。","重点是长期成长路线与不同地区的扩张目标。"],
+  16:["展示球员编组、训练、战术和团队状态管理。","不同人员配置会直接影响球队表现与比赛结果。"],
+  17:["展示移动版书店经营、选书和为顾客推荐书籍。","视频也呈现书车移动、店铺布置和触屏操作。"],
+  18:["介绍酒店冬季版本的场景改造、房间和服务流程。","重点展示装修变化、住客需求与酒店运营。"],
+  19:["介绍棒球 GM 玩法，包括阵容、训练和赛季管理。","比赛结果以外，数据判断和长期经营占比很高。"],
+  20:["展示采集、建设、运输和完成居民任务的连续流程。","小镇扩张、工具解锁和多人协作是主要卖点。"],
+  21:["商店页展示便利店补货、货架陈列、收银和店铺装饰。","商品库存与顾客服务构成主要经营循环。"],
+  22:["商店页展示管理租客需求、收取租金和升级房间。","楼层扩建与住客满意度推动长期成长。"],
+  23:["商店页展示原料采购、生产加工、市场交易和公司扩张。","多段供应链与价格变化是经营核心。"],
+  24:["Reel 展示收购旧物、整理商品并经营一家二手店。","商品鉴价、陈列和出售形成短而清楚的循环。"],
+  25:["Reel 展示经营偏远加油站，同时处理顾客与库存。","普通经营流程中加入夜间事件和轻悬疑氛围。"],
+  26:["Reel 展示酒店空间规划、房间建设和家具布置。","住客需求与经营收入决定下一步扩建。"],
+  27:["广告围绕严寒环境下的炉火、温度和居民生存展开。","资源投入会立即改变设施状态与居民工作效率。"],
+  28:["广告展示冰原探索、资源点选择和运输路线。","路线受天气影响，资源回收后用于营地发展。"],
+  29:["商店页围绕创业决策、员工安排和公司现金流展开。","每次投资都会影响生产效率与后续扩张。"],
+  30:["商店页展示酒吧菜单、库存、价格与顾客经营。","收入用于升级设施并解锁更多商品。"],
+  31:["Reel 介绍自由选择汤底、面条、酱汁和超过 100 种配料。","除自由制作外，还展示拉面富士山和限时挑战等模式。"],
+  32:["TikTok 以拍摄《愛你一萬年》为例展示制片题材玩法。","内容重点是选择项目、组织拍摄并查看作品结果。"],
+  33:["Shorts 展示从原料处理到完成一把剑的锻造过程。","订单、成品品质和工坊成长构成经营反馈。"],
+  34:["商店页展示机场航线、登机口与设施扩建。","客流和航班调度决定机场收入与发展速度。"],
+  35:["商店页展示购买飞机、规划航线和管理航空公司财务。","航程、需求与成本共同决定每条航线收益。"],
+  36:["Reel 介绍栽培、照料和出售超过 100 种室内绿植。","顾客订单、店铺口碑和自由装潢推动经营成长。"],
+  37:["TikTok 介绍 Paralives 的角色生活、互动和房屋建造。","内容强调人物行为更自然，以及较高的空间自定义自由度。"],
+  38:["商店页展示投资、经营公司和逐步扩大商业规模。","利润积累与新业务选择构成主要成长线。"],
+  39:["商店页展示超市补货、定价、陈列和服务顾客。","折扣策略、店铺布局与库存周转直接影响收益。"],
+  40:["视频盘点 10 款 2026 年值得关注的城市建造经营游戏。","每款主要比较建设方式、生产经济和城市扩张差异。"]
+};
+
+paid.forEach(x=>{x.platform ||= 'YouTube'; x.sourceKind ||= 'video';});
+organic.forEach((x,index)=>{x.id=paid.length+1+index; x.platform ||= 'YouTube'; x.sourceKind ||= 'video';});
+
+const escapeHtml = value => String(value).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+const playIcon = '<span aria-hidden="true">▶</span>';
+const openIcon = '<span aria-hidden="true">↗</span>';
+
+function sourceButtons(item){
+  const label=item.sourceKind==='store'?'打开商店玩法页':item.sourceKind==='ad'?'查看具体广告':item.sourceKind==='post'?'打开原帖':'播放原视频';
+  const icon=item.sourceKind==='video'?playIcon:openIcon;
+  return `<div class="actions"><a class="btn primary video-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${icon} ${label}</a></div>`;
 }
-function updatePlatformSummary(){
-  const counts = rankData.reduce((out,item) => { out[item.platform] = (out[item.platform] || 0) + 1; return out; },{});
-  document.querySelector('#platformSummary').innerHTML = Object.entries(counts).map(([platform,count]) => `<span>${esc(platform)} ${count}</span>`).join('');
+
+function paidCard(x){
+  const tags = `<span class="tag ${x.priority.toLowerCase()}">${x.priority}</span><span class="tag">${escapeHtml(x.market)}</span><span class="tag platform">${escapeHtml(x.platform)}</span><span class="tag style">${escapeHtml(x.style)}</span>`;
+  const sourceTitle=paidSourceTitles[x.id]||x.game;
+  const points=paidSourcePoints[x.id]||[x.hook,x.beats];
+  const pointList=points.map(point=>`<li>${escapeHtml(point)}</li>`).join('');
+  return `<article class="item paid" data-type="paid" data-market="${escapeHtml(x.market)}" data-priority="${x.priority}" data-platform="${escapeHtml(x.platform)}" data-search="${escapeHtml([sourceTitle,x.game,x.market,x.platform,x.style,x.adapt].join(' '))}">
+    <div class="item-top"><span class="num">${x.id}</span><div class="title-wrap"><div class="tags">${tags}</div><h3>${escapeHtml(sourceTitle)}</h3></div></div>
+    <div class="source"><b>公开信号：</b>${escapeHtml(x.signal)}${sourceButtons(x)}</div>
+    <div class="source-summary"><b>原内容大意</b><ul class="source-points">${pointList}</ul></div>
+    <div class="kept-grid">
+      <div class="detail"><b>创意建议</b><p>${escapeHtml(x.adapt)}</p></div>
+      <div class="detail"><b>UE / 录屏占比</b><p class="ue">${escapeHtml(x.ue)}</p></div>
+    </div></article>`;
 }
-document.querySelectorAll('[data-region-filter]').forEach(button => button.addEventListener('click',()=>{regionFilter=button.dataset.regionFilter;boardMarket='ALL';marketFilter.value='ALL';render();}));
-document.querySelectorAll('.board-tab').forEach(button => button.addEventListener('click',()=>{boardMarket=button.dataset.market;regionFilter='TW_HK';marketFilter.value=boardMarket === 'ALL' ? 'ALL' : boardMarket;render();document.querySelector('.region-board.tw-hk').scrollIntoView({behavior:'smooth',block:'start'});}));
-[search,marketFilter,platformFilter,visualFilter].forEach(control => control.addEventListener('input',()=>{if(control===marketFilter && marketFilter.value !== 'ALL'){regionFilter='TW_HK';boardMarket='ALL';}render();}));
-document.querySelector('#totalCount').textContent = rankData.length;
-document.querySelector('#jpCount').textContent = rankData.filter(item => item.region === 'JP').length;
-document.querySelector('#twHkCount').textContent = rankData.filter(item => item.region === 'TW_HK').length;
-render();
+
+function organicCard(x){
+  const tags = `<span class="tag ${x.priority.toLowerCase()}">${x.priority}</span><span class="tag">${escapeHtml(x.market)}</span><span class="tag platform">${escapeHtml(x.platform)}</span><span class="tag style">自然流量</span>`;
+  return `<article class="item organic" data-type="organic" data-market="${escapeHtml(x.market)}" data-priority="${x.priority}" data-platform="${escapeHtml(x.platform)}" data-search="${escapeHtml([x.title,x.channel,x.market,x.platform,x.format,x.adapt].join(' '))}">
+    <div class="item-top"><span class="num">${x.id}</span><div class="title-wrap"><div class="tags">${tags}</div><h3>${escapeHtml(x.title)}</h3></div></div>
+    <div class="source"><b>${escapeHtml(x.channel)}</b> · ${escapeHtml(x.signal)}${sourceButtons(x)}</div>
+    <div class="detail-grid">
+      <div class="detail"><b>为什么近期有效</b><p>${escapeHtml(x.why)}</p></div><div class="detail"><b>内容结构</b><p>${escapeHtml(x.format)}</p></div>
+      <div class="detail"><b>改成项目内容</b><p>${escapeHtml(x.adapt)}</p></div><div class="detail"><b>和买量互证</b><p>${escapeHtml(x.test)}</p></div>
+    </div></article>`;
+}
+
+function slgCard(x){
+  const tags=`<span class="tag slg">SLG</span><span class="tag">${escapeHtml(x.market)}</span><span class="tag platform">${escapeHtml(x.platform)}</span><span class="tag style">${escapeHtml(x.mechanic)}</span>`;
+  const points=x.points.map(point=>`<li>${escapeHtml(point)}</li>`).join('');
+  return `<article class="item slg" data-type="slg" data-market="${escapeHtml(x.market)}" data-priority="P0" data-platform="${escapeHtml(x.platform)}" data-search="${escapeHtml([x.title,x.market,x.platform,x.mechanic,x.adapt].join(' '))}">
+    <div class="item-top"><span class="num">${escapeHtml(x.id)}</span><div class="title-wrap"><div class="tags">${tags}</div><h3>${escapeHtml(x.title)}</h3></div></div>
+    <div class="source"><b>公开信号：</b>${escapeHtml(x.signal)}${sourceButtons(x)}</div>
+    <div class="source-summary"><b>原内容大意</b><ul class="source-points">${points}</ul></div>
+    <div class="kept-grid"><div class="detail"><b>创意建议</b><p>${escapeHtml(x.adapt)}</p></div><div class="detail"><b>UE / 录屏占比</b><p class="ue">${escapeHtml(x.ue)}</p></div></div>
+  </article>`;
+}
+
+const regionLists = [
+  ['jpPaidList',paid.filter(x=>x.market==='JP'),paidCard],
+  ['jpOrganicList',organic.filter(x=>x.market==='JP'),organicCard],
+  ['twPaidList',paid.filter(x=>x.market==='TW'),paidCard],
+  ['twOrganicList',organic.filter(x=>x.market==='TW'),organicCard],
+  ['hkPaidList',paid.filter(x=>x.market==='HK'),paidCard],
+  ['hkOrganicList',organic.filter(x=>x.market==='HK'),organicCard]
+];
+regionLists.forEach(([id,items,renderer])=>{document.getElementById(id).innerHTML=items.map(renderer).join('');});
+
+let activeFilter='all';
+let activeMarket='all';
+const search=document.getElementById('search');
+const platformFilter=document.getElementById('platformFilter');
+const filterButtons=[...document.querySelectorAll('[data-filter]')];
+const marketButtons=[...document.querySelectorAll('[data-market-filter]')];
+const slgMarketButtons=[...document.querySelectorAll('[data-slg-market]')];
+function updateMarketButtons(){
+  marketButtons.forEach(button=>{
+    const selected=activeFilter==='paid'&&button.dataset.marketFilter===activeMarket;
+    button.classList.toggle('active',selected);
+    button.setAttribute('aria-pressed',String(selected));
+  });
+  slgMarketButtons.forEach(button=>{
+    const selected=activeFilter==='slg'&&button.dataset.slgMarket===activeMarket;
+    button.classList.toggle('active',selected);
+    button.setAttribute('aria-pressed',String(selected));
+  });
+}
+function applyFilters(){
+  const term=search.value.trim().toLowerCase(); let visible=0;
+  document.querySelectorAll('.item').forEach(card=>{
+    const typeOk=activeFilter==='all'||card.dataset.type===activeFilter||(activeFilter==='p0'&&card.dataset.priority==='P0');
+    const marketOk=activeMarket==='all'||card.dataset.market===activeMarket;
+    const platformOk=platformFilter.value==='all'||card.dataset.platform===platformFilter.value;
+    const textOk=!term||card.dataset.search.toLowerCase().includes(term)||card.innerText.toLowerCase().includes(term);
+    card.hidden=!(typeOk&&marketOk&&platformOk&&textOk); if(!card.hidden) visible++;
+  });
+  document.querySelectorAll('.content-group').forEach(group=>{group.hidden=![...group.querySelectorAll('.item')].some(card=>!card.hidden);});
+  document.querySelectorAll('.market-section').forEach(section=>{section.hidden=![...section.querySelectorAll('.item')].some(card=>!card.hidden);});
+  document.querySelectorAll('.slg-market').forEach(section=>{section.hidden=![...section.querySelectorAll('.item')].some(card=>!card.hidden);});
+  document.getElementById('noResults').style.display=visible?'none':'block';
+}
+filterButtons.forEach(btn=>btn.addEventListener('click',()=>{filterButtons.forEach(b=>b.classList.remove('active'));btn.classList.add('active');activeFilter=btn.dataset.filter;activeMarket='all';updateMarketButtons();applyFilters();}));
+marketButtons.forEach(btn=>btn.addEventListener('click',()=>{
+  activeMarket=btn.dataset.marketFilter;
+  activeFilter='paid';
+  search.value='';
+  platformFilter.value='all';
+  filterButtons.forEach(button=>button.classList.toggle('active',button.dataset.filter==='paid'));
+  updateMarketButtons();
+  applyFilters();
+  document.querySelector(`.market-section[data-region="${activeMarket}"]`)?.scrollIntoView({behavior:'smooth',block:'start'});
+}));
+slgMarketButtons.forEach(btn=>btn.addEventListener('click',()=>{
+  activeMarket=btn.dataset.slgMarket;
+  activeFilter='slg';
+  search.value='';
+  platformFilter.value='all';
+  filterButtons.forEach(button=>button.classList.toggle('active',button.dataset.filter==='slg'));
+  updateMarketButtons();
+  applyFilters();
+  document.querySelector(`.slg-market[data-slg-region="${activeMarket}"]`)?.scrollIntoView({behavior:'smooth',block:'start'});
+}));
+platformFilter.addEventListener('change',applyFilters);
+search.addEventListener('input',applyFilters);
+
+const mkDailyPaid=(n,market,platform,sourceKind,style,title,url,signal,p1,p2,adapt,ue)=>({n,market,platform,sourceKind,style,title,game:title,url,signal,points:[p1,p2],adapt,ue});
+const mkDailyOrg=(n,market,platform,sourceKind,title,channel,url,signal,why,format,adapt,test)=>({n,market,platform,sourceKind,title,channel,url,signal,why,format,adapt,test});
+const mkSlgItem=(id,market,platform,sourceKind,mechanic,title,url,signal,p1,p2,adapt,ue)=>({id,market,platform,sourceKind,mechanic,title,url,signal,points:[p1,p2],adapt,ue});
+const slgItems=[
+  mkSlgItem('S01','JP','YouTube','video','资源首领','【晶石ボス】金塊をゲットせよ！【オフシーズン】/ラストウォー','https://www.youtube.com/watch?v=WHF3qsW_pcs','约 1,436 次观看 · 9 小时前','围绕晶石首领、伤害目标与金块奖励展开当期资源循环。','目标、出队、结算和资源回流集中在一次活动内。','改成纸雕矿脉争夺：三支小队同时采晶，玩家只调整一条补给线，结尾金块进入锻造坊并解锁新炉位。','0–10%'),
+  mkSlgItem('S02','JP','YouTube','video','赛季资源','【ラストウォー】『晶石イベント』解禁！６０日間で報酬GET！　　#ラストウォー #lastwar #vtuber','https://www.youtube.com/watch?v=RjB_n7wKUT8','约 3,689 次观看 · 14 小时前','介绍新开放的晶石活动与 60 日奖励周期。','长期目标被拆为每天可完成的资源积累和阶段结算。','把 60 天压成 20 秒体素日历：每天一格资源入库，三次关键选择改变最终仓库形态，最后用城墙升级收尾。','0–5%'),
+  mkSlgItem('S03','JP','YouTube','video','城建顺序','『黄金を無駄にするな！』　TG６～８育成計画　＃キングショット','https://www.youtube.com/watch?v=QtrO-0Rz0pY','约 2,942 次观看 · 4 个月前','拆解 TG6–8 建筑阶段的黄金消耗和成长计划。','把稀缺资源、建造时间和阶段目标放在同一条升级路线里比较。','做像素雪城“黄金只够升一座”：炉塔保产能、仓库保资源、兵营保守城，三选一后立即展示 24 小时后的城镇差异。','0–10%'),
+  mkSlgItem('S04','JP','YouTube','video','资源门槛','【キングショット】知らないと6.4億の大損!? 攻略サイトの罠を暴くTG5までの「真の必要資源」と最強の強化順','https://www.youtube.com/watch?v=hWwcl9XbPI4','约 1.3 万次观看 · 5 个月前','对比攻略表与实际资源需求，指出建造减免和军事设施顺序。','核心吸引点是错误升级会形成可量化的巨大损失。','用同一套纸雕城市做双线对照：A 先升大厅导致粮仓见底，B 先补运输与仓储，最后用“少花 6.4 亿”式日语数字牌收束。','0–5%'),
+  mkSlgItem('S05','JP','YouTube','video','联盟集结','熊狩りでダメージを出すために　〜英雄の選択〜 ＃キングショット','https://www.youtube.com/watch?v=tNbgwmHKINI','约 7,707 次观看 · 1 个月前','围绕联盟熊狩活动解释英雄选择和集结队伍配置。','同一目标下，不同英雄位置直接影响联盟总伤害。','改成木版画像素的巨兽集结：三路队伍从地图边缘汇合，只突出主将选择、到达时差和联盟总奖励三个反馈。','5–10%'),
+  mkSlgItem('S06','JP','YouTube','video','兵种升级','T12で何が変わった！？優先度・スキル・戦闘の変化まで徹底解説！【ホワイトアウトサバイバル / whiteout survival】','https://www.youtube.com/watch?v=cnINz_mvQo4','约 5,517 次观看 · 1 个月前','对比 T12 前后的优先级、技能和战斗结果变化。','升级价值不是只看数值，而是看兵种在具体战斗中的职责变化。','做赛璐璐兵种进化实验：同一路口前后各打一次，升级后单位轮廓、攻击范围和据点占领速度同时变化。','10–15%'),
+  mkSlgItem('S07','JP','YouTube','video','装备投资','【領主装備編】2026年夏、最新版！コスパ検証！！【ホワサバ】','https://www.youtube.com/watch?v=j69blaCTvFw','约 5,649 次观看 · 1 个月前','以 2026 夏季版本核算领主装备的投入产出。','用成本、材料和实际收益判断哪一件装备值得先做。','改成像素铁匠铺单任务：三件装备只够锻一件，锻造后立刻切到同一据点战，看运输量、守军和占领时间哪项真正改变。','0–5%'),
+  mkSlgItem('S08','JP','YouTube','video','赛季开荒','【三国志 真戦】実生活に支障をきたさず楽にスタダしても上位陣になれちゃう方法【三國志】【三国志战略版】1605','https://www.youtube.com/watch?v=LyJTCznkfLo','约 8,660 次观看 · 1 个月前','讲解低负担赛季开荒与资源节奏，目标是在较少操作下保持排名。','土地选择、体力和队伍行动被组织成可复用的开局路线。','做纸雕 12 小时开荒棋盘：每次只点一个资源地，错误路线卡在河道，正确路线连成补给链并点亮第一个据点。','5–10%'),
+  mkSlgItem('S09','JP','YouTube','video','据点攻防','【信長の野望 覇道】知らないと勝てない！港戦攻略のコツ！マップ別の立ち回りや攻略法について','https://www.youtube.com/watch?v=a_7pSUI-wQo','约 7,026 次观看 · 发布日期未在检索页显示','按不同港口地图讲解进攻路线、站位和争夺节奏。','玩法价值来自地形差异与据点目标，而不是单纯战力展示。','把港战重绘成剪纸冰港：先封一座桥，再让运输船绕行侧港；A 面突出路线误判，B 面突出最后 3 秒抢点。','5–10%'),
+  mkSlgItem('S10','JP','Google Play','store','合成城建','トップウォー','https://play.google.com/store/apps/details?id=com.topwar.gp&hl=ja','Google Play 日本页 · 4.6 分 · 77.9 万条评价 · 5,000 万+下载 · 2026-08-13 更新','商店页展示建筑、技能和单位通过合成立即升级。','从荒岛开拓到基地建设、训练部队和全球联盟战形成完整循环。','只借“拖拽合成即升级”：两座像素粮仓合成高级仓，运输车容量马上翻倍，再拉远出现新的边境格，不沿用现代军武画面。','0%'),
+  mkSlgItem('S11','TW','YouTube','video','活动路线','Kingshot 逐風/踏浪/沐光之旅完整攻略！羅盤這樣用最划算，微課、無課玩家必看！','https://www.youtube.com/watch?v=p9GP35wCGwM','约 3,454 次观看 · 发布日期未在检索页显示','讲解三类旅程活动、罗盘使用和微课/无课资源分配。','同一消耗品走不同路线会改变阶段奖励与后续成长。','繁中版做体素罗盘二选一：直走抢稀有矿，绕路补联盟物资；最后用两座城的资源差异回答“點樣用先最抵”。','0–5%'),
+  mkSlgItem('S12','TW','YouTube','video','生产运输','【Last War】賽季二新手快速上手！極寒風暴超詳細重點：職業技能怎麼點？煤炭鈦合金幹嘛用？緊急錄製經驗分享！','https://www.youtube.com/watch?v=w6eJ1-6j7gA','约 824 次观看 · 发布日期未在检索页显示','介绍极寒赛季职业技能、煤炭与钛合金的用途。','采集、加工、抗寒和职业选择共同决定赛季推进速度。','改成像素极寒生产链：煤矿→熔炉→钛构件→热源塔，故意让一辆运输车停错仓，观众能一眼找出断点。','0–10%'),
+  mkSlgItem('S13','TW','YouTube','video','剧本开荒','三戰2026年新劇本九州兵興，避坑指南及十天實用治軍戰法推薦！#三國志戰略版 #九州兵興 #治軍戰法','https://www.youtube.com/watch?v=ohIygKHpz1w','约 840 次观看 · 4 个月前','围绕九州兵兴剧本整理开局避坑和十天治军战法。','把新剧本规则、阶段目标和队伍方案放在同一条成长时间线上。','用木版画像素做十日军令板：每天只解锁一枚令牌，错误搭配导致粮线断开，正确搭配让地图边界连续推进。','5–10%'),
+  mkSlgItem('S14','TW','Google Play','store','自由行军','萬國覺醒-RoK','https://play.google.com/store/apps/details?id=com.lilithgame.roc.gp.tw&hl=zh_TW&gl=TW','Google Play 台湾页 · 4.0 分 · 2.1 万则评论 · 50 万+下载 · 2026-07-23 更新','商店页明确展示自由行军、包抄、资源点争夺与盟友增援。','世界地图缩放、城市自由布局和多兵线远征互相连接。','改成纸雕地图“同一支商队要不要绕路”：直线快但会撞敌，绕行可占资源点并接到盟友，结果直接落到城建产出。','5–10%'),
+  mkSlgItem('S15','HK','YouTube','video','兵种战法','【三國志戰略版】國際專屬新劇本——兵演春秋 介紹新武將新戰法同劇本講解！','https://www.youtube.com/watch?v=_LUDFsLV5N0','约 242 次观看 · 发布日期未在检索页显示 · HK player','介绍国际服兵演春秋剧本、新武将、新战法和新规则。','内容把角色、兵种和剧本机制放在同一套繁中解释框架里。','用粤语字幕做木版画军帐：先选兵种，再把战法令牌贴到地图路线；不要做角色大招混剪，结尾看据点是否守住。','5–10%'),
+  mkSlgItem('S16','HK','YouTube','video','港澳台剧本','《三國志．戰略版》 全新港台國際服專屬劇本，全新專屬武將、技能及兵種#삼국지전략판 #三國志戰略版 #三國志真戦 真戦','https://www.youtube.com/watch?v=GzCbA6Ryf9Q','约 4,324 次观看 · 1 个月前','聚焦港台国际服专属剧本、武将、技能与兵种差异。','专属版本节点给香港用户明确的“这次有什么不同”观看理由。','做纸雕港服“同一关口三种守法”：技能、兵种、运输路线各只改一个变量，用书面繁中主文案配一句轻粤语钩子。','5–10%'),
+  mkSlgItem('S17','HK','YouTube','video','联盟竞赛','#王國紀元 2026 IGG 全球巔峰賽線上選拔圓滿落幕！','https://www.youtube.com/watch?v=s431Lf-vD58','约 66 次观看 · 2 个月前 · 官方频道','官方短片记录 2026 全球巅峰赛线上选拔节点。','竞赛结果可作为联盟目标、赛制节点和强者对抗的公开内容信号。','不要复刻赛事混剪；改成低模三路据点计分板，联盟在最后十秒决定守仓还是抢中央点，结算数字直接翻转。','5–10%'),
+  mkSlgItem('S18','HK','Google Play','store','联盟扩张','王國紀元 - 變形金剛聯動','https://play.google.com/store/apps/details?id=com.igg.android.lordsmobile&hl=zh_HK&gl=HK','Google Play 香港页 · 4.1 分 · 917 万则评论 · 5 亿+下载 · 2026-07-31 更新','商店页列出建筑升级、科技研究、练兵、采粮挖矿与联盟远征。','兵种阵型、联盟集结、奇观争夺和王国扩张构成主要 SLG 循环。','改成纸雕浮空城：四类资源沿吊桥入库，联盟三队同时集结奇观；全程只保留图形化行军与扩建，不用写实战斗。','5–10%')
+];
+const dailyPaid=[
+  mkDailyPaid(1,'JP','YouTube','video','低多边形交通','City Transport Simulator 2026 - Launch Trailer | PS5 Games','https://www.youtube.com/watch?v=d6mKqmbCnlY','2.5 万次观看 · 4 个月前','展示公交线路、车辆调度与城市客流的连续变化。','从站点规划到车辆运行，结果会反馈到街区繁忙度。','改成冰河驿路的马车班次：先安排一辆车解决断粮，再拉远看到第二条路线开通。','0–5%'),
+  mkDailyPaid(2,'JP','YouTube','video','像素雪原','Above the Snow - Gameplay Trailer | Simulation 2026','https://www.youtube.com/watch?v=Hv1uS7Dfjo8','公开视频 · 4 个月前 · 玩法预告','展示雪地避难所的建造、居民需求与资源收集。','温度、床位和食物同时变化，经营选择决定避难所能否扩建。','保留“避难所需求同时亮红”的压力，改为像素冰河营地，避免写实雪景。','0–10%'),
+  mkDailyPaid(3,'JP','YouTube','video','纸雕城镇','Top 16 Upcoming Colony Survival Strategy Games 2026','https://www.youtube.com/watch?v=i8jnlQhZJEo','公开视频 · 2026 新作清单','展示避难所、资源采集、生产设施和聚落扩展。','生存压力被拆成资源、岗位和空间规划几个经营动作。','改成冰河小镇的仓储与供热经营，去掉战斗，只保留资源链和街区扩建。','0–10%'),
+  mkDailyPaid(4,'JP','YouTube','video','像素交通','City Transport Simulator 2026 - Announcement Trailer | PS5 Games','https://www.youtube.com/watch?v=n5z7YpAVrN4','公开视频 · 4 个月前','展示车辆、站点和城市生活节奏。','玩家的线路规划会改变居民到店和街区客流。','将“站点覆盖”改成驿站服务半径，首尾帧用同一地图显示扩建前后。','0–5%'),
+  mkDailyPaid(5,'JP','YouTube','video','体素工坊','eBaseball™: PRO SPIRIT 2026 - Official Gameplay Trailer | Next-Gen Baseball Simulation','https://www.youtube.com/watch?v=MpwwMrnFGyc','公开视频 · 官方玩法预告','展示队伍管理、训练安排和赛季结果。','短镜头把后台排班与结果反馈连在一起。','借用“岗位卡→结果跳变”结构，改成铁匠、搬运、炊事三岗位，不展示比赛。','0%'),
+  mkDailyPaid(6,'JP','YouTube','video','黏土城镇','Stormforge: Official Gameplay Trailer','https://www.youtube.com/watch?v=gtHU6wLr6F0','公开视频 · 官方玩法预告','展示资源采集、建筑放置与领地成长。','采集点、工坊和道路之间形成可视化生产链。','做成冰河资源加工链：木材进锯坊、锯材进修缮队，最后点亮新街区。','0–10%'),
+  mkDailyPaid(7,'JP','YouTube','video','木版画像素','Laundry Simulator 2026 - Official Gameplay Trailer','https://www.youtube.com/watch?v=ZcKv7Givfy0','公开视频 · 近期新作预告','展示接单、分类、加工、交付和店铺升级。','单一订单经过连续动作后立即产生金币反馈。','改成军需布料作坊：按订单分拣、染色、烘干，再扩建第二个晾晒架。','0%'),
+  mkDailyPaid(8,'JP','YouTube','video','赛璐璐经理','Barista Life Simulator 2026 – Nintendo Switch / Switch 2 Gameplay','https://www.youtube.com/watch?v=sn22bFXYm7A','公开视频 · Switch 玩法','展示点单、制作、出餐和客流高峰。','顾客需求气泡与制作顺序构成短时决策。','改成雪夜热汤站，重点是库存和出餐顺序，不做食物写实特写。','0–5%'),
+  mkDailyPaid(9,'JP','YouTube','video','像素岗位卡','Esports Manager 2026 - Official Release Date Trailer','https://www.youtube.com/watch?v=78ovz89_zaQ','公开视频 · 发售预告','展示阵容选择、训练、赛程和团队成长。','不同岗位配置会在结算页体现效率差异。','做成“掌柜/马夫/修路工三选一”，让人员配置直接改变驿站收入。','0%'),
+  mkDailyPaid(10,'JP','YouTube','video','纸雕地图','Master Business Management in 2026\'s Upcoming Tycoon Sim Games','https://www.youtube.com/watch?v=hyF5RSwH-aU','公开视频 · 2026 新作管理清单','清单对比公司、店铺与人员管理玩法。','经营动作被压缩成可快速比较的模块。','拆成日语“一个经营动作一条”系列，每条只留下补货、排班或运输。','0%'),
+  mkDailyPaid(11,'JP','Steam','store','像素拼图','Cities: Skylines II','https://store.steampowered.com/app/949230/Cities_Skylines_II/','Steam 具体商店玩法页 · 评分/评价量以实时页为准','商店页展示道路、公共设施、客流和城市扩展。','空间规划与服务效率的反馈非常直观。','做“先通冰桥还是先建仓”的轻城建选择，结尾给街区扩建结果。','0–10%'),
+  mkDailyPaid(12,'JP','YouTube','video','纸雕商铺','新作ゲーム【お店経営】忙しくて楽しいおすすめ10本 | 2026年以降','https://www.youtube.com/watch?v=yh6NbpDKIIU','1242 次观看 · 6 个月前','集中展示店铺经营新作的进货、服务和扩建。','忙碌感来自多个小任务同时出现，而不是大场面。','用三冰驿站做“同一时间三张订单”的纸雕分屏，强调连续处理。','0%'),
+  mkDailyPaid(13,'JP','YouTube','video','黏土农贸街','馬牧場と農業と店経営と転売ヤーを同時にこなすシミュレーションゲーム【実況】','https://www.youtube.com/watch?v=sSTuIAg6mD8','3590 次观看 · 14 小时前','展示牧场、农业、店铺和转卖多个经营环节并行。','多条经营线并行会制造“先做哪件事”的即时冲突。','只取一条线：马料加工→驿站售卖→现金回流，减少题材杂讯。','0–5%'),
+  mkDailyPaid(14,'JP','YouTube','video','低多边形城建','TOP 30 MOST REALISTIC New Simulation Games coming out in 2026','https://www.youtube.com/watch?v=UAr6HQxzPC4','公开视频 · 2026 新作清单','清单视频展示多种建设、道路和生产设施。','“30 款 + 2026”带来明确检索入口，适合提取经营机制。','改成“一个空地只放三种设施”，让空间规划在 15 秒内闭环。','0–10%'),
+  mkDailyPaid(15,'JP','YouTube','video','木版画书铺','本屋をリアル経営してひたすらお金を稼ぐ最新シミュレーターゲーム【 Bookshop Simulator ライブ配信 】','https://www.youtube.com/watch?v=BeSJ8qzQP7E','1.1 万次观看 · 4 周前直播','展示书籍进货、陈列、顾客选择和收银。','最后一本书的库存会自然制造选择冲突。','改成兵书铺：同一本书面对商队与平民两种需求，选择后改变下一日客流。','0%'),
+  mkDailyPaid(16,'JP','YouTube','video','像素公司','Steamで遊べる！本格的な会社・店舗経営シミュレーションゲーム15選【全部日本語】','https://www.youtube.com/watch?v=sXcUhYLf10I','4254 次观看 · 7 个月前','对比公司、商店和生产链的经营方式。','“全部日语”降低理解门槛，适合日本区自然点击。','提取其中最清楚的库存/定价镜头，做日语 UI 的小店 A 面。','0%'),
+  mkDailyPaid(17,'JP','YouTube','video','纸片城镇','今後発売予定の、驚くほど素晴らしいタイクーンゲーム15選！','https://www.youtube.com/watch?v=3RoFGNKBXLI','4.7 万次观看 · 3 个月前','展示多个新生代 tycoon 的扩建、服务和生产。','“即将发售”与新作密度带来期待感。','把三冰做成“尚未开通的第二座驿站”，用设施解锁制造期待。','0%'),
+  mkDailyPaid(18,'JP','YouTube','video','像素旅馆','Top 16 Upcoming Tycoon & Management Games Coming in 2026','https://www.youtube.com/watch?v=7SYip8bgDQs','公开视频 · 2026 新作清单','展示旅馆、商店、交通等 tycoon 循环。','同类对比能快速找出高频经营动作。','借“住客需求→房间模块→收租”三段循环，做雪城客栈低模剖面。','0%'),
+  mkDailyPaid(19,'JP','YouTube','video','体素生产链','Tycoon, shopkeeping & business management games upcoming in 2026','https://www.youtube.com/watch?v=LopFISZPcuE','公开视频 · 2026 新作清单','围绕店铺管理、补货和商业成长做快速展示。','店铺经营可被压缩为一条清晰操作链。','做“仓库只剩两箱”的日语短素材，连续展示补货、排班、开门。','0%'),
+  mkDailyPaid(20,'JP','YouTube','video','黏土街区','Top 25 NEW Upcoming Simulation Games of 2025 & 2026','https://www.youtube.com/watch?v=NAElH89KRJA','公开视频 · 2025–2026 新作清单','展示多款新模拟游戏的独特系统与发展阶段。','新作清单适合提取“一个新系统”作为广告核心。','只保留街区扩建的阶段变化，用三种建筑模块做首尾帧。','0%'),
+  mkDailyPaid(21,'JP','Meta','ad','像素剖面','Township Mobile — Ad #1760176685733678','https://www.facebook.com/ads/library/?id=1760176685733678','日本广告库：2026-07-29 起投 · 多版本','广告文案强调农场、建造和关卡混合。','同一素材多版本复用，说明“建设结果 + 单一任务”易被重复测试。','去掉三消，改成炉火、仓库和居民需求三指标的连续经营。','0–5%'),
+  mkDailyPaid(22,'JP','Meta','ad','纸雕旅馆','Dream Hotel: Hotel Manager Simulation Game — Ad #1403789940813145','https://www.facebook.com/ads/library/?id=1403789940813145','日本广告库：2025-05-28 起投 · 仍可见','展示升级酒店、招募员工和扩建帝国。','“招人 + 扩建”比泛泛世界观更容易一眼理解。','改成雪城客栈员工分工：先招炊事还是修窗，结果直接反馈满意度。','0–5%'),
+  mkDailyPaid(23,'JP','Google Play','store','像素农场','Township','https://play.google.com/store/apps/details?id=com.playrix.township&hl=ja','日本 Google Play 玩法页 · 评分/评价量以实时商店页为准','商店页展示种植、加工、订单和城镇扩建。','生产链与订单反馈适合拆为可视化资源流。','改成药草田→作坊→驿站订单，画面保持像素平视。','0%'),
+  mkDailyPaid(24,'JP','Google Play','store','低多边形酒店','Dream Hotel: Hotel Manager Simulation Game','https://play.google.com/store/apps/details?id=com.hotel.frenzy.simulation.grand.hotel&hl=ja','日本 Google Play 玩法页 · 公开评分以实时页为准','商店页展示房间升级、员工管理和住客服务。','房间需求与现金流之间的反馈非常直接。','改成分层雪城旅店，先修保温再收租，避免现代豪华酒店包装。','0–5%'),
+  mkDailyPaid(25,'JP','Google Play','store','木版画像素','冒険ダンジョン村2','https://play.google.com/store/apps/details?id=net.kairosoft.android.bouken2&hl=ja','日本 Google Play 商店页 · Kairosoft 经营玩法证据','展示村庄设施、冒险者需求和设施升级。','设施摆放会影响居民与冒险者的消费路径。','改成冰河驿站村：商队需求决定先建仓库、铁匠铺还是客栈。','0%'),
+  mkDailyPaid(26,'JP','Google Play','store','纸雕校园','箱庭シティ鉄道','https://play.google.com/store/apps/details?id=net.kairosoft.android.train&hl=ja','日本 Google Play 商店页 · 具体玩法入口','展示线路、站点和城市设施的组合经营。','路线规划与客流结果形成可视化闭环。','改成商队路线：调度两辆雪橇解决同一订单，再解锁第三个站点。','0–5%'),
+  mkDailyPaid(27,'JP','App Store','store','赛璐璐城市','Pocket City 2','https://apps.apple.com/jp/app/pocket-city-2/id1533709428','日本 App Store 具体商品页 · 玩法证据','商店页展示道路、建筑、居民和城市活动。','轻城建与居民需求可以组成短时空间规划选择。','只借“道路覆盖→客流改变”结构，改为冰桥和驿站道路。','0%'),
+  mkDailyPaid(28,'JP','App Store','store','像素公司','Coffee Inc 2','https://apps.apple.com/jp/app/coffee-inc-2/id1450172464','日本 App Store 具体商品页 · 玩法证据','商店页展示门店选址、员工、菜单和财务成长。','定价、排班和选址都能转成一张经营决策卡。','改成热汤铺：先定价还是先招炊事员，结尾给出现金流变化。','0%'),
+  mkDailyPaid(29,'JP','App Store','store','低模交通','Mini Metro','https://apps.apple.com/jp/app/mini-metro/id837860959','日本 App Store 具体商品页 · 玩法证据','商店页展示线路连接、客流和资源限制。','有限线路下的取舍是非常清楚的经营冲突。','改成三座冰河城的商队路线，线路变成纸雕粗线动画。','0%'),
+  mkDailyPaid(30,'JP','Steam','store','体素城建','Kingdoms Reborn','https://store.steampowered.com/app/1331550/Kingdoms_Reborn/','Steam 具体商店玩法页 · 评分/评价量以实时页为准','商店页展示资源、居民、生产链和城镇扩展。','生产与空间规划可压缩成一个“缺口→补设施→扩建”循环。','改为冰河边缘的轻城建，突出仓储、供热和道路，不做战争大场面。','0–10%'),
+  mkDailyPaid(31,'TW','TikTok','video','像素修理铺','ReStory: Chill Electronics Repairs - A Cozy Shop Simulator','https://www.tiktok.com/@petitjusgames/video/7652878905535139079','TikTok：1180+ 次观看 · 2 个月前','展示接收旧物、拆解、维修和店铺经营。','单件物品从故障到修好，变化容易在竖屏里看懂。','改成修復破損軍械/馬具：維修完成後帶動驛站訂單，畫風保持像素硬朗。','0%'),
+  mkDailyPaid(32,'TW','Google Play','store','像素农场','Township','https://play.google.com/store/apps/details?id=com.playrix.township&hl=zh_TW','台湾 Google Play 具体玩法页 · 评分/评价量以实时页为准','展示种植、加工、订单和城镇建设。','资源加工到订单交付的反馈适合繁中短素材。','台湾版用“缺貨→補貨→出貨”三步，画面仍是非写实冰河驿站。','0%'),
+  mkDailyPaid(33,'TW','App Store','store','赛璐璐公司','Coffee Inc 2','https://apps.apple.com/tw/app/coffee-inc-2/id1450172464','台湾 App Store 具体商品页 · 玩法证据','展示门店经营、人员排班和现金流。','门店决策可用繁中卡片快速表达。','文案用“先請人還是先買設備？”并用雪城作坊替换咖啡店。','0%'),
+  mkDailyPaid(34,'TW','App Store','store','低模城市','Pocket City 2','https://apps.apple.com/tw/app/pocket-city-2/id1533709428','台湾 App Store 具体商品页 · 玩法证据','展示道路、设施和城市扩张。','空间规划直接影响居民路径和服务效率。','改成冰桥街区：先铺路还是先建仓，结果用繁中客流数字反馈。','0%'),
+  mkDailyPaid(35,'TW','Meta','ad','纸雕酒店','Dream Hotel: Hotel Manager Simulation Game — Ad #27700060929635743','https://www.facebook.com/ads/library/?id=27700060929635743','Meta 广告库具体 ID · 2026-07-29 起投','广告展示酒店升级、员工和服务流程。','“服務失誤→升級設施”是繁中用户一眼能懂的冲突。','改成“客棧只剩一張床”，用住宿需求驱动空间扩建。','0–5%'),
+  mkDailyPaid(36,'TW','TikTok','video','木版画小店','Tabletop Game Shop Simulator Just Got A Massive Upgrade ...','https://www.tiktok.com/@skytzsy/video/7644952325588667666','TikTok：4860+ 次观看 · 2 个月前','展示桌游店上架、补货、陈列和客流。','升级前后对照让经营结果非常直观。','改成“軍令牌鋪大改版”，做货架重排与爆单对照。','0%'),
+  mkDailyPaid(37,'HK','Google Play','store','像素农场','Township','https://play.google.com/store/apps/details?id=com.playrix.township&hl=zh_HK','香港 Google Play 具体玩法页 · 评分/评价量以实时页为准','展示农场、加工、订单和城镇扩建。','繁中商店页能验证“生產→出貨→擴建”的本地表达。','改成“雪地補給站”，字幕用香港常见书面繁中，动作保持中性硬朗。','0%'),
+  mkDailyPaid(38,'HK','Google Play','store','低多边形酒店','Dream Hotel: Hotel Manager Simulation Game','https://play.google.com/store/apps/details?id=com.hotel.frenzy.simulation.grand.hotel&hl=zh_HK','香港 Google Play 具体玩法页 · 玩法证据','展示房間需求、員工安排與收入。','服务顺序和房间升级构成短决策。','做“今晚要唔要加床？”的粤语字幕版本，画面仍用纸雕剖面。','0–5%'),
+  mkDailyPaid(39,'HK','App Store','store','赛璐璐公司','Coffee Inc 2','https://apps.apple.com/hk/app/coffee-inc-2/id1450172464','香港 App Store 具体商品页 · 玩法证据','展示店舖選址、排班、菜單與財務。','小店现金流是香港本地经营语境容易理解的冲突。','改成驿站熱湯舖，测试“先加座位定先補貨”的两种开场。','0%'),
+  mkDailyPaid(40,'HK','App Store','store','低模城市','Pocket City 2','https://apps.apple.com/hk/app/pocket-city-2/id1533709428','香港 App Store 具体商品页 · 玩法证据','展示道路、居民和城市设施扩建。','街區規劃与客流反馈适合短视频。','改成“先通冰橋定先開倉”，用两条路线做 A/B。','0%'),
+  mkDailyPaid(41,'HK','TikTok','video','像素港味小铺','體驗經營港味小舖，從製作點心到招待客人，樂趣一手掌握','https://www.tiktok.com/@mrgamerloveu_/video/7552853432214801678','TikTok：香港語境经营内容 · 具体视频入口','展示小铺制作、招待客人和店内服务。','本地口味与店务动作形成清楚的经营叙事。','改成“冰河驛站熱湯舖”，保留港味字幕节奏，不使用写实食物镜头。','0%'),
+  mkDailyPaid(42,'HK','Meta','ad','纸雕农场','Township Mobile — Ad #1682963229671075','https://www.facebook.com/ads/library/?id=1682963229671075','Meta 广告库具体 ID · 2026-07-29 起投','广告展示农场、建设和连续任务。','同一创意的多个版本适合测试“爆单”与“缺货”开场。','做港版“倉庫見底”版本，先给库存压力，再用街区扩建收尾。','0–5%')
+];
+const dailyOrganic=[
+  mkDailyOrg(43,'JP','YouTube','video','TOP 40 New Upcoming Simulation Games of 2026 and Beyond','Simulation Lab','https://www.youtube.com/watch?v=beL4IuaS_j4','公开视频 · 2026 及以后清单','超长清单适合被搜索和二次整理。','多品类对比能帮助找到非女性向、非幼态的经营包装。','做“只看轻经营”的日语二次筛选，突出补货、排班和运输。','按评论投票挑选下一条日本广告创意。'),
+  mkDailyOrg(47,'JP','YouTube','video','Top 20 NEW Medieval Games of 2026','GameTrailers','https://www.youtube.com/watch?v=YTMdJd8ogFg','公开视频 · 中世纪新作清单','中世纪题材与建设经营天然接近三冰受众。','清单将城建、生产和资源调度拆开说明。','改成雪城驿站经营，不复制战斗镜头，只保留作坊与路线。','把评论里最常被提到的资源动作做买量变体。'),
+  mkDailyOrg(49,'JP','YouTube','video','16 Best Management Games 2026 - That You Can Play RIGHT NOW!','Management Games Daily','https://www.youtube.com/watch?v=PkExIdxTzLw','公开视频 · 2026 经营清单','“现在就能玩”比泛泛期待更有行动感。','每款都给出可玩理由与经营循环。','将三冰自然视频标题改成“今すぐ試せる雪城经营动作”，避免宏大叙事。','收藏高的经营循环进入商店页素材测试。'),
+  mkDailyOrg(50,'JP','YouTube','video','【ゲームショップ斜陽】元ゲーム店店員なのでゲームショップを経営する【steam】','日本独立游戏实况','https://www.youtube.com/watch?v=80DpkK-lyi0','1447 次观看 · 3 个月前','真实店员经验让店铺经营有明确观察视角。','库存、陈列和客流问题通过实况逐步暴露。','改成驿站军需铺，把店员视角换成掌柜视角，重点看补货和客流。','用评论中最常见的库存问题做买量钩子。'),
+  mkDailyOrg(51,'JP','YouTube','video','ランドリーシミュレーター2026 初公開 - 新しいランドリーストアの旅が始まる！エピソード1','日本经营游戏频道','https://www.youtube.com/watch?v=dDkU6_oNWNY','7268 次观看 · 4 个月前','新作初公开具备版本节点和明确店务题材。','从接单、加工到取件形成连续服务动作。','改成军需布料作坊，强调排班和订单，而不是洗衣写实质感。','自然内容中完成率最高的订单段落拆成 6 秒买量。'),
+  mkDailyOrg(52,'JP','YouTube','video','カジュアルに楽しめる色々やさしいコージー植物店経営シミュレーションゲーム実況プレイ【Leafy Corner】','日本独立游戏实况','https://www.youtube.com/watch?v=m8UQ4TNP4_8','183 次观看 · 3 个月前','独立实况展示了植物店的陈列和顾客服务。','单店、小订单和逐步扩建让经营逻辑容易跟随。','不做治愈包装，改成中性药草铺，突出库存和订单。','观察评论对“陈列/补货”的偏好再做买量。'),
+  mkDailyOrg(53,'JP','YouTube','video','【好評ゲー日本語対応】結構こまかいホテル経営シミュレーションゲーム実況プレイ【Hotel Architect／ホテル・アーキテクト】','日本独立游戏实况','https://www.youtube.com/watch?v=Y3D0yO9nagI','284 次观看 · 3 个月前','日本语实况降低理解门槛，展示酒店空间规划。','房间布局、服务路线和收入结算都有清楚反馈。','改为雪城客栈剖面，用有限格子做床位/炉火二选一。','把自然内容中最常被问的空间选择做买量 A/B。'),
+  mkDailyOrg(54,'JP','YouTube','video','レンタルビデオ店をリアル経営してお金を稼ぐ最新シミュレーターゲーム【 Retro Rewind Video Store Simulator ライブ配信 #2 】','日本独立游戏实况','https://www.youtube.com/watch?v=SHVlIWWQxQQ','1.1 万次观看 · 5 个月前','系列直播有连续追更和明确经营主题。','库存、陈列和顾客偏好共同推动门店成长。','改成军令牌/地图铺，保持“库存稀缺→陈列→回款”结构。','用系列评论问题生成下一条广告字幕。'),
+  mkDailyOrg(55,'JP','YouTube','video','働いたことない男のお店経営『 おにぎり屋さんシミュレーター 』','日本游戏实况','https://www.youtube.com/watch?v=Us98DsAOqTU','435 万次观看 · 10 个月前','高播放量来自单一店务题材和明显结果反馈。','制作、售卖、补货与失误都能被观众快速理解。','不拍写实食物，改成像素饭团/军粮图标和库存数字。','把高播放片段的“忙中出错”做成买量开场。'),
+  mkDailyOrg(56,'JP','YouTube','video','2026年Android＆iOS向け、最もリアルなビジネスマネジメントゲーム14選！','日本手游推荐频道','https://www.youtube.com/watch?v=zH56ScqLeSo','5.2 万次观看 · 6 个月前','移动端清单有明确平台和数量。','每款用一项经营机制做快速比较。','二次剪辑只保留补货、排班、定价三类，项目建议用日语 UI。','评论热词与商店页关键词交叉验证。'),
+  mkDailyOrg(57,'JP','YouTube','video','レンタルビデオ店をリアル経営してお金を稼ぐ最新シミュレーターゲーム【 Retro Rewind Video Store Simulator ライブ配信 】','日本独立游戏实况','https://www.youtube.com/watch?v=uNSsYe7-Kh4','1.6 万次观看 · 5 个月前','系列内容的观看量高于单次试玩，说明题材有追更性。','店铺扩建与库存周转是连续剧情。','做“驿站第 2 天”系列，每天只新增一个货架或岗位。','自然追更率高的任务改成买量连续剧。'),
+  mkDailyOrg(58,'JP','YouTube','video','高すぎるのに客が殺到する寿司屋を経営する','日本游戏实况','https://www.youtube.com/watch?v=jgo4IzL2MfU','99 万次观看 · 2 个月前','高价与爆客流形成强冲突，标题即给结果。','定价、客流和库存之间的反差非常直观。','改成“高价热汤仍然爆单”，用库存与口碑数值替代食物写实。','价格冲突最适合做日本广告 A/B。'),
+  mkDailyOrg(59,'JP','YouTube','video','STEAMで圧倒的好評のヴィンテージショップ経営ゲームでチル夜『Thrifty Business ヴィンテージショップへようこそ』','日本独立游戏实况','https://www.youtube.com/watch?v=RjQ3fqXfCC8','3.4 万次观看 · 2 个月前','Steam 高评价与店铺经营题材共同形成产品信号。','收货、鉴价、陈列、出售的循环很短。','改成旧军械铺，加入鉴定失误和声望反馈，画面使用木版画像素。','把收藏/评论最高的物品类型做下一条买量。'),
+  mkDailyOrg(60,'JP','TikTok','video','Model Kit Shop Simulator gameplay — Game of the Day','ultrahazard','https://www.tiktok.com/@ultrahazard/video/7669835578782895380','1.5 万+ 次观看 · 2 周前','近期短视频以单店经营动作和结果为核心。','快速展示上架、补货和顾客购买。','改成军械模型铺，开场用库存告急替代真人手部。','用短视频完播和评论选择做素材排序。'),
+  mkDailyOrg(61,'JP','TikTok','video','TCG Card Shop Simulator\'s 1.0 launch is coming ...','nikkikolls','https://www.tiktok.com/@nikkikolls/video/7674988171607756045','290+ 次观看 · 2 天前','版本节点非常新，且围绕店铺经营。','用一句话说明 1.0 更新，再给一个店务动作。','改成三冰“新设施上线”短预告，先展示功能结果再解释。','把评论最关心的新设施做买量首帧。'),
+  mkDailyOrg(62,'JP','TikTok','video','Discover the Retro Rewind Video Store Simulator!','CasRaeSlayz','https://www.tiktok.com/@casraeslayz/video/7624962757045128478','540+ 次观看 · 4 个月前','短视频用一句话介绍复古录像店经营。','店铺主题、陈列和顾客购买在极短时间内完成。','改成军令牌/地图铺，用库存告急替代真人展示。','把完播高的陈列动作拆成日本买量 B 面。'),
+  mkDailyOrg(63,'JP','Instagram','video','These are my top 5 tycoon games I\'ve played on Roblox','rubux.plays','https://www.instagram.com/reel/Daf50pYIpDp/','200+ 赞 · 1 个月前','榜单+短片组合有收藏和转发理由。','每款只给一个系统卖点，信息密度高。','改为“日本向け经营动作五选”，每款用冰河驿站对应一个镜头。','评论排名最高的动作进入下一期买量。'),
+  mkDailyOrg(64,'JP','Instagram','video','this tycoon game literally teaches you how to produce music ...','mrizzy','https://www.instagram.com/reel/DbBOSvyu712/','2210+ 赞 · 1 个月前','把生产过程做成短教程，观众能理解规则。','生产链分步骤展示，结尾有产出反馈。','改成作坊生产链教学：原料→加工→订单，使用纸雕图层。','收藏率验证生产链是否值得买量。'),
+  mkDailyOrg(65,'JP','Instagram','video','E-Shop Tycoon! Review from the demo. Build, manage, and ...','steam_reviews4','https://www.instagram.com/reel/Da9pRERIgAE/','7710+ 赞 · 1 个月前','Demo 评测同时给出建造与管理，近期互动较高。','先展示玩法，再给一句值不值得的判断。','做三冰 Demo 片段：只演一个设施从空地到营业。','自然评论的问题用于补充买量字幕。'),
+  mkDailyOrg(66,'JP','X','post','The End of Cash Grab Roblox Games','EvanZir','https://x.com/EvanZir/status/2070170318396608699','360+ 赞 · 1 个月前','讨论经营与长期留存的帖子适合观察玩家反感点。','帖子以观点+案例引发讨论。','项目自然内容可讨论“为什么看得见经营结果更重要”，不做抽象口号。','把高频负面评论转成广告避坑项。'),
+  mkDailyOrg(67,'TW','YouTube','video','15款必玩的模擬經營類的手遊精選！超適合養老型玩家！| 2026年最新 Android/iOS 雙平台手機遊戲推薦第1期！','台灣手游推薦頻道','https://www.youtube.com/watch?v=MNLvihAMCx8','3802 次觀看 · 6 個月前','平台与数量明确，繁中用户可快速收藏。','每款以一项循环说明“为什么耐玩”。','改成繁中“越玩越順”的补货/排班短片，画风保持像素。','把收藏最高的循环拆成台湾买量。'),
+  mkDailyOrg(68,'TW','YouTube','video','經典神作+創意新遊！ Steam夏促史低必買·城市建造遊戲【模擬經營遊戲推薦】','台灣遊戲頻道','https://www.youtube.com/watch?v=muJb9yjthCU','6.9 萬次觀看 · 1 個月前','Steam 夏促节点带来明确购买理由与高近期性。','价格/版本节点和城市建设玩法并置。','做三冰“新设施上线”繁中内容，先展示经营收益再给商店入口。','收藏与点击商店页互证素材价值。'),
+  mkDailyOrg(69,'TW','YouTube','video','Switch1&2新遊推薦 | 2026年最期待的模擬經營和種田遊戲！','台灣主機遊戲頻道','https://www.youtube.com/watch?v=JqrFglTBoHs','8074 次觀看 · 5 個月前','主機平台+模擬經營筛选明确。','把种田、经营和空间规划并列对比。','改成“雪地作坊經營”专题，避免女性向治愈包装。','评论选择的玩法动作进入台湾广告。'),
+  mkDailyOrg(70,'TW','YouTube','video','拯救週一！5款史低經營遊戲巨好玩 #模擬經營遊戲 #遊戲推薦','台灣遊戲頻道','https://www.youtube.com/watch?v=qEdKrM_TXIs','11 次觀看 · 9 天前','新近发布且标签直指经营游戏。','用低价/史低作为点击入口，再快速给玩法。','做“雪城今日缺貨”系列，把价格刺激换成经营选择。','自然内容的标签组合可用于台湾文案测试。'),
+  mkDailyOrg(71,'HK','TikTok','video','攻城戰團隊經營與資源分配：天堂遊戲中的團隊哲學','陳總','https://www.tiktok.com/@top_uncle_/video/7654290149911645447','6750+ 次觀看 · 1 個月前','香港/繁中语境下讨论团队经营与资源分配。','用团队选择和资源分配解释长期成长。','改成驿站人员与运输分工，粤语字幕只做钩子。','评论中的资源分配争议可转为买量二选一。'),
+  mkDailyOrg(72,'HK','Instagram','video','再問一問AI，竟然係99日，我地由零開始做左盒game出黎','studio1024.hk','https://www.instagram.com/reel/DVvYWj4iXFF/','20+ 赞 · 5 个月前','香港本地开发者以连续更新记录游戏制作过程。','从草图到成品的前后对比容易形成追更。','做“驿站一个模块从草图到营业”的连载，自然展示经营细节。','把观众最关心的模块做香港买量预告。'),
+  mkDailyOrg(73,'HK','Instagram','video','香港90後開發者失業後自學遊戲開發歷時2年獨力製作手遊','gamenews_daily','https://www.instagram.com/reel/DbNH1vgDfYk/','180+ 赞 · 3 周前','香港本地开发者故事近期且有明确地域身份。','开发过程与游戏成品形成前后对比。','自然内容可做“驿站一天开发日志”，展示一个经营模块从草图到成品。','把观众最关心的经营模块做买量预告。'),
+  mkDailyOrg(74,'HK','Instagram','video','我發現大家好中意睇我介紹超市game，所以決定介紹另一隻','yesports.asia','https://www.instagram.com/reel/C_K8GbOtXa3/','10+ 赞 · 1 年前','账号已验证超市游戏内容有连续需求。','先用观众偏好承接，再介绍另一款玩法。','做香港“超市/驿站经营”连载，持续换一个库存问题。','看连载下一条的评论增长，决定买量版本。')
+];
+function dailyPaidCard(x){
+  const tags=`<span class="tag p1">${x.n<=20?'P0':'P1'}</span><span class="tag">${escapeHtml(x.market)}</span><span class="tag platform">${escapeHtml(x.platform)}</span><span class="tag style">${escapeHtml(x.style)}</span>`;
+  const points=x.points.map(p=>`<li>${escapeHtml(p)}</li>`).join('');
+  return `<article class="item paid" data-type="paid" data-market="${x.market}" data-priority="${x.n<=20?'P0':'P1'}" data-platform="${escapeHtml(x.platform)}" data-search="${escapeHtml([x.title,x.market,x.platform,x.style,x.adapt].join(' '))}"><div class="item-top"><span class="num">${x.n}</span><div class="title-wrap"><div class="tags">${tags}</div><h3>${escapeHtml(x.title)}</h3></div></div><div class="source"><b>公开信号：</b>${escapeHtml(x.signal)}${sourceButtons(x)}</div><div class="source-summary"><b>原内容大意</b><ul class="source-points">${points}</ul></div><div class="kept-grid"><div class="detail"><b>创意建议</b><p>${escapeHtml(x.adapt)}</p></div><div class="detail"><b>UE / 录屏占比</b><p class="ue">${escapeHtml(x.ue)}</p></div></div></article>`;
+}
+function dailyOrganicCard(x){
+  const tags=`<span class="tag ${x.n<60?'p0':'p1'}">${x.n<60?'P0':'P1'}</span><span class="tag">${escapeHtml(x.market)}</span><span class="tag platform">${escapeHtml(x.platform)}</span><span class="tag style">自然流量</span>`;
+  return `<article class="item organic" data-type="organic" data-market="${x.market}" data-priority="${x.n<60?'P0':'P1'}" data-platform="${escapeHtml(x.platform)}" data-search="${escapeHtml([x.title,x.channel,x.market,x.platform,x.format,x.adapt].join(' '))}"><div class="item-top"><span class="num">${x.n}</span><div class="title-wrap"><div class="tags">${tags}</div><h3>${escapeHtml(x.title)}</h3></div></div><div class="source"><b>${escapeHtml(x.channel)}</b> · ${escapeHtml(x.signal)}${sourceButtons(x)}</div><div class="detail-grid"><div class="detail"><b>为什么近期有效</b><p>${escapeHtml(x.why)}</p></div><div class="detail"><b>内容结构</b><p>${escapeHtml(x.format)}</p></div><div class="detail"><b>改成项目内容</b><p>${escapeHtml(x.adapt)}</p></div><div class="detail"><b>和买量互证</b><p>${escapeHtml(x.test)}</p></div></div></article>`;
+}
+const dailyPaidByMarket={JP:dailyPaid.filter(x=>x.market==='JP'),TW:dailyPaid.filter(x=>x.market==='TW'),HK:dailyPaid.filter(x=>x.market==='HK')};
+const dailyOrgByMarket={JP:dailyOrganic.filter(x=>x.market==='JP'),TW:dailyOrganic.filter(x=>x.market==='TW'),HK:dailyOrganic.filter(x=>x.market==='HK')};
+document.getElementById('jpPaidList_20260820').innerHTML=dailyPaidByMarket.JP.map(dailyPaidCard).join('');
+document.getElementById('twPaidList_20260820').innerHTML=dailyPaidByMarket.TW.map(dailyPaidCard).join('');
+document.getElementById('hkPaidList_20260820').innerHTML=dailyPaidByMarket.HK.map(dailyPaidCard).join('');
+document.getElementById('jpOrganicList_20260820').innerHTML=dailyOrgByMarket.JP.map(dailyOrganicCard).join('');
+document.getElementById('twOrganicList_20260820').innerHTML=dailyOrgByMarket.TW.map(dailyOrganicCard).join('');
+document.getElementById('hkOrganicList_20260820').innerHTML=dailyOrgByMarket.HK.map(dailyOrganicCard).join('');
+const slgByMarket={JP:slgItems.filter(x=>x.market==='JP'),TW:slgItems.filter(x=>x.market==='TW'),HK:slgItems.filter(x=>x.market==='HK')};
+document.getElementById('jpSlgList_20260820').innerHTML=slgByMarket.JP.map(slgCard).join('');
+document.getElementById('twSlgList_20260820').innerHTML=slgByMarket.TW.map(slgCard).join('');
+document.getElementById('hkSlgList_20260820').innerHTML=slgByMarket.HK.map(slgCard).join('');
+applyFilters();
 </script>
 </body>
 </html>
